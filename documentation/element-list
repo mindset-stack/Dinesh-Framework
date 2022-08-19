@@ -1,0 +1,9 @@
+com.blazeclan.qa.base
+com.blazeclan.qa.bdd.hooks
+com.blazeclan.qa.bdd.stepsdefinition
+com.blazeclan.qa.logging
+com.blazeclan.qa.pages
+com.blazeclan.qa.reports
+com.blazeclan.qa.test.bdd
+com.blazeclan.qa.test.testng
+com.blazeclan.qa.utility

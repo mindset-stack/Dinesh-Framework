@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testng-results failed="1" passed="1" skipped="0" total="2">
+    <suite duration-ms="32666" name="io.cucumber.core.plugin.TestNGFormatter">
+        <test duration-ms="32666" name="io.cucumber.core.plugin.TestNGFormatter">
+            <class name="Search for product">
+                <test-method duration-ms="17192" finished-at="2022-08-19T05:18:40.867099300Z" name="Search for an product" started-at="2022-08-19T05:18:23.549861Z" status="PASS"/>
+            </class>
+            <class name="Validate the login functionality">
+                <test-method duration-ms="14541" finished-at="2022-08-19T05:18:55.617677700Z" name="Test login functionality" started-at="2022-08-19T05:18:41.059105200Z" status="FAIL">
+                    <exception class="java.lang.AssertionError">
+                        <message><![CDATA[Given When user open login page.............................................passed
+When User login to application with "dineshkumar.icon.dk@gmail.com" and "Dinnu@4318" credentials.passed
+Then Navigate to Home Page title as ""......................................failed
+]]></message>
+                        <full-stacktrace><![CDATA[java.lang.AssertionError: expected [] but found [My Account]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at com.blazeclan.qa.bdd.stepsdefinition.Login.navigateToHomePageTitleAs(Login.java:29)
+	at ✽.Navigate to Home Page title as ""(file:///D:/Framework/BlazeclanAutomationFramework/src/main/java/com/blazeclan/qa/bdd/features/Login.feature:6)
+]]></full-stacktrace>
+                    </exception>
+                </test-method>
+            </class>
+        </test>
+    </suite>
+</testng-results>
