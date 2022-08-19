@@ -1,20 +1,20 @@
 package com.blazeclan.qa.bdd.hooks;
 
 import com.blazeclan.qa.base.CommonFunctions;
-import com.blazeclan.qa.reports.CucumberExtentReports;
-import io.cucumber.core.gherkin.Step;
+import com.blazeclan.qa.constants.IConstants;
 import io.cucumber.java.*;
-import org.testng.annotations.AfterSuite;
 
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
+import java.util.Properties;
 
 public class Hooks extends CommonFunctions {
 
     @Before
     public void setUp() {
-        invokeApplicationURL("chrome", "https://naveenautomationlabs.com/opencart/");
+        Properties prop = init_properties(IConstants.TEST_CONFIG_PATH);
+        invokeApplicationURL(prop.getProperty("BrowserName"), prop.getProperty("Url"));
         waitForLoading();
     }
 
@@ -38,6 +38,7 @@ public class Hooks extends CommonFunctions {
         } else {
             File fi = new File(captureScreenshot(scenario.getName(), "passed"));
             byte[] fileContent = Files.readAllBytes(fi.toPath());
+            scenario.attach(fileContent, "image/png", scenario.getName());
         }
 
         browserKill();
