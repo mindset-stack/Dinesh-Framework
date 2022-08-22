@@ -10,7 +10,7 @@ import org.testng.annotations.AfterSuite;
 @CucumberOptions(features = {"src/main/java/com/blazeclan/qa/bdd/features"},
         plugin = { "pretty", "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
                 "json:target/MyReports/cucumber.json", "testng:target/MyReports/report.xml",
-        "html:target/cucumber-html-report.html"},
+        "html:target/cucumber-html-report.html","rerun:target/failedRerun.txt"},
         monochrome = true,
 //        dryRun = true,
         glue = {"com.blazeclan.qa.bdd.stepsdefinition","com.blazeclan.qa.bdd.hooks"})

@@ -10,7 +10,6 @@ import java.nio.file.Files;
 import java.util.Properties;
 
 public class Hooks extends CommonFunctions {
-
     @Before
     public void setUp() {
         Properties prop = init_properties(IConstants.TEST_CONFIG_PATH);

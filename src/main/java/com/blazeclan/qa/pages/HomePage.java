@@ -19,7 +19,6 @@ public class HomePage {
     @FindBy(xpath = "(//a[normalize-space()='Login'])[1]")
     public WebElement loginBtn;
 
-
     public HomePage(WebDriver driver) {
         PageFactory.initElements(driver, this);
     }

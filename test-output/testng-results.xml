@@ -2,20 +2,20 @@
 <testng-results ignored="1" total="2" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-08-16T17:56:16 IST" name="Default Suite" finished-at="2022-08-16T17:56:27 IST" duration-ms="10668">
+  <suite started-at="2022-08-19T17:01:32 IST" name="Default Suite" finished-at="2022-08-19T17:01:55 IST" duration-ms="22394">
     <groups>
     </groups>
-    <test started-at="2022-08-16T17:56:16 IST" name="BlazeclanAutomationFramework" finished-at="2022-08-16T17:56:27 IST" duration-ms="10668">
+    <test started-at="2022-08-19T17:01:32 IST" name="BlazeclanAutomationFramework" finished-at="2022-08-19T17:01:55 IST" duration-ms="22394">
       <class name="com.blazeclan.qa.test.testng.TestFramework">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.blazeclan.qa.test.testng.TestFramework@740cae06]" started-at="2022-08-16T17:56:16 IST" name="setUp" finished-at="2022-08-16T17:56:24 IST" duration-ms="8137" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.blazeclan.qa.test.testng.TestFramework@2dc54ad4]" started-at="2022-08-19T17:01:32 IST" name="setUp" finished-at="2022-08-19T17:01:51 IST" duration-ms="18642" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="navigateToLoginPage()[pri:2, instance:com.blazeclan.qa.test.testng.TestFramework@740cae06]" started-at="2022-08-16T17:56:24 IST" name="navigateToLoginPage" finished-at="2022-08-16T17:56:25 IST" duration-ms="1038" status="PASS">
+        <test-method signature="navigateToLoginPage()[pri:2, instance:com.blazeclan.qa.test.testng.TestFramework@2dc54ad4]" started-at="2022-08-19T17:01:51 IST" name="navigateToLoginPage" finished-at="2022-08-19T17:01:53 IST" duration-ms="1644" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- navigateToLoginPage -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.blazeclan.qa.test.testng.TestFramework@740cae06]" started-at="2022-08-16T17:56:25 IST" name="tearDown" finished-at="2022-08-16T17:56:27 IST" duration-ms="1115" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.blazeclan.qa.test.testng.TestFramework@2dc54ad4]" started-at="2022-08-19T17:01:53 IST" name="tearDown" finished-at="2022-08-19T17:01:55 IST" duration-ms="1440" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

@@ -7,7 +7,6 @@ import com.blazeclan.qa.pages.LoginPage;
 import com.blazeclan.qa.pages.RegisterPage;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Parameters;
 
 public class BaseTest extends CommonFunctions {
 

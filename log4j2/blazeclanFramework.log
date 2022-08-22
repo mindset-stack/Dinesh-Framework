@@ -1,528 +1,214 @@
-[INFO ] 2022-08-19 10:31:34.552 [main] Log - Open chrome browser
-[INFO ] 2022-08-19 10:31:34.586 [main] Log - chrome browser is selected
-[DEBUG] 2022-08-19 10:31:38.065 [main] InternalLoggerFactory - Using Log4J2 as the default logging framework
-[DEBUG] 2022-08-19 10:31:38.071 [main] ResourceLeakDetector - -Dio.netty.leakDetection.level: simple
-[DEBUG] 2022-08-19 10:31:38.072 [main] ResourceLeakDetector - -Dio.netty.leakDetection.targetRecords: 4
-[DEBUG] 2022-08-19 10:31:38.083 [main] ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@5e9bbd9d
-[DEBUG] 2022-08-19 10:31:38.106 [main] PlatformDependent0 - -Dio.netty.noUnsafe: false
-[DEBUG] 2022-08-19 10:31:38.106 [main] PlatformDependent0 - Java version: 18
-[DEBUG] 2022-08-19 10:31:38.108 [main] PlatformDependent0 - sun.misc.Unsafe.theUnsafe: available
-[DEBUG] 2022-08-19 10:31:38.109 [main] PlatformDependent0 - sun.misc.Unsafe.copyMemory: available
-[DEBUG] 2022-08-19 10:31:38.109 [main] PlatformDependent0 - sun.misc.Unsafe.storeFence: available
-[DEBUG] 2022-08-19 10:31:38.110 [main] PlatformDependent0 - java.nio.Buffer.address: available
-[DEBUG] 2022-08-19 10:31:38.111 [main] PlatformDependent0 - direct buffer constructor: unavailable: Reflective setAccessible(true) disabled
-[DEBUG] 2022-08-19 10:31:38.111 [main] PlatformDependent0 - java.nio.Bits.unaligned: available, true
-[DEBUG] 2022-08-19 10:31:38.113 [main] PlatformDependent0 - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable: class io.netty.util.internal.PlatformDependent0$7 cannot access class jdk.internal.misc.Unsafe (in module java.base) because module java.base does not export jdk.internal.misc to unnamed module @2344fc66
-[DEBUG] 2022-08-19 10:31:38.115 [main] PlatformDependent0 - java.nio.DirectByteBuffer.<init>(long, int): unavailable
-[DEBUG] 2022-08-19 10:31:38.115 [main] PlatformDependent - sun.misc.Unsafe: available
-[DEBUG] 2022-08-19 10:31:38.116 [main] PlatformDependent - maxDirectMemory: 2086666240 bytes (maybe)
-[DEBUG] 2022-08-19 10:31:38.117 [main] PlatformDependent - -Dio.netty.tmpdir: C:\Users\DINESH~1.PED\AppData\Local\Temp (java.io.tmpdir)
-[DEBUG] 2022-08-19 10:31:38.117 [main] PlatformDependent - -Dio.netty.bitMode: 64 (sun.arch.data.model)
-[DEBUG] 2022-08-19 10:31:38.118 [main] PlatformDependent - Platform: Windows
-[DEBUG] 2022-08-19 10:31:38.119 [main] PlatformDependent - -Dio.netty.maxDirectMemory: -1 bytes
-[DEBUG] 2022-08-19 10:31:38.120 [main] PlatformDependent - -Dio.netty.uninitializedArrayAllocationThreshold: -1
-[DEBUG] 2022-08-19 10:31:38.121 [main] CleanerJava9 - java.nio.ByteBuffer.cleaner(): available
-[DEBUG] 2022-08-19 10:31:38.121 [main] PlatformDependent - -Dio.netty.noPreferDirect: false
-[DEBUG] 2022-08-19 10:31:38.132 [main] PlatformDependent - org.jctools-core.MpscChunkedArrayQueue: available
-[DEBUG] 2022-08-19 10:31:38.172 [main] InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
-[DEBUG] 2022-08-19 10:31:38.172 [main] InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
-[DEBUG] 2022-08-19 10:31:38.195 [main] JdkSslContext - Default protocols (JDK): [TLSv1.3, TLSv1.2] 
-[DEBUG] 2022-08-19 10:31:38.195 [main] JdkSslContext - Default cipher suites (JDK): [TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_AES_128_GCM_SHA256, TLS_AES_256_GCM_SHA384]
-[DEBUG] 2022-08-19 10:31:38.243 [main] MultithreadEventLoopGroup - -Dio.netty.eventLoopThreads: 16
-[DEBUG] 2022-08-19 10:31:38.261 [main] NioEventLoop - -Dio.netty.noKeySetOptimization: false
-[DEBUG] 2022-08-19 10:31:38.261 [main] NioEventLoop - -Dio.netty.selectorAutoRebuildThreshold: 512
-[DEBUG] 2022-08-19 10:31:38.372 [main] PooledByteBufAllocator - -Dio.netty.allocator.numHeapArenas: 16
-[DEBUG] 2022-08-19 10:31:38.373 [main] PooledByteBufAllocator - -Dio.netty.allocator.numDirectArenas: 16
-[DEBUG] 2022-08-19 10:31:38.373 [main] PooledByteBufAllocator - -Dio.netty.allocator.pageSize: 8192
-[DEBUG] 2022-08-19 10:31:38.373 [main] PooledByteBufAllocator - -Dio.netty.allocator.maxOrder: 9
-[DEBUG] 2022-08-19 10:31:38.373 [main] PooledByteBufAllocator - -Dio.netty.allocator.chunkSize: 4194304
-[DEBUG] 2022-08-19 10:31:38.374 [main] PooledByteBufAllocator - -Dio.netty.allocator.smallCacheSize: 256
-[DEBUG] 2022-08-19 10:31:38.374 [main] PooledByteBufAllocator - -Dio.netty.allocator.normalCacheSize: 64
-[DEBUG] 2022-08-19 10:31:38.374 [main] PooledByteBufAllocator - -Dio.netty.allocator.maxCachedBufferCapacity: 32768
-[DEBUG] 2022-08-19 10:31:38.374 [main] PooledByteBufAllocator - -Dio.netty.allocator.cacheTrimInterval: 8192
-[DEBUG] 2022-08-19 10:31:38.374 [main] PooledByteBufAllocator - -Dio.netty.allocator.cacheTrimIntervalMillis: 0
-[DEBUG] 2022-08-19 10:31:38.375 [main] PooledByteBufAllocator - -Dio.netty.allocator.useCacheForAllThreads: false
-[DEBUG] 2022-08-19 10:31:38.375 [main] PooledByteBufAllocator - -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
-[DEBUG] 2022-08-19 10:31:38.393 [main] ByteBufUtil - -Dio.netty.allocator.type: pooled
-[DEBUG] 2022-08-19 10:31:38.393 [main] ByteBufUtil - -Dio.netty.threadLocalDirectBufferSize: 0
-[DEBUG] 2022-08-19 10:31:38.393 [main] ByteBufUtil - -Dio.netty.maxThreadLocalCharBufferSize: 16384
-[DEBUG] 2022-08-19 10:31:39.450 [Forwarding newSession on session null to remote] DefaultChannelId - -Dio.netty.processId: 19048 (auto-detected)
-[DEBUG] 2022-08-19 10:31:39.453 [Forwarding newSession on session null to remote] NetUtil - -Djava.net.preferIPv4Stack: false
-[DEBUG] 2022-08-19 10:31:39.453 [Forwarding newSession on session null to remote] NetUtil - -Djava.net.preferIPv6Addresses: false
-[DEBUG] 2022-08-19 10:31:39.474 [Forwarding newSession on session null to remote] NetUtilInitializations - Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
-[DEBUG] 2022-08-19 10:31:39.476 [Forwarding newSession on session null to remote] NetUtil - Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200
-[DEBUG] 2022-08-19 10:31:39.548 [Forwarding newSession on session null to remote] DefaultChannelId - -Dio.netty.machineId: f4:7b:09:ff:fe:3d:cf:0c (auto-detected)
-[DEBUG] 2022-08-19 10:31:39.615 [AsyncHttpClient-1-2] AbstractByteBuf - -Dio.netty.buffer.checkAccessible: true
-[DEBUG] 2022-08-19 10:31:39.616 [AsyncHttpClient-1-2] AbstractByteBuf - -Dio.netty.buffer.checkBounds: true
-[DEBUG] 2022-08-19 10:31:39.616 [AsyncHttpClient-1-2] ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@4ef48a21
-[DEBUG] 2022-08-19 10:31:39.647 [AsyncHttpClient-1-2] Recycler - -Dio.netty.recycler.maxCapacityPerThread: 4096
-[DEBUG] 2022-08-19 10:31:39.647 [AsyncHttpClient-1-2] Recycler - -Dio.netty.recycler.ratio: 8
-[DEBUG] 2022-08-19 10:31:39.647 [AsyncHttpClient-1-2] Recycler - -Dio.netty.recycler.chunkSize: 32
-[DEBUG] 2022-08-19 10:31:39.647 [AsyncHttpClient-1-2] Recycler - -Dio.netty.recycler.blocking: false
-[DEBUG] 2022-08-19 10:31:45.644 [AsyncHttpClient-1-2] Brotli - brotli4j not in the classpath; Brotli support will be unavailable.
-[DEBUG] 2022-08-19 10:31:45.910 [main] ThreadLocalRandom - -Dio.netty.initialSeedUniquifier: 0xb2cb65106c8c393f
-[INFO ] 2022-08-19 10:31:45.988 [main] Log - Open the urlhttps://naveenautomationlabs.com/opencart/
-[INFO ] 2022-08-19 10:31:50.994 [main] Log - https://naveenautomationlabs.com/opencart/
-[INFO ] 2022-08-19 10:31:51.991 [main] Log - Text in element : [[ChromeDriver: chrome on WINDOWS (7bc0f1ac9dce5258a932a911f7644145)] -> xpath: //input[@placeholder='Search']] is cleared
-[INFO ] 2022-08-19 10:31:52.149 [main] Log - Click on Text Box: [[ChromeDriver: chrome on WINDOWS (7bc0f1ac9dce5258a932a911f7644145)] -> xpath: //input[@placeholder='Search']]
-[INFO ] 2022-08-19 10:31:52.301 [main] Log - Enter text on [[ChromeDriver: chrome on WINDOWS (7bc0f1ac9dce5258a932a911f7644145)] -> xpath: //input[@placeholder='Search']] :Apple
-[INFO ] 2022-08-19 10:31:52.404 [main] Log - wait for until element [[ChromeDriver: chrome on WINDOWS (7bc0f1ac9dce5258a932a911f7644145)] -> xpath: //div[@id='search']/span] is visible
-[INFO ] 2022-08-19 10:31:53.436 [main] Log - Click on element: [[ChromeDriver: chrome on WINDOWS (7bc0f1ac9dce5258a932a911f7644145)] -> xpath: //div[@id='search']/span]
-[INFO ] 2022-08-19 10:31:56.007 [main] Log - Kills the browsers
-[INFO ] 2022-08-19 10:31:56.393 [main] Log - Open chrome browser
-[INFO ] 2022-08-19 10:31:56.393 [main] Log - chrome browser is selected
-[INFO ] 2022-08-19 10:32:01.701 [main] Log - Open the urlhttps://naveenautomationlabs.com/opencart/
-[INFO ] 2022-08-19 10:32:06.189 [main] Log - https://naveenautomationlabs.com/opencart/
-[INFO ] 2022-08-19 10:32:07.037 [main] Log - wait for until element [[ChromeDriver: chrome on WINDOWS (f352cdd236e9feb873866d54ce4e5aca)] -> xpath: //span[normalize-space()='My Account']] is visible
-[INFO ] 2022-08-19 10:32:07.245 [main] Log - Click on element: [[ChromeDriver: chrome on WINDOWS (f352cdd236e9feb873866d54ce4e5aca)] -> xpath: //span[normalize-space()='My Account']]
-[INFO ] 2022-08-19 10:32:07.415 [main] Log - wait for until element [[ChromeDriver: chrome on WINDOWS (f352cdd236e9feb873866d54ce4e5aca)] -> xpath: (//a[normalize-space()='Login'])[1]] is visible
-[INFO ] 2022-08-19 10:32:08.212 [main] Log - Click on element: [[ChromeDriver: chrome on WINDOWS (f352cdd236e9feb873866d54ce4e5aca)] -> xpath: (//a[normalize-space()='Login'])[1]]
-[INFO ] 2022-08-19 10:32:08.733 [main] Log - Text in element : [[ChromeDriver: chrome on WINDOWS (f352cdd236e9feb873866d54ce4e5aca)] -> id: input-email] is cleared
-[INFO ] 2022-08-19 10:32:08.848 [main] Log - Click on Text Box: [[ChromeDriver: chrome on WINDOWS (f352cdd236e9feb873866d54ce4e5aca)] -> id: input-email]
-[INFO ] 2022-08-19 10:32:08.992 [main] Log - Enter text on [[ChromeDriver: chrome on WINDOWS (f352cdd236e9feb873866d54ce4e5aca)] -> id: input-email] :dineshkumar.icon.dk@gmail.com
-[INFO ] 2022-08-19 10:32:09.053 [main] Log - Text in element : [[ChromeDriver: chrome on WINDOWS (f352cdd236e9feb873866d54ce4e5aca)] -> id: input-password] is cleared
-[INFO ] 2022-08-19 10:32:09.119 [main] Log - Click on Text Box: [[ChromeDriver: chrome on WINDOWS (f352cdd236e9feb873866d54ce4e5aca)] -> id: input-password]
-[INFO ] 2022-08-19 10:32:09.262 [main] Log - Enter text on [[ChromeDriver: chrome on WINDOWS (f352cdd236e9feb873866d54ce4e5aca)] -> id: input-password] :Dinnu@4318
-[INFO ] 2022-08-19 10:32:09.328 [main] Log - wait for until element [[ChromeDriver: chrome on WINDOWS (f352cdd236e9feb873866d54ce4e5aca)] -> xpath: //input[@value='Login']] is visible
-[INFO ] 2022-08-19 10:32:11.305 [main] Log - Click on element: Proxy element for: DefaultElementLocator 'By.xpath: //input[@value='Login']'
-[INFO ] 2022-08-19 10:32:13.592 [main] Log - Kills the browsers
-[INFO ] 2022-08-19 10:39:42.331 [main] Log - Open chrome browser
-[INFO ] 2022-08-19 10:39:42.350 [main] Log - chrome browser is selected
-[DEBUG] 2022-08-19 10:39:43.258 [main] InternalLoggerFactory - Using Log4J2 as the default logging framework
-[DEBUG] 2022-08-19 10:39:43.264 [main] ResourceLeakDetector - -Dio.netty.leakDetection.level: simple
-[DEBUG] 2022-08-19 10:39:43.265 [main] ResourceLeakDetector - -Dio.netty.leakDetection.targetRecords: 4
-[DEBUG] 2022-08-19 10:39:43.269 [main] ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@7fad214a
-[DEBUG] 2022-08-19 10:39:43.292 [main] PlatformDependent0 - -Dio.netty.noUnsafe: false
-[DEBUG] 2022-08-19 10:39:43.292 [main] PlatformDependent0 - Java version: 18
-[DEBUG] 2022-08-19 10:39:43.294 [main] PlatformDependent0 - sun.misc.Unsafe.theUnsafe: available
-[DEBUG] 2022-08-19 10:39:43.295 [main] PlatformDependent0 - sun.misc.Unsafe.copyMemory: available
-[DEBUG] 2022-08-19 10:39:43.295 [main] PlatformDependent0 - sun.misc.Unsafe.storeFence: available
-[DEBUG] 2022-08-19 10:39:43.296 [main] PlatformDependent0 - java.nio.Buffer.address: available
-[DEBUG] 2022-08-19 10:39:43.297 [main] PlatformDependent0 - direct buffer constructor: unavailable: Reflective setAccessible(true) disabled
-[DEBUG] 2022-08-19 10:39:43.297 [main] PlatformDependent0 - java.nio.Bits.unaligned: available, true
-[DEBUG] 2022-08-19 10:39:43.299 [main] PlatformDependent0 - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable: class io.netty.util.internal.PlatformDependent0$7 cannot access class jdk.internal.misc.Unsafe (in module java.base) because module java.base does not export jdk.internal.misc to unnamed module @68be2bc2
-[DEBUG] 2022-08-19 10:39:43.300 [main] PlatformDependent0 - java.nio.DirectByteBuffer.<init>(long, int): unavailable
-[DEBUG] 2022-08-19 10:39:43.301 [main] PlatformDependent - sun.misc.Unsafe: available
-[DEBUG] 2022-08-19 10:39:43.301 [main] PlatformDependent - maxDirectMemory: 2086666240 bytes (maybe)
-[DEBUG] 2022-08-19 10:39:43.302 [main] PlatformDependent - -Dio.netty.tmpdir: C:\Users\DINESH~1.PED\AppData\Local\Temp (java.io.tmpdir)
-[DEBUG] 2022-08-19 10:39:43.302 [main] PlatformDependent - -Dio.netty.bitMode: 64 (sun.arch.data.model)
-[DEBUG] 2022-08-19 10:39:43.303 [main] PlatformDependent - Platform: Windows
-[DEBUG] 2022-08-19 10:39:43.303 [main] PlatformDependent - -Dio.netty.maxDirectMemory: -1 bytes
-[DEBUG] 2022-08-19 10:39:43.304 [main] PlatformDependent - -Dio.netty.uninitializedArrayAllocationThreshold: -1
-[DEBUG] 2022-08-19 10:39:43.305 [main] CleanerJava9 - java.nio.ByteBuffer.cleaner(): available
-[DEBUG] 2022-08-19 10:39:43.305 [main] PlatformDependent - -Dio.netty.noPreferDirect: false
-[DEBUG] 2022-08-19 10:39:43.314 [main] PlatformDependent - org.jctools-core.MpscChunkedArrayQueue: available
-[DEBUG] 2022-08-19 10:39:43.340 [main] InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
-[DEBUG] 2022-08-19 10:39:43.341 [main] InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
-[DEBUG] 2022-08-19 10:39:43.458 [main] JdkSslContext - Default protocols (JDK): [TLSv1.3, TLSv1.2] 
-[DEBUG] 2022-08-19 10:39:43.458 [main] JdkSslContext - Default cipher suites (JDK): [TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_AES_128_GCM_SHA256, TLS_AES_256_GCM_SHA384]
-[DEBUG] 2022-08-19 10:39:43.498 [main] MultithreadEventLoopGroup - -Dio.netty.eventLoopThreads: 16
-[DEBUG] 2022-08-19 10:39:43.518 [main] NioEventLoop - -Dio.netty.noKeySetOptimization: false
-[DEBUG] 2022-08-19 10:39:43.518 [main] NioEventLoop - -Dio.netty.selectorAutoRebuildThreshold: 512
-[DEBUG] 2022-08-19 10:39:43.714 [main] PooledByteBufAllocator - -Dio.netty.allocator.numHeapArenas: 16
-[DEBUG] 2022-08-19 10:39:43.714 [main] PooledByteBufAllocator - -Dio.netty.allocator.numDirectArenas: 16
-[DEBUG] 2022-08-19 10:39:43.715 [main] PooledByteBufAllocator - -Dio.netty.allocator.pageSize: 8192
-[DEBUG] 2022-08-19 10:39:43.715 [main] PooledByteBufAllocator - -Dio.netty.allocator.maxOrder: 9
-[DEBUG] 2022-08-19 10:39:43.716 [main] PooledByteBufAllocator - -Dio.netty.allocator.chunkSize: 4194304
-[DEBUG] 2022-08-19 10:39:43.716 [main] PooledByteBufAllocator - -Dio.netty.allocator.smallCacheSize: 256
-[DEBUG] 2022-08-19 10:39:43.717 [main] PooledByteBufAllocator - -Dio.netty.allocator.normalCacheSize: 64
-[DEBUG] 2022-08-19 10:39:43.717 [main] PooledByteBufAllocator - -Dio.netty.allocator.maxCachedBufferCapacity: 32768
-[DEBUG] 2022-08-19 10:39:43.718 [main] PooledByteBufAllocator - -Dio.netty.allocator.cacheTrimInterval: 8192
-[DEBUG] 2022-08-19 10:39:43.718 [main] PooledByteBufAllocator - -Dio.netty.allocator.cacheTrimIntervalMillis: 0
-[DEBUG] 2022-08-19 10:39:43.719 [main] PooledByteBufAllocator - -Dio.netty.allocator.useCacheForAllThreads: false
-[DEBUG] 2022-08-19 10:39:43.719 [main] PooledByteBufAllocator - -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
-[DEBUG] 2022-08-19 10:39:43.756 [main] ByteBufUtil - -Dio.netty.allocator.type: pooled
-[DEBUG] 2022-08-19 10:39:43.757 [main] ByteBufUtil - -Dio.netty.threadLocalDirectBufferSize: 0
-[DEBUG] 2022-08-19 10:39:43.757 [main] ByteBufUtil - -Dio.netty.maxThreadLocalCharBufferSize: 16384
-[DEBUG] 2022-08-19 10:39:44.795 [Forwarding newSession on session null to remote] DefaultChannelId - -Dio.netty.processId: 18076 (auto-detected)
-[DEBUG] 2022-08-19 10:39:44.801 [Forwarding newSession on session null to remote] NetUtil - -Djava.net.preferIPv4Stack: false
-[DEBUG] 2022-08-19 10:39:44.802 [Forwarding newSession on session null to remote] NetUtil - -Djava.net.preferIPv6Addresses: false
-[DEBUG] 2022-08-19 10:39:44.842 [Forwarding newSession on session null to remote] NetUtilInitializations - Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
-[DEBUG] 2022-08-19 10:39:44.844 [Forwarding newSession on session null to remote] NetUtil - Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200
-[DEBUG] 2022-08-19 10:39:44.960 [Forwarding newSession on session null to remote] DefaultChannelId - -Dio.netty.machineId: f4:7b:09:ff:fe:3d:cf:0c (auto-detected)
-[DEBUG] 2022-08-19 10:39:45.090 [AsyncHttpClient-1-2] AbstractByteBuf - -Dio.netty.buffer.checkAccessible: true
-[DEBUG] 2022-08-19 10:39:45.092 [AsyncHttpClient-1-2] AbstractByteBuf - -Dio.netty.buffer.checkBounds: true
-[DEBUG] 2022-08-19 10:39:45.092 [AsyncHttpClient-1-2] ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@29fdbb09
-[DEBUG] 2022-08-19 10:39:45.152 [AsyncHttpClient-1-2] Recycler - -Dio.netty.recycler.maxCapacityPerThread: 4096
-[DEBUG] 2022-08-19 10:39:45.153 [AsyncHttpClient-1-2] Recycler - -Dio.netty.recycler.ratio: 8
-[DEBUG] 2022-08-19 10:39:45.153 [AsyncHttpClient-1-2] Recycler - -Dio.netty.recycler.chunkSize: 32
-[DEBUG] 2022-08-19 10:39:45.153 [AsyncHttpClient-1-2] Recycler - -Dio.netty.recycler.blocking: false
-[DEBUG] 2022-08-19 10:39:49.821 [AsyncHttpClient-1-2] Brotli - brotli4j not in the classpath; Brotli support will be unavailable.
-[DEBUG] 2022-08-19 10:39:50.001 [main] ThreadLocalRandom - -Dio.netty.initialSeedUniquifier: 0x099f988fd2a2482c
-[INFO ] 2022-08-19 10:39:50.048 [main] Log - Open the urlhttps://naveenautomationlabs.com/opencart/
-[INFO ] 2022-08-19 10:39:55.064 [main] Log - https://naveenautomationlabs.com/opencart/
-[INFO ] 2022-08-19 10:39:56.891 [main] Log - Text in element : [[ChromeDriver: chrome on WINDOWS (90a8038e60807f00ca6276a0d014b202)] -> xpath: //input[@placeholder='Search']] is cleared
-[INFO ] 2022-08-19 10:39:56.968 [main] Log - Click on Text Box: [[ChromeDriver: chrome on WINDOWS (90a8038e60807f00ca6276a0d014b202)] -> xpath: //input[@placeholder='Search']]
-[INFO ] 2022-08-19 10:39:57.058 [main] Log - Enter text on [[ChromeDriver: chrome on WINDOWS (90a8038e60807f00ca6276a0d014b202)] -> xpath: //input[@placeholder='Search']] :Apple
-[INFO ] 2022-08-19 10:39:57.128 [main] Log - wait for until element [[ChromeDriver: chrome on WINDOWS (90a8038e60807f00ca6276a0d014b202)] -> xpath: //div[@id='search']/span] is visible
-[INFO ] 2022-08-19 10:39:57.644 [main] Log - Click on element: [[ChromeDriver: chrome on WINDOWS (90a8038e60807f00ca6276a0d014b202)] -> xpath: //div[@id='search']/span]
-[INFO ] 2022-08-19 10:40:00.050 [main] Log - Kills the browsers
-[INFO ] 2022-08-19 10:40:00.178 [main] Log - Open chrome browser
-[INFO ] 2022-08-19 10:40:00.178 [main] Log - chrome browser is selected
-[INFO ] 2022-08-19 10:40:05.739 [main] Log - Open the urlhttps://naveenautomationlabs.com/opencart/
-[INFO ] 2022-08-19 10:40:09.893 [main] Log - https://naveenautomationlabs.com/opencart/
-[INFO ] 2022-08-19 10:40:10.135 [main] Log - wait for until element [[ChromeDriver: chrome on WINDOWS (e0f8d9b30baec8459c9f46c9e061d788)] -> xpath: //span[normalize-space()='My Account']] is visible
-[INFO ] 2022-08-19 10:40:10.232 [main] Log - Click on element: [[ChromeDriver: chrome on WINDOWS (e0f8d9b30baec8459c9f46c9e061d788)] -> xpath: //span[normalize-space()='My Account']]
-[INFO ] 2022-08-19 10:40:10.318 [main] Log - wait for until element [[ChromeDriver: chrome on WINDOWS (e0f8d9b30baec8459c9f46c9e061d788)] -> xpath: (//a[normalize-space()='Login'])[1]] is visible
-[INFO ] 2022-08-19 10:40:10.791 [main] Log - Click on element: [[ChromeDriver: chrome on WINDOWS (e0f8d9b30baec8459c9f46c9e061d788)] -> xpath: (//a[normalize-space()='Login'])[1]]
-[INFO ] 2022-08-19 10:40:11.223 [main] Log - Text in element : [[ChromeDriver: chrome on WINDOWS (e0f8d9b30baec8459c9f46c9e061d788)] -> id: input-email] is cleared
-[INFO ] 2022-08-19 10:40:11.343 [main] Log - Click on Text Box: [[ChromeDriver: chrome on WINDOWS (e0f8d9b30baec8459c9f46c9e061d788)] -> id: input-email]
-[INFO ] 2022-08-19 10:40:11.537 [main] Log - Enter text on [[ChromeDriver: chrome on WINDOWS (e0f8d9b30baec8459c9f46c9e061d788)] -> id: input-email] :dineshkumar.icon.dk@gmail.com
-[INFO ] 2022-08-19 10:40:11.624 [main] Log - Text in element : [[ChromeDriver: chrome on WINDOWS (e0f8d9b30baec8459c9f46c9e061d788)] -> id: input-password] is cleared
-[INFO ] 2022-08-19 10:40:11.742 [main] Log - Click on Text Box: [[ChromeDriver: chrome on WINDOWS (e0f8d9b30baec8459c9f46c9e061d788)] -> id: input-password]
-[INFO ] 2022-08-19 10:40:11.860 [main] Log - Enter text on [[ChromeDriver: chrome on WINDOWS (e0f8d9b30baec8459c9f46c9e061d788)] -> id: input-password] :Dinnu@4318
-[INFO ] 2022-08-19 10:40:11.914 [main] Log - wait for until element [[ChromeDriver: chrome on WINDOWS (e0f8d9b30baec8459c9f46c9e061d788)] -> xpath: //input[@value='Login']] is visible
-[INFO ] 2022-08-19 10:40:14.031 [main] Log - Click on element: Proxy element for: DefaultElementLocator 'By.xpath: //input[@value='Login']'
-[INFO ] 2022-08-19 10:40:16.535 [main] Log - Kills the browsers
-[INFO ] 2022-08-19 10:42:04.173 [main] Log - Open chrome browser
-[INFO ] 2022-08-19 10:42:04.183 [main] Log - chrome browser is selected
-[DEBUG] 2022-08-19 10:42:04.852 [main] InternalLoggerFactory - Using Log4J2 as the default logging framework
-[DEBUG] 2022-08-19 10:42:04.857 [main] ResourceLeakDetector - -Dio.netty.leakDetection.level: simple
-[DEBUG] 2022-08-19 10:42:04.857 [main] ResourceLeakDetector - -Dio.netty.leakDetection.targetRecords: 4
-[DEBUG] 2022-08-19 10:42:04.862 [main] ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@217c23ce
-[DEBUG] 2022-08-19 10:42:04.885 [main] PlatformDependent0 - -Dio.netty.noUnsafe: false
-[DEBUG] 2022-08-19 10:42:04.885 [main] PlatformDependent0 - Java version: 18
-[DEBUG] 2022-08-19 10:42:04.886 [main] PlatformDependent0 - sun.misc.Unsafe.theUnsafe: available
-[DEBUG] 2022-08-19 10:42:04.887 [main] PlatformDependent0 - sun.misc.Unsafe.copyMemory: available
-[DEBUG] 2022-08-19 10:42:04.889 [main] PlatformDependent0 - sun.misc.Unsafe.storeFence: available
-[DEBUG] 2022-08-19 10:42:04.890 [main] PlatformDependent0 - java.nio.Buffer.address: available
-[DEBUG] 2022-08-19 10:42:04.891 [main] PlatformDependent0 - direct buffer constructor: unavailable: Reflective setAccessible(true) disabled
-[DEBUG] 2022-08-19 10:42:04.891 [main] PlatformDependent0 - java.nio.Bits.unaligned: available, true
-[DEBUG] 2022-08-19 10:42:04.894 [main] PlatformDependent0 - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable: class io.netty.util.internal.PlatformDependent0$7 cannot access class jdk.internal.misc.Unsafe (in module java.base) because module java.base does not export jdk.internal.misc to unnamed module @1d057a39
-[DEBUG] 2022-08-19 10:42:04.895 [main] PlatformDependent0 - java.nio.DirectByteBuffer.<init>(long, int): unavailable
-[DEBUG] 2022-08-19 10:42:04.896 [main] PlatformDependent - sun.misc.Unsafe: available
-[DEBUG] 2022-08-19 10:42:04.897 [main] PlatformDependent - maxDirectMemory: 2086666240 bytes (maybe)
-[DEBUG] 2022-08-19 10:42:04.899 [main] PlatformDependent - -Dio.netty.tmpdir: C:\Users\DINESH~1.PED\AppData\Local\Temp (java.io.tmpdir)
-[DEBUG] 2022-08-19 10:42:04.899 [main] PlatformDependent - -Dio.netty.bitMode: 64 (sun.arch.data.model)
-[DEBUG] 2022-08-19 10:42:04.900 [main] PlatformDependent - Platform: Windows
-[DEBUG] 2022-08-19 10:42:04.901 [main] PlatformDependent - -Dio.netty.maxDirectMemory: -1 bytes
-[DEBUG] 2022-08-19 10:42:04.902 [main] PlatformDependent - -Dio.netty.uninitializedArrayAllocationThreshold: -1
-[DEBUG] 2022-08-19 10:42:04.905 [main] CleanerJava9 - java.nio.ByteBuffer.cleaner(): available
-[DEBUG] 2022-08-19 10:42:04.905 [main] PlatformDependent - -Dio.netty.noPreferDirect: false
-[DEBUG] 2022-08-19 10:42:04.923 [main] PlatformDependent - org.jctools-core.MpscChunkedArrayQueue: available
-[DEBUG] 2022-08-19 10:42:04.959 [main] InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
-[DEBUG] 2022-08-19 10:42:04.959 [main] InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
-[DEBUG] 2022-08-19 10:42:05.142 [main] JdkSslContext - Default protocols (JDK): [TLSv1.3, TLSv1.2] 
-[DEBUG] 2022-08-19 10:42:05.143 [main] JdkSslContext - Default cipher suites (JDK): [TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_AES_128_GCM_SHA256, TLS_AES_256_GCM_SHA384]
-[DEBUG] 2022-08-19 10:42:05.203 [main] MultithreadEventLoopGroup - -Dio.netty.eventLoopThreads: 16
-[DEBUG] 2022-08-19 10:42:05.219 [main] NioEventLoop - -Dio.netty.noKeySetOptimization: false
-[DEBUG] 2022-08-19 10:42:05.220 [main] NioEventLoop - -Dio.netty.selectorAutoRebuildThreshold: 512
-[DEBUG] 2022-08-19 10:42:05.328 [main] PooledByteBufAllocator - -Dio.netty.allocator.numHeapArenas: 16
-[DEBUG] 2022-08-19 10:42:05.328 [main] PooledByteBufAllocator - -Dio.netty.allocator.numDirectArenas: 16
-[DEBUG] 2022-08-19 10:42:05.328 [main] PooledByteBufAllocator - -Dio.netty.allocator.pageSize: 8192
-[DEBUG] 2022-08-19 10:42:05.328 [main] PooledByteBufAllocator - -Dio.netty.allocator.maxOrder: 9
-[DEBUG] 2022-08-19 10:42:05.328 [main] PooledByteBufAllocator - -Dio.netty.allocator.chunkSize: 4194304
-[DEBUG] 2022-08-19 10:42:05.328 [main] PooledByteBufAllocator - -Dio.netty.allocator.smallCacheSize: 256
-[DEBUG] 2022-08-19 10:42:05.329 [main] PooledByteBufAllocator - -Dio.netty.allocator.normalCacheSize: 64
-[DEBUG] 2022-08-19 10:42:05.329 [main] PooledByteBufAllocator - -Dio.netty.allocator.maxCachedBufferCapacity: 32768
-[DEBUG] 2022-08-19 10:42:05.329 [main] PooledByteBufAllocator - -Dio.netty.allocator.cacheTrimInterval: 8192
-[DEBUG] 2022-08-19 10:42:05.329 [main] PooledByteBufAllocator - -Dio.netty.allocator.cacheTrimIntervalMillis: 0
-[DEBUG] 2022-08-19 10:42:05.329 [main] PooledByteBufAllocator - -Dio.netty.allocator.useCacheForAllThreads: false
-[DEBUG] 2022-08-19 10:42:05.329 [main] PooledByteBufAllocator - -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
-[DEBUG] 2022-08-19 10:42:05.340 [main] ByteBufUtil - -Dio.netty.allocator.type: pooled
-[DEBUG] 2022-08-19 10:42:05.340 [main] ByteBufUtil - -Dio.netty.threadLocalDirectBufferSize: 0
-[DEBUG] 2022-08-19 10:42:05.340 [main] ByteBufUtil - -Dio.netty.maxThreadLocalCharBufferSize: 16384
-[DEBUG] 2022-08-19 10:42:06.153 [Forwarding newSession on session null to remote] DefaultChannelId - -Dio.netty.processId: 7220 (auto-detected)
-[DEBUG] 2022-08-19 10:42:06.157 [Forwarding newSession on session null to remote] NetUtil - -Djava.net.preferIPv4Stack: false
-[DEBUG] 2022-08-19 10:42:06.157 [Forwarding newSession on session null to remote] NetUtil - -Djava.net.preferIPv6Addresses: false
-[DEBUG] 2022-08-19 10:42:06.188 [Forwarding newSession on session null to remote] NetUtilInitializations - Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
-[DEBUG] 2022-08-19 10:42:06.190 [Forwarding newSession on session null to remote] NetUtil - Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200
-[DEBUG] 2022-08-19 10:42:06.294 [Forwarding newSession on session null to remote] DefaultChannelId - -Dio.netty.machineId: f4:7b:09:ff:fe:3d:cf:0c (auto-detected)
-[DEBUG] 2022-08-19 10:42:06.403 [AsyncHttpClient-1-2] AbstractByteBuf - -Dio.netty.buffer.checkAccessible: true
-[DEBUG] 2022-08-19 10:42:06.405 [AsyncHttpClient-1-2] AbstractByteBuf - -Dio.netty.buffer.checkBounds: true
-[DEBUG] 2022-08-19 10:42:06.405 [AsyncHttpClient-1-2] ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@ab3882e
-[DEBUG] 2022-08-19 10:42:06.452 [AsyncHttpClient-1-2] Recycler - -Dio.netty.recycler.maxCapacityPerThread: 4096
-[DEBUG] 2022-08-19 10:42:06.453 [AsyncHttpClient-1-2] Recycler - -Dio.netty.recycler.ratio: 8
-[DEBUG] 2022-08-19 10:42:06.453 [AsyncHttpClient-1-2] Recycler - -Dio.netty.recycler.chunkSize: 32
-[DEBUG] 2022-08-19 10:42:06.453 [AsyncHttpClient-1-2] Recycler - -Dio.netty.recycler.blocking: false
-[DEBUG] 2022-08-19 10:42:11.121 [AsyncHttpClient-1-2] Brotli - brotli4j not in the classpath; Brotli support will be unavailable.
-[DEBUG] 2022-08-19 10:42:11.440 [main] ThreadLocalRandom - -Dio.netty.initialSeedUniquifier: 0x6e7b33dad0a4eafe
-[INFO ] 2022-08-19 10:42:11.491 [main] Log - Open the urlhttps://naveenautomationlabs.com/opencart/
-[INFO ] 2022-08-19 10:42:16.085 [main] Log - https://naveenautomationlabs.com/opencart/
-[INFO ] 2022-08-19 10:42:17.528 [main] Log - Text in element : [[ChromeDriver: chrome on WINDOWS (f995d0cafd78248616411a13b4eec5a4)] -> xpath: //input[@placeholder='Search']] is cleared
-[INFO ] 2022-08-19 10:42:17.662 [main] Log - Click on Text Box: [[ChromeDriver: chrome on WINDOWS (f995d0cafd78248616411a13b4eec5a4)] -> xpath: //input[@placeholder='Search']]
-[INFO ] 2022-08-19 10:42:17.788 [main] Log - Enter text on [[ChromeDriver: chrome on WINDOWS (f995d0cafd78248616411a13b4eec5a4)] -> xpath: //input[@placeholder='Search']] :Apple
-[INFO ] 2022-08-19 10:42:17.848 [main] Log - wait for until element [[ChromeDriver: chrome on WINDOWS (f995d0cafd78248616411a13b4eec5a4)] -> xpath: //div[@id='search']/span] is visible
-[INFO ] 2022-08-19 10:42:19.028 [main] Log - Click on element: [[ChromeDriver: chrome on WINDOWS (f995d0cafd78248616411a13b4eec5a4)] -> xpath: //div[@id='search']/span]
-[INFO ] 2022-08-19 10:42:21.222 [main] Log - Kills the browsers
-[INFO ] 2022-08-19 10:42:21.450 [main] Log - Open chrome browser
-[INFO ] 2022-08-19 10:42:21.450 [main] Log - chrome browser is selected
-[INFO ] 2022-08-19 10:42:26.613 [main] Log - Open the urlhttps://naveenautomationlabs.com/opencart/
-[INFO ] 2022-08-19 10:42:30.824 [main] Log - https://naveenautomationlabs.com/opencart/
-[INFO ] 2022-08-19 10:42:31.715 [main] Log - wait for until element [[ChromeDriver: chrome on WINDOWS (1f38d7973b7928f089ef83a05072902d)] -> xpath: //span[normalize-space()='My Account']] is visible
-[INFO ] 2022-08-19 10:42:31.799 [main] Log - Click on element: [[ChromeDriver: chrome on WINDOWS (1f38d7973b7928f089ef83a05072902d)] -> xpath: //span[normalize-space()='My Account']]
-[INFO ] 2022-08-19 10:42:31.854 [main] Log - wait for until element [[ChromeDriver: chrome on WINDOWS (1f38d7973b7928f089ef83a05072902d)] -> xpath: (//a[normalize-space()='Login'])[1]] is visible
-[INFO ] 2022-08-19 10:42:32.328 [main] Log - Click on element: [[ChromeDriver: chrome on WINDOWS (1f38d7973b7928f089ef83a05072902d)] -> xpath: (//a[normalize-space()='Login'])[1]]
-[INFO ] 2022-08-19 10:42:32.801 [main] Log - Text in element : [[ChromeDriver: chrome on WINDOWS (1f38d7973b7928f089ef83a05072902d)] -> id: input-email] is cleared
-[INFO ] 2022-08-19 10:42:32.991 [main] Log - Click on Text Box: [[ChromeDriver: chrome on WINDOWS (1f38d7973b7928f089ef83a05072902d)] -> id: input-email]
-[INFO ] 2022-08-19 10:42:33.127 [main] Log - Enter text on [[ChromeDriver: chrome on WINDOWS (1f38d7973b7928f089ef83a05072902d)] -> id: input-email] :dineshkumar.icon.dk@gmail.com
-[INFO ] 2022-08-19 10:42:33.191 [main] Log - Text in element : [[ChromeDriver: chrome on WINDOWS (1f38d7973b7928f089ef83a05072902d)] -> id: input-password] is cleared
-[INFO ] 2022-08-19 10:42:33.256 [main] Log - Click on Text Box: [[ChromeDriver: chrome on WINDOWS (1f38d7973b7928f089ef83a05072902d)] -> id: input-password]
-[INFO ] 2022-08-19 10:42:33.376 [main] Log - Enter text on [[ChromeDriver: chrome on WINDOWS (1f38d7973b7928f089ef83a05072902d)] -> id: input-password] :Dinnu@4318
-[INFO ] 2022-08-19 10:42:33.495 [main] Log - wait for until element [[ChromeDriver: chrome on WINDOWS (1f38d7973b7928f089ef83a05072902d)] -> xpath: //input[@value='Login']] is visible
-[INFO ] 2022-08-19 10:42:35.383 [main] Log - Click on element: Proxy element for: DefaultElementLocator 'By.xpath: //input[@value='Login']'
-[INFO ] 2022-08-19 10:42:37.715 [main] Log - Kills the browsers
-[INFO ] 2022-08-19 10:43:21.674 [main] Log - Open chrome browser
-[INFO ] 2022-08-19 10:43:21.684 [main] Log - chrome browser is selected
-[DEBUG] 2022-08-19 10:43:22.255 [main] InternalLoggerFactory - Using Log4J2 as the default logging framework
-[DEBUG] 2022-08-19 10:43:22.260 [main] ResourceLeakDetector - -Dio.netty.leakDetection.level: simple
-[DEBUG] 2022-08-19 10:43:22.260 [main] ResourceLeakDetector - -Dio.netty.leakDetection.targetRecords: 4
-[DEBUG] 2022-08-19 10:43:22.263 [main] ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@1200458e
-[DEBUG] 2022-08-19 10:43:22.283 [main] PlatformDependent0 - -Dio.netty.noUnsafe: false
-[DEBUG] 2022-08-19 10:43:22.284 [main] PlatformDependent0 - Java version: 18
-[DEBUG] 2022-08-19 10:43:22.285 [main] PlatformDependent0 - sun.misc.Unsafe.theUnsafe: available
-[DEBUG] 2022-08-19 10:43:22.286 [main] PlatformDependent0 - sun.misc.Unsafe.copyMemory: available
-[DEBUG] 2022-08-19 10:43:22.287 [main] PlatformDependent0 - sun.misc.Unsafe.storeFence: available
-[DEBUG] 2022-08-19 10:43:22.287 [main] PlatformDependent0 - java.nio.Buffer.address: available
-[DEBUG] 2022-08-19 10:43:22.288 [main] PlatformDependent0 - direct buffer constructor: unavailable: Reflective setAccessible(true) disabled
-[DEBUG] 2022-08-19 10:43:22.289 [main] PlatformDependent0 - java.nio.Bits.unaligned: available, true
-[DEBUG] 2022-08-19 10:43:22.290 [main] PlatformDependent0 - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable: class io.netty.util.internal.PlatformDependent0$7 cannot access class jdk.internal.misc.Unsafe (in module java.base) because module java.base does not export jdk.internal.misc to unnamed module @c038203
-[DEBUG] 2022-08-19 10:43:22.292 [main] PlatformDependent0 - java.nio.DirectByteBuffer.<init>(long, int): unavailable
-[DEBUG] 2022-08-19 10:43:22.292 [main] PlatformDependent - sun.misc.Unsafe: available
-[DEBUG] 2022-08-19 10:43:22.293 [main] PlatformDependent - maxDirectMemory: 2086666240 bytes (maybe)
-[DEBUG] 2022-08-19 10:43:22.293 [main] PlatformDependent - -Dio.netty.tmpdir: C:\Users\DINESH~1.PED\AppData\Local\Temp (java.io.tmpdir)
-[DEBUG] 2022-08-19 10:43:22.293 [main] PlatformDependent - -Dio.netty.bitMode: 64 (sun.arch.data.model)
-[DEBUG] 2022-08-19 10:43:22.294 [main] PlatformDependent - Platform: Windows
-[DEBUG] 2022-08-19 10:43:22.295 [main] PlatformDependent - -Dio.netty.maxDirectMemory: -1 bytes
-[DEBUG] 2022-08-19 10:43:22.295 [main] PlatformDependent - -Dio.netty.uninitializedArrayAllocationThreshold: -1
-[DEBUG] 2022-08-19 10:43:22.297 [main] CleanerJava9 - java.nio.ByteBuffer.cleaner(): available
-[DEBUG] 2022-08-19 10:43:22.297 [main] PlatformDependent - -Dio.netty.noPreferDirect: false
-[DEBUG] 2022-08-19 10:43:22.311 [main] PlatformDependent - org.jctools-core.MpscChunkedArrayQueue: available
-[DEBUG] 2022-08-19 10:43:22.347 [main] InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
-[DEBUG] 2022-08-19 10:43:22.347 [main] InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
-[DEBUG] 2022-08-19 10:43:22.461 [main] JdkSslContext - Default protocols (JDK): [TLSv1.3, TLSv1.2] 
-[DEBUG] 2022-08-19 10:43:22.462 [main] JdkSslContext - Default cipher suites (JDK): [TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_AES_128_GCM_SHA256, TLS_AES_256_GCM_SHA384]
-[DEBUG] 2022-08-19 10:43:22.518 [main] MultithreadEventLoopGroup - -Dio.netty.eventLoopThreads: 16
-[DEBUG] 2022-08-19 10:43:22.537 [main] NioEventLoop - -Dio.netty.noKeySetOptimization: false
-[DEBUG] 2022-08-19 10:43:22.537 [main] NioEventLoop - -Dio.netty.selectorAutoRebuildThreshold: 512
-[DEBUG] 2022-08-19 10:43:22.670 [main] PooledByteBufAllocator - -Dio.netty.allocator.numHeapArenas: 16
-[DEBUG] 2022-08-19 10:43:22.670 [main] PooledByteBufAllocator - -Dio.netty.allocator.numDirectArenas: 16
-[DEBUG] 2022-08-19 10:43:22.671 [main] PooledByteBufAllocator - -Dio.netty.allocator.pageSize: 8192
-[DEBUG] 2022-08-19 10:43:22.672 [main] PooledByteBufAllocator - -Dio.netty.allocator.maxOrder: 9
-[DEBUG] 2022-08-19 10:43:22.672 [main] PooledByteBufAllocator - -Dio.netty.allocator.chunkSize: 4194304
-[DEBUG] 2022-08-19 10:43:22.672 [main] PooledByteBufAllocator - -Dio.netty.allocator.smallCacheSize: 256
-[DEBUG] 2022-08-19 10:43:22.672 [main] PooledByteBufAllocator - -Dio.netty.allocator.normalCacheSize: 64
-[DEBUG] 2022-08-19 10:43:22.672 [main] PooledByteBufAllocator - -Dio.netty.allocator.maxCachedBufferCapacity: 32768
-[DEBUG] 2022-08-19 10:43:22.672 [main] PooledByteBufAllocator - -Dio.netty.allocator.cacheTrimInterval: 8192
-[DEBUG] 2022-08-19 10:43:22.673 [main] PooledByteBufAllocator - -Dio.netty.allocator.cacheTrimIntervalMillis: 0
-[DEBUG] 2022-08-19 10:43:22.673 [main] PooledByteBufAllocator - -Dio.netty.allocator.useCacheForAllThreads: false
-[DEBUG] 2022-08-19 10:43:22.673 [main] PooledByteBufAllocator - -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
-[DEBUG] 2022-08-19 10:43:22.697 [main] ByteBufUtil - -Dio.netty.allocator.type: pooled
-[DEBUG] 2022-08-19 10:43:22.697 [main] ByteBufUtil - -Dio.netty.threadLocalDirectBufferSize: 0
-[DEBUG] 2022-08-19 10:43:22.697 [main] ByteBufUtil - -Dio.netty.maxThreadLocalCharBufferSize: 16384
-[DEBUG] 2022-08-19 10:43:23.508 [Forwarding newSession on session null to remote] DefaultChannelId - -Dio.netty.processId: 28352 (auto-detected)
-[DEBUG] 2022-08-19 10:43:23.511 [Forwarding newSession on session null to remote] NetUtil - -Djava.net.preferIPv4Stack: false
-[DEBUG] 2022-08-19 10:43:23.511 [Forwarding newSession on session null to remote] NetUtil - -Djava.net.preferIPv6Addresses: false
-[DEBUG] 2022-08-19 10:43:23.530 [Forwarding newSession on session null to remote] NetUtilInitializations - Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
-[DEBUG] 2022-08-19 10:43:23.531 [Forwarding newSession on session null to remote] NetUtil - Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200
-[DEBUG] 2022-08-19 10:43:23.589 [Forwarding newSession on session null to remote] DefaultChannelId - -Dio.netty.machineId: f4:7b:09:ff:fe:3d:cf:0c (auto-detected)
-[DEBUG] 2022-08-19 10:43:23.633 [AsyncHttpClient-1-2] AbstractByteBuf - -Dio.netty.buffer.checkAccessible: true
-[DEBUG] 2022-08-19 10:43:23.633 [AsyncHttpClient-1-2] AbstractByteBuf - -Dio.netty.buffer.checkBounds: true
-[DEBUG] 2022-08-19 10:43:23.634 [AsyncHttpClient-1-2] ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@ab3882e
-[DEBUG] 2022-08-19 10:43:23.657 [AsyncHttpClient-1-2] Recycler - -Dio.netty.recycler.maxCapacityPerThread: 4096
-[DEBUG] 2022-08-19 10:43:23.657 [AsyncHttpClient-1-2] Recycler - -Dio.netty.recycler.ratio: 8
-[DEBUG] 2022-08-19 10:43:23.658 [AsyncHttpClient-1-2] Recycler - -Dio.netty.recycler.chunkSize: 32
-[DEBUG] 2022-08-19 10:43:23.658 [AsyncHttpClient-1-2] Recycler - -Dio.netty.recycler.blocking: false
-[DEBUG] 2022-08-19 10:43:27.903 [AsyncHttpClient-1-2] Brotli - brotli4j not in the classpath; Brotli support will be unavailable.
-[DEBUG] 2022-08-19 10:43:28.126 [main] ThreadLocalRandom - -Dio.netty.initialSeedUniquifier: 0x19993f40ec5e9226
-[INFO ] 2022-08-19 10:43:28.186 [main] Log - Open the urlhttps://naveenautomationlabs.com/opencart/
-[INFO ] 2022-08-19 10:43:32.218 [main] Log - https://naveenautomationlabs.com/opencart/
-[INFO ] 2022-08-19 10:43:33.607 [main] Log - Text in element : [[ChromeDriver: chrome on WINDOWS (32227c483225e5b3b7c31bcb8cc136a3)] -> xpath: //input[@placeholder='Search']] is cleared
-[INFO ] 2022-08-19 10:43:33.676 [main] Log - Click on Text Box: [[ChromeDriver: chrome on WINDOWS (32227c483225e5b3b7c31bcb8cc136a3)] -> xpath: //input[@placeholder='Search']]
-[INFO ] 2022-08-19 10:43:33.757 [main] Log - Enter text on [[ChromeDriver: chrome on WINDOWS (32227c483225e5b3b7c31bcb8cc136a3)] -> xpath: //input[@placeholder='Search']] :Apple
-[INFO ] 2022-08-19 10:43:33.812 [main] Log - wait for until element [[ChromeDriver: chrome on WINDOWS (32227c483225e5b3b7c31bcb8cc136a3)] -> xpath: //div[@id='search']/span] is visible
-[INFO ] 2022-08-19 10:43:34.685 [main] Log - Click on element: [[ChromeDriver: chrome on WINDOWS (32227c483225e5b3b7c31bcb8cc136a3)] -> xpath: //div[@id='search']/span]
-[INFO ] 2022-08-19 10:43:37.411 [main] Log - Kills the browsers
-[INFO ] 2022-08-19 10:43:37.713 [main] Log - Open chrome browser
-[INFO ] 2022-08-19 10:43:37.714 [main] Log - chrome browser is selected
-[INFO ] 2022-08-19 10:43:42.903 [main] Log - Open the urlhttps://naveenautomationlabs.com/opencart/
-[INFO ] 2022-08-19 10:43:47.247 [main] Log - https://naveenautomationlabs.com/opencart/
-[INFO ] 2022-08-19 10:43:48.093 [main] Log - wait for until element [[ChromeDriver: chrome on WINDOWS (ca386347e062f64b3da037fa06fca916)] -> xpath: //span[normalize-space()='My Account']] is visible
-[INFO ] 2022-08-19 10:43:48.280 [main] Log - Click on element: [[ChromeDriver: chrome on WINDOWS (ca386347e062f64b3da037fa06fca916)] -> xpath: //span[normalize-space()='My Account']]
-[INFO ] 2022-08-19 10:43:48.331 [main] Log - wait for until element [[ChromeDriver: chrome on WINDOWS (ca386347e062f64b3da037fa06fca916)] -> xpath: (//a[normalize-space()='Login'])[1]] is visible
-[INFO ] 2022-08-19 10:43:48.933 [main] Log - Click on element: [[ChromeDriver: chrome on WINDOWS (ca386347e062f64b3da037fa06fca916)] -> xpath: (//a[normalize-space()='Login'])[1]]
-[INFO ] 2022-08-19 10:43:49.531 [main] Log - Text in element : [[ChromeDriver: chrome on WINDOWS (ca386347e062f64b3da037fa06fca916)] -> id: input-email] is cleared
-[INFO ] 2022-08-19 10:43:49.678 [main] Log - Click on Text Box: [[ChromeDriver: chrome on WINDOWS (ca386347e062f64b3da037fa06fca916)] -> id: input-email]
-[INFO ] 2022-08-19 10:43:49.806 [main] Log - Enter text on [[ChromeDriver: chrome on WINDOWS (ca386347e062f64b3da037fa06fca916)] -> id: input-email] :dineshkumar.icon.dk@gmail.com
-[INFO ] 2022-08-19 10:43:49.872 [main] Log - Text in element : [[ChromeDriver: chrome on WINDOWS (ca386347e062f64b3da037fa06fca916)] -> id: input-password] is cleared
-[INFO ] 2022-08-19 10:43:49.946 [main] Log - Click on Text Box: [[ChromeDriver: chrome on WINDOWS (ca386347e062f64b3da037fa06fca916)] -> id: input-password]
-[INFO ] 2022-08-19 10:43:50.032 [main] Log - Enter text on [[ChromeDriver: chrome on WINDOWS (ca386347e062f64b3da037fa06fca916)] -> id: input-password] :Dinnu@4318
-[INFO ] 2022-08-19 10:43:50.079 [main] Log - wait for until element [[ChromeDriver: chrome on WINDOWS (ca386347e062f64b3da037fa06fca916)] -> xpath: //input[@value='Login']] is visible
-[INFO ] 2022-08-19 10:43:52.228 [main] Log - Click on element: Proxy element for: DefaultElementLocator 'By.xpath: //input[@value='Login']'
-[INFO ] 2022-08-19 10:43:54.465 [main] Log - Kills the browsers
-[INFO ] 2022-08-19 10:46:55.897 [main] Log - Open chrome browser
-[INFO ] 2022-08-19 10:46:55.908 [main] Log - chrome browser is selected
-[DEBUG] 2022-08-19 10:46:56.476 [main] InternalLoggerFactory - Using Log4J2 as the default logging framework
-[DEBUG] 2022-08-19 10:46:56.482 [main] ResourceLeakDetector - -Dio.netty.leakDetection.level: simple
-[DEBUG] 2022-08-19 10:46:56.482 [main] ResourceLeakDetector - -Dio.netty.leakDetection.targetRecords: 4
-[DEBUG] 2022-08-19 10:46:56.486 [main] ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@2c829dbc
-[DEBUG] 2022-08-19 10:46:56.506 [main] PlatformDependent0 - -Dio.netty.noUnsafe: false
-[DEBUG] 2022-08-19 10:46:56.507 [main] PlatformDependent0 - Java version: 18
-[DEBUG] 2022-08-19 10:46:56.508 [main] PlatformDependent0 - sun.misc.Unsafe.theUnsafe: available
-[DEBUG] 2022-08-19 10:46:56.509 [main] PlatformDependent0 - sun.misc.Unsafe.copyMemory: available
-[DEBUG] 2022-08-19 10:46:56.510 [main] PlatformDependent0 - sun.misc.Unsafe.storeFence: available
-[DEBUG] 2022-08-19 10:46:56.511 [main] PlatformDependent0 - java.nio.Buffer.address: available
-[DEBUG] 2022-08-19 10:46:56.512 [main] PlatformDependent0 - direct buffer constructor: unavailable: Reflective setAccessible(true) disabled
-[DEBUG] 2022-08-19 10:46:56.512 [main] PlatformDependent0 - java.nio.Bits.unaligned: available, true
-[DEBUG] 2022-08-19 10:46:56.514 [main] PlatformDependent0 - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable: class io.netty.util.internal.PlatformDependent0$7 cannot access class jdk.internal.misc.Unsafe (in module java.base) because module java.base does not export jdk.internal.misc to unnamed module @cc285f4
-[DEBUG] 2022-08-19 10:46:56.515 [main] PlatformDependent0 - java.nio.DirectByteBuffer.<init>(long, int): unavailable
-[DEBUG] 2022-08-19 10:46:56.515 [main] PlatformDependent - sun.misc.Unsafe: available
-[DEBUG] 2022-08-19 10:46:56.516 [main] PlatformDependent - maxDirectMemory: 2086666240 bytes (maybe)
-[DEBUG] 2022-08-19 10:46:56.516 [main] PlatformDependent - -Dio.netty.tmpdir: C:\Users\DINESH~1.PED\AppData\Local\Temp (java.io.tmpdir)
-[DEBUG] 2022-08-19 10:46:56.516 [main] PlatformDependent - -Dio.netty.bitMode: 64 (sun.arch.data.model)
-[DEBUG] 2022-08-19 10:46:56.516 [main] PlatformDependent - Platform: Windows
-[DEBUG] 2022-08-19 10:46:56.517 [main] PlatformDependent - -Dio.netty.maxDirectMemory: -1 bytes
-[DEBUG] 2022-08-19 10:46:56.517 [main] PlatformDependent - -Dio.netty.uninitializedArrayAllocationThreshold: -1
-[DEBUG] 2022-08-19 10:46:56.519 [main] CleanerJava9 - java.nio.ByteBuffer.cleaner(): available
-[DEBUG] 2022-08-19 10:46:56.519 [main] PlatformDependent - -Dio.netty.noPreferDirect: false
-[DEBUG] 2022-08-19 10:46:56.528 [main] PlatformDependent - org.jctools-core.MpscChunkedArrayQueue: available
-[DEBUG] 2022-08-19 10:46:56.546 [main] InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
-[DEBUG] 2022-08-19 10:46:56.546 [main] InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
-[DEBUG] 2022-08-19 10:46:56.666 [main] JdkSslContext - Default protocols (JDK): [TLSv1.3, TLSv1.2] 
-[DEBUG] 2022-08-19 10:46:56.666 [main] JdkSslContext - Default cipher suites (JDK): [TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_AES_128_GCM_SHA256, TLS_AES_256_GCM_SHA384]
-[DEBUG] 2022-08-19 10:46:56.728 [main] MultithreadEventLoopGroup - -Dio.netty.eventLoopThreads: 16
-[DEBUG] 2022-08-19 10:46:56.748 [main] NioEventLoop - -Dio.netty.noKeySetOptimization: false
-[DEBUG] 2022-08-19 10:46:56.749 [main] NioEventLoop - -Dio.netty.selectorAutoRebuildThreshold: 512
-[DEBUG] 2022-08-19 10:46:56.905 [main] PooledByteBufAllocator - -Dio.netty.allocator.numHeapArenas: 16
-[DEBUG] 2022-08-19 10:46:56.905 [main] PooledByteBufAllocator - -Dio.netty.allocator.numDirectArenas: 16
-[DEBUG] 2022-08-19 10:46:56.906 [main] PooledByteBufAllocator - -Dio.netty.allocator.pageSize: 8192
-[DEBUG] 2022-08-19 10:46:56.906 [main] PooledByteBufAllocator - -Dio.netty.allocator.maxOrder: 9
-[DEBUG] 2022-08-19 10:46:56.906 [main] PooledByteBufAllocator - -Dio.netty.allocator.chunkSize: 4194304
-[DEBUG] 2022-08-19 10:46:56.907 [main] PooledByteBufAllocator - -Dio.netty.allocator.smallCacheSize: 256
-[DEBUG] 2022-08-19 10:46:56.907 [main] PooledByteBufAllocator - -Dio.netty.allocator.normalCacheSize: 64
-[DEBUG] 2022-08-19 10:46:56.908 [main] PooledByteBufAllocator - -Dio.netty.allocator.maxCachedBufferCapacity: 32768
-[DEBUG] 2022-08-19 10:46:56.908 [main] PooledByteBufAllocator - -Dio.netty.allocator.cacheTrimInterval: 8192
-[DEBUG] 2022-08-19 10:46:56.908 [main] PooledByteBufAllocator - -Dio.netty.allocator.cacheTrimIntervalMillis: 0
-[DEBUG] 2022-08-19 10:46:56.909 [main] PooledByteBufAllocator - -Dio.netty.allocator.useCacheForAllThreads: false
-[DEBUG] 2022-08-19 10:46:56.909 [main] PooledByteBufAllocator - -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
-[DEBUG] 2022-08-19 10:46:56.932 [main] ByteBufUtil - -Dio.netty.allocator.type: pooled
-[DEBUG] 2022-08-19 10:46:56.934 [main] ByteBufUtil - -Dio.netty.threadLocalDirectBufferSize: 0
-[DEBUG] 2022-08-19 10:46:56.934 [main] ByteBufUtil - -Dio.netty.maxThreadLocalCharBufferSize: 16384
-[DEBUG] 2022-08-19 10:46:57.925 [Forwarding newSession on session null to remote] DefaultChannelId - -Dio.netty.processId: 8200 (auto-detected)
-[DEBUG] 2022-08-19 10:46:57.928 [Forwarding newSession on session null to remote] NetUtil - -Djava.net.preferIPv4Stack: false
-[DEBUG] 2022-08-19 10:46:57.928 [Forwarding newSession on session null to remote] NetUtil - -Djava.net.preferIPv6Addresses: false
-[DEBUG] 2022-08-19 10:46:57.950 [Forwarding newSession on session null to remote] NetUtilInitializations - Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
-[DEBUG] 2022-08-19 10:46:57.951 [Forwarding newSession on session null to remote] NetUtil - Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200
-[DEBUG] 2022-08-19 10:46:58.023 [Forwarding newSession on session null to remote] DefaultChannelId - -Dio.netty.machineId: f4:7b:09:ff:fe:3d:cf:0c (auto-detected)
-[DEBUG] 2022-08-19 10:46:58.114 [AsyncHttpClient-1-2] AbstractByteBuf - -Dio.netty.buffer.checkAccessible: true
-[DEBUG] 2022-08-19 10:46:58.116 [AsyncHttpClient-1-2] AbstractByteBuf - -Dio.netty.buffer.checkBounds: true
-[DEBUG] 2022-08-19 10:46:58.116 [AsyncHttpClient-1-2] ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@562122c6
-[DEBUG] 2022-08-19 10:46:58.164 [AsyncHttpClient-1-2] Recycler - -Dio.netty.recycler.maxCapacityPerThread: 4096
-[DEBUG] 2022-08-19 10:46:58.164 [AsyncHttpClient-1-2] Recycler - -Dio.netty.recycler.ratio: 8
-[DEBUG] 2022-08-19 10:46:58.164 [AsyncHttpClient-1-2] Recycler - -Dio.netty.recycler.chunkSize: 32
-[DEBUG] 2022-08-19 10:46:58.164 [AsyncHttpClient-1-2] Recycler - -Dio.netty.recycler.blocking: false
-[DEBUG] 2022-08-19 10:47:02.840 [AsyncHttpClient-1-2] Brotli - brotli4j not in the classpath; Brotli support will be unavailable.
-[DEBUG] 2022-08-19 10:47:03.115 [main] ThreadLocalRandom - -Dio.netty.initialSeedUniquifier: 0xe1be3d8c543b42f5
-[INFO ] 2022-08-19 10:47:03.170 [main] Log - Open the urlhttps://naveenautomationlabs.com/opencart/
-[INFO ] 2022-08-19 10:47:09.542 [main] Log - https://naveenautomationlabs.com/opencart/
-[INFO ] 2022-08-19 10:47:10.513 [main] Log - Text in element : [[ChromeDriver: chrome on WINDOWS (56502cc68f68eb7e4aa45c11c848fa6a)] -> xpath: //input[@placeholder='Search']] is cleared
-[INFO ] 2022-08-19 10:47:10.598 [main] Log - Click on Text Box: [[ChromeDriver: chrome on WINDOWS (56502cc68f68eb7e4aa45c11c848fa6a)] -> xpath: //input[@placeholder='Search']]
-[INFO ] 2022-08-19 10:47:10.684 [main] Log - Enter text on [[ChromeDriver: chrome on WINDOWS (56502cc68f68eb7e4aa45c11c848fa6a)] -> xpath: //input[@placeholder='Search']] :Apple
-[INFO ] 2022-08-19 10:47:10.768 [main] Log - wait for until element [[ChromeDriver: chrome on WINDOWS (56502cc68f68eb7e4aa45c11c848fa6a)] -> xpath: //div[@id='search']/span] is visible
-[INFO ] 2022-08-19 10:47:11.735 [main] Log - Click on element: [[ChromeDriver: chrome on WINDOWS (56502cc68f68eb7e4aa45c11c848fa6a)] -> xpath: //div[@id='search']/span]
-[INFO ] 2022-08-19 10:47:14.367 [main] Log - Kills the browsers
-[INFO ] 2022-08-19 10:47:14.550 [main] Log - Open chrome browser
-[INFO ] 2022-08-19 10:47:14.550 [main] Log - chrome browser is selected
-[INFO ] 2022-08-19 10:47:19.021 [main] Log - Open the urlhttps://naveenautomationlabs.com/opencart/
-[INFO ] 2022-08-19 10:47:23.092 [main] Log - https://naveenautomationlabs.com/opencart/
-[INFO ] 2022-08-19 10:47:23.405 [main] Log - wait for until element [[ChromeDriver: chrome on WINDOWS (2831fac70f73d1ffe750e9c00d2dc2b0)] -> xpath: //span[normalize-space()='My Account']] is visible
-[INFO ] 2022-08-19 10:47:23.496 [main] Log - Click on element: [[ChromeDriver: chrome on WINDOWS (2831fac70f73d1ffe750e9c00d2dc2b0)] -> xpath: //span[normalize-space()='My Account']]
-[INFO ] 2022-08-19 10:47:23.551 [main] Log - wait for until element [[ChromeDriver: chrome on WINDOWS (2831fac70f73d1ffe750e9c00d2dc2b0)] -> xpath: (//a[normalize-space()='Login'])[1]] is visible
-[INFO ] 2022-08-19 10:47:24.082 [main] Log - Click on element: [[ChromeDriver: chrome on WINDOWS (2831fac70f73d1ffe750e9c00d2dc2b0)] -> xpath: (//a[normalize-space()='Login'])[1]]
-[INFO ] 2022-08-19 10:47:24.564 [main] Log - Text in element : [[ChromeDriver: chrome on WINDOWS (2831fac70f73d1ffe750e9c00d2dc2b0)] -> id: input-email] is cleared
-[INFO ] 2022-08-19 10:47:24.649 [main] Log - Click on Text Box: [[ChromeDriver: chrome on WINDOWS (2831fac70f73d1ffe750e9c00d2dc2b0)] -> id: input-email]
-[INFO ] 2022-08-19 10:47:24.824 [main] Log - Enter text on [[ChromeDriver: chrome on WINDOWS (2831fac70f73d1ffe750e9c00d2dc2b0)] -> id: input-email] :dineshkumar.icon.dk@gmail.com
-[INFO ] 2022-08-19 10:47:24.900 [main] Log - Text in element : [[ChromeDriver: chrome on WINDOWS (2831fac70f73d1ffe750e9c00d2dc2b0)] -> id: input-password] is cleared
-[INFO ] 2022-08-19 10:47:24.968 [main] Log - Click on Text Box: [[ChromeDriver: chrome on WINDOWS (2831fac70f73d1ffe750e9c00d2dc2b0)] -> id: input-password]
-[INFO ] 2022-08-19 10:47:25.055 [main] Log - Enter text on [[ChromeDriver: chrome on WINDOWS (2831fac70f73d1ffe750e9c00d2dc2b0)] -> id: input-password] :Dinnu@4318
-[INFO ] 2022-08-19 10:47:25.111 [main] Log - wait for until element [[ChromeDriver: chrome on WINDOWS (2831fac70f73d1ffe750e9c00d2dc2b0)] -> xpath: //input[@value='Login']] is visible
-[INFO ] 2022-08-19 10:47:26.864 [main] Log - Click on element: Proxy element for: DefaultElementLocator 'By.xpath: //input[@value='Login']'
-[INFO ] 2022-08-19 10:47:29.387 [main] Log - Kills the browsers
-[INFO ] 2022-08-19 10:48:24.170 [main] Log - Open chrome browser
-[INFO ] 2022-08-19 10:48:24.182 [main] Log - chrome browser is selected
-[DEBUG] 2022-08-19 10:48:25.227 [main] InternalLoggerFactory - Using Log4J2 as the default logging framework
-[DEBUG] 2022-08-19 10:48:25.234 [main] ResourceLeakDetector - -Dio.netty.leakDetection.level: simple
-[DEBUG] 2022-08-19 10:48:25.234 [main] ResourceLeakDetector - -Dio.netty.leakDetection.targetRecords: 4
-[DEBUG] 2022-08-19 10:48:25.240 [main] ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@6f5bd362
-[DEBUG] 2022-08-19 10:48:25.270 [main] PlatformDependent0 - -Dio.netty.noUnsafe: false
-[DEBUG] 2022-08-19 10:48:25.270 [main] PlatformDependent0 - Java version: 18
-[DEBUG] 2022-08-19 10:48:25.272 [main] PlatformDependent0 - sun.misc.Unsafe.theUnsafe: available
-[DEBUG] 2022-08-19 10:48:25.273 [main] PlatformDependent0 - sun.misc.Unsafe.copyMemory: available
-[DEBUG] 2022-08-19 10:48:25.274 [main] PlatformDependent0 - sun.misc.Unsafe.storeFence: available
-[DEBUG] 2022-08-19 10:48:25.274 [main] PlatformDependent0 - java.nio.Buffer.address: available
-[DEBUG] 2022-08-19 10:48:25.275 [main] PlatformDependent0 - direct buffer constructor: unavailable: Reflective setAccessible(true) disabled
-[DEBUG] 2022-08-19 10:48:25.277 [main] PlatformDependent0 - java.nio.Bits.unaligned: available, true
-[DEBUG] 2022-08-19 10:48:25.279 [main] PlatformDependent0 - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable: class io.netty.util.internal.PlatformDependent0$7 cannot access class jdk.internal.misc.Unsafe (in module java.base) because module java.base does not export jdk.internal.misc to unnamed module @7f9a81e8
-[DEBUG] 2022-08-19 10:48:25.281 [main] PlatformDependent0 - java.nio.DirectByteBuffer.<init>(long, int): unavailable
-[DEBUG] 2022-08-19 10:48:25.281 [main] PlatformDependent - sun.misc.Unsafe: available
-[DEBUG] 2022-08-19 10:48:25.281 [main] PlatformDependent - maxDirectMemory: 2086666240 bytes (maybe)
-[DEBUG] 2022-08-19 10:48:25.282 [main] PlatformDependent - -Dio.netty.tmpdir: C:\Users\DINESH~1.PED\AppData\Local\Temp (java.io.tmpdir)
-[DEBUG] 2022-08-19 10:48:25.282 [main] PlatformDependent - -Dio.netty.bitMode: 64 (sun.arch.data.model)
-[DEBUG] 2022-08-19 10:48:25.282 [main] PlatformDependent - Platform: Windows
-[DEBUG] 2022-08-19 10:48:25.283 [main] PlatformDependent - -Dio.netty.maxDirectMemory: -1 bytes
-[DEBUG] 2022-08-19 10:48:25.284 [main] PlatformDependent - -Dio.netty.uninitializedArrayAllocationThreshold: -1
-[DEBUG] 2022-08-19 10:48:25.285 [main] CleanerJava9 - java.nio.ByteBuffer.cleaner(): available
-[DEBUG] 2022-08-19 10:48:25.286 [main] PlatformDependent - -Dio.netty.noPreferDirect: false
-[DEBUG] 2022-08-19 10:48:25.297 [main] PlatformDependent - org.jctools-core.MpscChunkedArrayQueue: available
-[DEBUG] 2022-08-19 10:48:25.321 [main] InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
-[DEBUG] 2022-08-19 10:48:25.322 [main] InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
-[DEBUG] 2022-08-19 10:48:25.408 [main] JdkSslContext - Default protocols (JDK): [TLSv1.3, TLSv1.2] 
-[DEBUG] 2022-08-19 10:48:25.408 [main] JdkSslContext - Default cipher suites (JDK): [TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_AES_128_GCM_SHA256, TLS_AES_256_GCM_SHA384]
-[DEBUG] 2022-08-19 10:48:25.460 [main] MultithreadEventLoopGroup - -Dio.netty.eventLoopThreads: 16
-[DEBUG] 2022-08-19 10:48:25.481 [main] NioEventLoop - -Dio.netty.noKeySetOptimization: false
-[DEBUG] 2022-08-19 10:48:25.481 [main] NioEventLoop - -Dio.netty.selectorAutoRebuildThreshold: 512
-[DEBUG] 2022-08-19 10:48:25.605 [main] PooledByteBufAllocator - -Dio.netty.allocator.numHeapArenas: 16
-[DEBUG] 2022-08-19 10:48:25.605 [main] PooledByteBufAllocator - -Dio.netty.allocator.numDirectArenas: 16
-[DEBUG] 2022-08-19 10:48:25.606 [main] PooledByteBufAllocator - -Dio.netty.allocator.pageSize: 8192
-[DEBUG] 2022-08-19 10:48:25.606 [main] PooledByteBufAllocator - -Dio.netty.allocator.maxOrder: 9
-[DEBUG] 2022-08-19 10:48:25.606 [main] PooledByteBufAllocator - -Dio.netty.allocator.chunkSize: 4194304
-[DEBUG] 2022-08-19 10:48:25.606 [main] PooledByteBufAllocator - -Dio.netty.allocator.smallCacheSize: 256
-[DEBUG] 2022-08-19 10:48:25.606 [main] PooledByteBufAllocator - -Dio.netty.allocator.normalCacheSize: 64
-[DEBUG] 2022-08-19 10:48:25.607 [main] PooledByteBufAllocator - -Dio.netty.allocator.maxCachedBufferCapacity: 32768
-[DEBUG] 2022-08-19 10:48:25.607 [main] PooledByteBufAllocator - -Dio.netty.allocator.cacheTrimInterval: 8192
-[DEBUG] 2022-08-19 10:48:25.607 [main] PooledByteBufAllocator - -Dio.netty.allocator.cacheTrimIntervalMillis: 0
-[DEBUG] 2022-08-19 10:48:25.607 [main] PooledByteBufAllocator - -Dio.netty.allocator.useCacheForAllThreads: false
-[DEBUG] 2022-08-19 10:48:25.608 [main] PooledByteBufAllocator - -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
-[DEBUG] 2022-08-19 10:48:25.635 [main] ByteBufUtil - -Dio.netty.allocator.type: pooled
-[DEBUG] 2022-08-19 10:48:25.635 [main] ByteBufUtil - -Dio.netty.threadLocalDirectBufferSize: 0
-[DEBUG] 2022-08-19 10:48:25.636 [main] ByteBufUtil - -Dio.netty.maxThreadLocalCharBufferSize: 16384
-[DEBUG] 2022-08-19 10:48:26.878 [Forwarding newSession on session null to remote] DefaultChannelId - -Dio.netty.processId: 14184 (auto-detected)
-[DEBUG] 2022-08-19 10:48:26.881 [Forwarding newSession on session null to remote] NetUtil - -Djava.net.preferIPv4Stack: false
-[DEBUG] 2022-08-19 10:48:26.882 [Forwarding newSession on session null to remote] NetUtil - -Djava.net.preferIPv6Addresses: false
-[DEBUG] 2022-08-19 10:48:26.913 [Forwarding newSession on session null to remote] NetUtilInitializations - Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
-[DEBUG] 2022-08-19 10:48:26.915 [Forwarding newSession on session null to remote] NetUtil - Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200
-[DEBUG] 2022-08-19 10:48:27.000 [Forwarding newSession on session null to remote] DefaultChannelId - -Dio.netty.machineId: f4:7b:09:ff:fe:3d:cf:0c (auto-detected)
-[DEBUG] 2022-08-19 10:48:27.047 [AsyncHttpClient-1-2] AbstractByteBuf - -Dio.netty.buffer.checkAccessible: true
-[DEBUG] 2022-08-19 10:48:27.048 [AsyncHttpClient-1-2] AbstractByteBuf - -Dio.netty.buffer.checkBounds: true
-[DEBUG] 2022-08-19 10:48:27.048 [AsyncHttpClient-1-2] ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@6226e3e9
-[DEBUG] 2022-08-19 10:48:27.074 [AsyncHttpClient-1-2] Recycler - -Dio.netty.recycler.maxCapacityPerThread: 4096
-[DEBUG] 2022-08-19 10:48:27.075 [AsyncHttpClient-1-2] Recycler - -Dio.netty.recycler.ratio: 8
-[DEBUG] 2022-08-19 10:48:27.075 [AsyncHttpClient-1-2] Recycler - -Dio.netty.recycler.chunkSize: 32
-[DEBUG] 2022-08-19 10:48:27.075 [AsyncHttpClient-1-2] Recycler - -Dio.netty.recycler.blocking: false
-[DEBUG] 2022-08-19 10:48:32.429 [AsyncHttpClient-1-2] Brotli - brotli4j not in the classpath; Brotli support will be unavailable.
-[DEBUG] 2022-08-19 10:48:32.608 [main] ThreadLocalRandom - -Dio.netty.initialSeedUniquifier: 0x9d59f0b050d74a0d
-[INFO ] 2022-08-19 10:48:32.677 [main] Log - Open the urlhttps://naveenautomationlabs.com/opencart/
-[INFO ] 2022-08-19 10:48:35.707 [main] Log - https://naveenautomationlabs.com/opencart/
-[INFO ] 2022-08-19 10:48:37.392 [main] Log - Text in element : [[ChromeDriver: chrome on WINDOWS (41c6fe329b7dd595cf1087bc04fe8152)] -> xpath: //input[@placeholder='Search']] is cleared
-[INFO ] 2022-08-19 10:48:37.564 [main] Log - Click on Text Box: [[ChromeDriver: chrome on WINDOWS (41c6fe329b7dd595cf1087bc04fe8152)] -> xpath: //input[@placeholder='Search']]
-[INFO ] 2022-08-19 10:48:37.734 [main] Log - Enter text on [[ChromeDriver: chrome on WINDOWS (41c6fe329b7dd595cf1087bc04fe8152)] -> xpath: //input[@placeholder='Search']] :Apple
-[INFO ] 2022-08-19 10:48:37.865 [main] Log - wait for until element [[ChromeDriver: chrome on WINDOWS (41c6fe329b7dd595cf1087bc04fe8152)] -> xpath: //div[@id='search']/span] is visible
-[INFO ] 2022-08-19 10:48:38.394 [main] Log - Click on element: [[ChromeDriver: chrome on WINDOWS (41c6fe329b7dd595cf1087bc04fe8152)] -> xpath: //div[@id='search']/span]
-[INFO ] 2022-08-19 10:48:40.865 [main] Log - Kills the browsers
-[INFO ] 2022-08-19 10:48:41.062 [main] Log - Open chrome browser
-[INFO ] 2022-08-19 10:48:41.062 [main] Log - chrome browser is selected
-[INFO ] 2022-08-19 10:48:45.858 [main] Log - Open the urlhttps://naveenautomationlabs.com/opencart/
-[INFO ] 2022-08-19 10:48:49.213 [main] Log - https://naveenautomationlabs.com/opencart/
-[INFO ] 2022-08-19 10:48:50.048 [main] Log - wait for until element [[ChromeDriver: chrome on WINDOWS (cb0377c41ec328e162e10b22d4b37720)] -> xpath: //span[normalize-space()='My Account']] is visible
-[INFO ] 2022-08-19 10:48:50.129 [main] Log - Click on element: [[ChromeDriver: chrome on WINDOWS (cb0377c41ec328e162e10b22d4b37720)] -> xpath: //span[normalize-space()='My Account']]
-[INFO ] 2022-08-19 10:48:50.198 [main] Log - wait for until element [[ChromeDriver: chrome on WINDOWS (cb0377c41ec328e162e10b22d4b37720)] -> xpath: (//a[normalize-space()='Login'])[1]] is visible
-[INFO ] 2022-08-19 10:48:50.725 [main] Log - Click on element: [[ChromeDriver: chrome on WINDOWS (cb0377c41ec328e162e10b22d4b37720)] -> xpath: (//a[normalize-space()='Login'])[1]]
-[INFO ] 2022-08-19 10:48:51.254 [main] Log - Text in element : [[ChromeDriver: chrome on WINDOWS (cb0377c41ec328e162e10b22d4b37720)] -> id: input-email] is cleared
-[INFO ] 2022-08-19 10:48:51.315 [main] Log - Click on Text Box: [[ChromeDriver: chrome on WINDOWS (cb0377c41ec328e162e10b22d4b37720)] -> id: input-email]
-[INFO ] 2022-08-19 10:48:51.425 [main] Log - Enter text on [[ChromeDriver: chrome on WINDOWS (cb0377c41ec328e162e10b22d4b37720)] -> id: input-email] :dineshkumar.icon.dk@gmail.com
-[INFO ] 2022-08-19 10:48:51.493 [main] Log - Text in element : [[ChromeDriver: chrome on WINDOWS (cb0377c41ec328e162e10b22d4b37720)] -> id: input-password] is cleared
-[INFO ] 2022-08-19 10:48:51.557 [main] Log - Click on Text Box: [[ChromeDriver: chrome on WINDOWS (cb0377c41ec328e162e10b22d4b37720)] -> id: input-password]
-[INFO ] 2022-08-19 10:48:51.626 [main] Log - Enter text on [[ChromeDriver: chrome on WINDOWS (cb0377c41ec328e162e10b22d4b37720)] -> id: input-password] :Dinnu@4318
-[INFO ] 2022-08-19 10:48:51.673 [main] Log - wait for until element [[ChromeDriver: chrome on WINDOWS (cb0377c41ec328e162e10b22d4b37720)] -> xpath: //input[@value='Login']] is visible
-[INFO ] 2022-08-19 10:48:53.446 [main] Log - Click on element: Proxy element for: DefaultElementLocator 'By.xpath: //input[@value='Login']'
-[INFO ] 2022-08-19 10:48:55.616 [main] Log - Kills the browsers
+[INFO ] 2022-08-22 09:55:47.470 [main] Log - Open chrome browser
+[INFO ] 2022-08-22 09:55:47.502 [main] Log - chrome browser is selected
+[INFO ] 2022-08-22 09:55:56.551 [main] Log - Open the urlhttps://naveenautomationlabs.com/opencart/
+[INFO ] 2022-08-22 09:56:00.794 [main] Log - https://naveenautomationlabs.com/opencart/
+[INFO ] 2022-08-22 09:56:02.018 [main] Log - Text in element : [[ChromeDriver: chrome on WINDOWS (c9c85f489bd5f562b74369922488df88)] -> xpath: //input[@placeholder='Search']] is cleared
+[INFO ] 2022-08-22 09:56:02.088 [main] Log - Click on Text Box: [[ChromeDriver: chrome on WINDOWS (c9c85f489bd5f562b74369922488df88)] -> xpath: //input[@placeholder='Search']]
+[INFO ] 2022-08-22 09:56:02.204 [main] Log - Enter text on [[ChromeDriver: chrome on WINDOWS (c9c85f489bd5f562b74369922488df88)] -> xpath: //input[@placeholder='Search']] :Apple
+[INFO ] 2022-08-22 09:56:02.373 [main] Log - wait for until element [[ChromeDriver: chrome on WINDOWS (c9c85f489bd5f562b74369922488df88)] -> xpath: //div[@id='search']/span] is visible
+[INFO ] 2022-08-22 09:56:02.880 [main] Log - Click on element: [[ChromeDriver: chrome on WINDOWS (c9c85f489bd5f562b74369922488df88)] -> xpath: //div[@id='search']/span]
+[ERROR] 2022-08-22 09:56:05.796 [main] Log - Fail to clicked on [[ChromeDriver: chrome on WINDOWS (c9c85f489bd5f562b74369922488df88)] -> xpath: (//a[normalize-space()='Login'])[1]]
+[INFO ] 2022-08-22 09:56:07.494 [main] Log - Kills the browsers
+[INFO ] 2022-08-22 09:56:07.668 [main] Log - Open chrome browser
+[INFO ] 2022-08-22 09:56:07.669 [main] Log - chrome browser is selected
+[INFO ] 2022-08-22 09:56:11.440 [main] Log - Open the urlhttps://naveenautomationlabs.com/opencart/
+[INFO ] 2022-08-22 09:56:15.912 [main] Log - https://naveenautomationlabs.com/opencart/
+[INFO ] 2022-08-22 09:56:16.670 [main] Log - wait for until element [[ChromeDriver: chrome on WINDOWS (2cc61fdb52d989274c7dce3c7a2f5352)] -> xpath: //span[normalize-space()='My Account']] is visible
+[INFO ] 2022-08-22 09:56:16.782 [main] Log - Click on element: [[ChromeDriver: chrome on WINDOWS (2cc61fdb52d989274c7dce3c7a2f5352)] -> xpath: //span[normalize-space()='My Account']]
+[INFO ] 2022-08-22 09:56:16.821 [main] Log - wait for until element [[ChromeDriver: chrome on WINDOWS (2cc61fdb52d989274c7dce3c7a2f5352)] -> xpath: (//a[normalize-space()='Login'])[1]] is visible
+[INFO ] 2022-08-22 09:56:17.155 [main] Log - Click on element: [[ChromeDriver: chrome on WINDOWS (2cc61fdb52d989274c7dce3c7a2f5352)] -> xpath: (//a[normalize-space()='Login'])[1]]
+[INFO ] 2022-08-22 09:56:17.485 [main] Log - Text in element : [[ChromeDriver: chrome on WINDOWS (2cc61fdb52d989274c7dce3c7a2f5352)] -> id: input-email] is cleared
+[INFO ] 2022-08-22 09:56:17.537 [main] Log - Click on Text Box: [[ChromeDriver: chrome on WINDOWS (2cc61fdb52d989274c7dce3c7a2f5352)] -> id: input-email]
+[INFO ] 2022-08-22 09:56:17.620 [main] Log - Enter text on [[ChromeDriver: chrome on WINDOWS (2cc61fdb52d989274c7dce3c7a2f5352)] -> id: input-email] :dineshkumar.icon.dk@gmail.com
+[INFO ] 2022-08-22 09:56:17.733 [main] Log - Text in element : [[ChromeDriver: chrome on WINDOWS (2cc61fdb52d989274c7dce3c7a2f5352)] -> id: input-password] is cleared
+[INFO ] 2022-08-22 09:56:17.789 [main] Log - Click on Text Box: [[ChromeDriver: chrome on WINDOWS (2cc61fdb52d989274c7dce3c7a2f5352)] -> id: input-password]
+[INFO ] 2022-08-22 09:56:17.846 [main] Log - Enter text on [[ChromeDriver: chrome on WINDOWS (2cc61fdb52d989274c7dce3c7a2f5352)] -> id: input-password] :Dinnu@4318
+[INFO ] 2022-08-22 09:56:17.890 [main] Log - wait for until element [[ChromeDriver: chrome on WINDOWS (2cc61fdb52d989274c7dce3c7a2f5352)] -> xpath: //input[@value='Login']] is visible
+[INFO ] 2022-08-22 09:56:19.394 [main] Log - Click on element: Proxy element for: DefaultElementLocator 'By.xpath: //input[@value='Login']'
+[INFO ] 2022-08-22 09:56:21.233 [main] Log - Kills the browsers
+[INFO ] 2022-08-22 10:01:09.951 [main] Log - Open chrome browser
+[INFO ] 2022-08-22 10:01:09.961 [main] Log - chrome browser is selected
+[INFO ] 2022-08-22 10:01:15.001 [main] Log - Open the urlhttps://naveenautomationlabs.com/opencart/
+[INFO ] 2022-08-22 10:01:18.072 [main] Log - https://naveenautomationlabs.com/opencart/
+[INFO ] 2022-08-22 10:01:18.880 [main] Log - wait for until element [[ChromeDriver: chrome on WINDOWS (99866c4241a4526d3572a857bac83499)] -> xpath: //span[normalize-space()='My Account']] is visible
+[INFO ] 2022-08-22 10:01:18.953 [main] Log - Click on element: [[ChromeDriver: chrome on WINDOWS (99866c4241a4526d3572a857bac83499)] -> xpath: //span[normalize-space()='My Account']]
+[INFO ] 2022-08-22 10:01:18.999 [main] Log - wait for until element [[ChromeDriver: chrome on WINDOWS (99866c4241a4526d3572a857bac83499)] -> xpath: (//a[normalize-space()='Login'])[1]] is visible
+[INFO ] 2022-08-22 10:01:19.339 [main] Log - Click on element: [[ChromeDriver: chrome on WINDOWS (99866c4241a4526d3572a857bac83499)] -> xpath: (//a[normalize-space()='Login'])[1]]
+[INFO ] 2022-08-22 10:01:19.763 [main] Log - Text in element : [[ChromeDriver: chrome on WINDOWS (99866c4241a4526d3572a857bac83499)] -> id: input-email] is cleared
+[INFO ] 2022-08-22 10:01:19.828 [main] Log - Click on Text Box: [[ChromeDriver: chrome on WINDOWS (99866c4241a4526d3572a857bac83499)] -> id: input-email]
+[INFO ] 2022-08-22 10:01:19.939 [main] Log - Enter text on [[ChromeDriver: chrome on WINDOWS (99866c4241a4526d3572a857bac83499)] -> id: input-email] :dineshkumar.icon.dk@gmail.com
+[INFO ] 2022-08-22 10:01:20.007 [main] Log - Text in element : [[ChromeDriver: chrome on WINDOWS (99866c4241a4526d3572a857bac83499)] -> id: input-password] is cleared
+[INFO ] 2022-08-22 10:01:20.058 [main] Log - Click on Text Box: [[ChromeDriver: chrome on WINDOWS (99866c4241a4526d3572a857bac83499)] -> id: input-password]
+[INFO ] 2022-08-22 10:01:20.121 [main] Log - Enter text on [[ChromeDriver: chrome on WINDOWS (99866c4241a4526d3572a857bac83499)] -> id: input-password] :Dinnu@4318
+[INFO ] 2022-08-22 10:01:20.171 [main] Log - wait for until element [[ChromeDriver: chrome on WINDOWS (99866c4241a4526d3572a857bac83499)] -> xpath: //input[@value='Login']] is visible
+[INFO ] 2022-08-22 10:01:21.746 [main] Log - Click on element: Proxy element for: DefaultElementLocator 'By.xpath: //input[@value='Login']'
+[INFO ] 2022-08-22 10:01:23.342 [main] Log - Kills the browsers
+[INFO ] 2022-08-22 10:02:29.947 [main] Log - Open chrome browser
+[INFO ] 2022-08-22 10:02:29.963 [main] Log - chrome browser is selected
+[INFO ] 2022-08-22 10:02:35.382 [main] Log - Open the urlhttps://naveenautomationlabs.com/opencart/
+[INFO ] 2022-08-22 10:02:38.027 [main] Log - https://naveenautomationlabs.com/opencart/
+[INFO ] 2022-08-22 10:02:38.321 [main] Log - wait for until element [[ChromeDriver: chrome on WINDOWS (7f01551a2195e49bc1f6adee7a13b8e7)] -> xpath: //span[normalize-space()='My Account']] is visible
+[INFO ] 2022-08-22 10:02:38.402 [main] Log - Click on element: [[ChromeDriver: chrome on WINDOWS (7f01551a2195e49bc1f6adee7a13b8e7)] -> xpath: //span[normalize-space()='My Account']]
+[INFO ] 2022-08-22 10:02:38.469 [main] Log - wait for until element [[ChromeDriver: chrome on WINDOWS (7f01551a2195e49bc1f6adee7a13b8e7)] -> xpath: (//a[normalize-space()='Login'])[1]] is visible
+[INFO ] 2022-08-22 10:02:43.189 [main] Log - Click on element: [[ChromeDriver: chrome on WINDOWS (7f01551a2195e49bc1f6adee7a13b8e7)] -> xpath: (//a[normalize-space()='Login'])[1]]
+[INFO ] 2022-08-22 10:02:43.502 [main] Log - Text in element : [[ChromeDriver: chrome on WINDOWS (7f01551a2195e49bc1f6adee7a13b8e7)] -> id: input-email] is cleared
+[INFO ] 2022-08-22 10:02:43.549 [main] Log - Click on Text Box: [[ChromeDriver: chrome on WINDOWS (7f01551a2195e49bc1f6adee7a13b8e7)] -> id: input-email]
+[INFO ] 2022-08-22 10:02:43.634 [main] Log - Enter text on [[ChromeDriver: chrome on WINDOWS (7f01551a2195e49bc1f6adee7a13b8e7)] -> id: input-email] :dineshkumar.icon.dk@gmail.com
+[INFO ] 2022-08-22 10:02:43.704 [main] Log - Text in element : [[ChromeDriver: chrome on WINDOWS (7f01551a2195e49bc1f6adee7a13b8e7)] -> id: input-password] is cleared
+[INFO ] 2022-08-22 10:02:43.750 [main] Log - Click on Text Box: [[ChromeDriver: chrome on WINDOWS (7f01551a2195e49bc1f6adee7a13b8e7)] -> id: input-password]
+[INFO ] 2022-08-22 10:02:43.803 [main] Log - Enter text on [[ChromeDriver: chrome on WINDOWS (7f01551a2195e49bc1f6adee7a13b8e7)] -> id: input-password] :Dinnu@4318
+[INFO ] 2022-08-22 10:02:43.848 [main] Log - wait for until element [[ChromeDriver: chrome on WINDOWS (7f01551a2195e49bc1f6adee7a13b8e7)] -> xpath: //input[@value='Login']] is visible
+[INFO ] 2022-08-22 10:02:45.503 [main] Log - Click on element: Proxy element for: DefaultElementLocator 'By.xpath: //input[@value='Login']'
+[INFO ] 2022-08-22 10:02:47.298 [main] Log - Kills the browsers
+[INFO ] 2022-08-22 10:31:57.798 [main] Log - Open chrome browser
+[INFO ] 2022-08-22 10:31:57.810 [main] Log - chrome browser is selected
+[INFO ] 2022-08-22 10:32:03.731 [main] Log - Open the urlhttps://naveenautomationlabs.com/opencart/
+[INFO ] 2022-08-22 10:32:06.607 [main] Log - https://naveenautomationlabs.com/opencart/
+[INFO ] 2022-08-22 10:32:06.823 [main] Log - loginToApplication test is starting.
+[INFO ] 2022-08-22 10:32:07.168 [main] Log - deleted all cookies
+[ERROR] 2022-08-22 10:32:07.237 [main] Log - loginToApplication Test is failed
+[INFO ] 2022-08-22 10:32:07.542 [main] Log - loginToApplication com.blazeclan.qa.test.testng.TestFramework  null ababf1c8-98de-47cb-950d-da366aeae2ff
+[INFO ] 2022-08-22 10:32:08.702 [main] Log - Kills the browsers
+[INFO ] 2022-08-22 10:32:08.733 [main] Log - I am in onFinish method BlazeclanAutomationFramework
+[INFO ] 2022-08-22 10:35:39.834 [main] Log - Open chrome browser
+[INFO ] 2022-08-22 10:35:39.842 [main] Log - chrome browser is selected
+[INFO ] 2022-08-22 10:35:44.352 [main] Log - Open the urlhttps://naveenautomationlabs.com/opencart/
+[INFO ] 2022-08-22 10:35:46.993 [main] Log - https://naveenautomationlabs.com/opencart/
+[INFO ] 2022-08-22 10:35:47.232 [main] Log - navigateToLoginPage test is starting.
+[INFO ] 2022-08-22 10:35:47.663 [main] Log - move to the element : [[ChromeDriver: chrome on WINDOWS (2633e054ef767ff6ff069c765fb7e1c5)] -> xpath: //span[normalize-space()='My Account']] is clicked
+[INFO ] 2022-08-22 10:35:47.724 [main] Log - wait for until element [[ChromeDriver: chrome on WINDOWS (2633e054ef767ff6ff069c765fb7e1c5)] -> xpath: (//a[normalize-space()='Login'])[1]] is visible
+[INFO ] 2022-08-22 10:35:48.281 [main] Log - Click on element: [[ChromeDriver: chrome on WINDOWS (2633e054ef767ff6ff069c765fb7e1c5)] -> xpath: (//a[normalize-space()='Login'])[1]]
+[INFO ] 2022-08-22 10:35:48.376 [main] Log - navigateToLoginPage Test is passed
+[INFO ] 2022-08-22 10:35:48.376 [main] Log - navigateToLoginPage com.blazeclan.qa.test.testng.TestFramework  null 32564f95-766a-4940-84da-9a34210622d6  []
+[INFO ] 2022-08-22 10:35:48.607 [main] Log - loginToApplication test is starting.
+[INFO ] 2022-08-22 10:35:48.621 [main] Log - deleted all cookies
+[INFO ] 2022-08-22 10:35:48.673 [main] Log - Text in element : [[ChromeDriver: chrome on WINDOWS (2633e054ef767ff6ff069c765fb7e1c5)] -> id: input-email] is cleared
+[INFO ] 2022-08-22 10:35:48.729 [main] Log - Click on Text Box: [[ChromeDriver: chrome on WINDOWS (2633e054ef767ff6ff069c765fb7e1c5)] -> id: input-email]
+[INFO ] 2022-08-22 10:35:48.816 [main] Log - Enter text on [[ChromeDriver: chrome on WINDOWS (2633e054ef767ff6ff069c765fb7e1c5)] -> id: input-email] :dineshkumar.icon.dk@gmail.com
+[INFO ] 2022-08-22 10:35:48.871 [main] Log - Text in element : [[ChromeDriver: chrome on WINDOWS (2633e054ef767ff6ff069c765fb7e1c5)] -> id: input-password] is cleared
+[INFO ] 2022-08-22 10:35:48.915 [main] Log - Click on Text Box: [[ChromeDriver: chrome on WINDOWS (2633e054ef767ff6ff069c765fb7e1c5)] -> id: input-password]
+[INFO ] 2022-08-22 10:35:48.961 [main] Log - Enter text on [[ChromeDriver: chrome on WINDOWS (2633e054ef767ff6ff069c765fb7e1c5)] -> id: input-password] :Dinnu@4318
+[INFO ] 2022-08-22 10:35:49.001 [main] Log - wait for until element [[ChromeDriver: chrome on WINDOWS (2633e054ef767ff6ff069c765fb7e1c5)] -> xpath: //input[@value='Login']] is visible
+[INFO ] 2022-08-22 10:35:50.534 [main] Log - Click on element: Proxy element for: DefaultElementLocator 'By.xpath: //input[@value='Login']'
+[ERROR] 2022-08-22 10:35:50.585 [main] Log - loginToApplication Test is failed
+[INFO ] 2022-08-22 10:35:50.755 [main] Log - loginToApplication com.blazeclan.qa.test.testng.TestFramework  null b039f70c-af56-4395-a3bb-f8d60bc782e1
+[INFO ] 2022-08-22 10:35:51.839 [main] Log - Kills the browsers
+[INFO ] 2022-08-22 10:35:51.865 [main] Log - I am in onFinish method BlazeclanAutomationFramework
+[INFO ] 2022-08-22 10:49:59.175 [main] Log - Open chrome browser
+[INFO ] 2022-08-22 10:49:59.182 [main] Log - chrome browser is selected
+[INFO ] 2022-08-22 10:50:02.988 [main] Log - Open the urlhttps://naveenautomationlabs.com/opencart/
+[INFO ] 2022-08-22 10:50:06.001 [main] Log - https://naveenautomationlabs.com/opencart/
+[INFO ] 2022-08-22 10:50:06.246 [main] Log - navigateToLoginPage test is starting.
+[INFO ] 2022-08-22 10:50:06.777 [main] Log - move to the element : [[ChromeDriver: chrome on WINDOWS (8f8b90df0c71f7aed427c5d367aee256)] -> xpath: //span[normalize-space()='My Account']] is clicked
+[INFO ] 2022-08-22 10:50:06.839 [main] Log - wait for until element [[ChromeDriver: chrome on WINDOWS (8f8b90df0c71f7aed427c5d367aee256)] -> xpath: (//a[normalize-space()='Login'])[1]] is visible
+[INFO ] 2022-08-22 10:50:07.605 [main] Log - Click on element: [[ChromeDriver: chrome on WINDOWS (8f8b90df0c71f7aed427c5d367aee256)] -> xpath: (//a[normalize-space()='Login'])[1]]
+[INFO ] 2022-08-22 10:50:07.706 [main] Log - navigateToLoginPage Test is passed
+[INFO ] 2022-08-22 10:50:07.706 [main] Log - navigateToLoginPage com.blazeclan.qa.test.testng.TestFramework  null 68742f67-5347-4e10-91f0-97c589d0538a  []
+[INFO ] 2022-08-22 10:50:07.953 [main] Log - loginToApplication test is starting.
+[INFO ] 2022-08-22 10:50:07.970 [main] Log - deleted all cookies
+[INFO ] 2022-08-22 10:50:08.029 [main] Log - Text in element : [[ChromeDriver: chrome on WINDOWS (8f8b90df0c71f7aed427c5d367aee256)] -> id: input-email] is cleared
+[INFO ] 2022-08-22 10:50:08.087 [main] Log - Click on Text Box: [[ChromeDriver: chrome on WINDOWS (8f8b90df0c71f7aed427c5d367aee256)] -> id: input-email]
+[INFO ] 2022-08-22 10:50:08.227 [main] Log - Enter text on [[ChromeDriver: chrome on WINDOWS (8f8b90df0c71f7aed427c5d367aee256)] -> id: input-email] :dineshkumar.icon.dk@gmail.com
+[INFO ] 2022-08-22 10:50:08.301 [main] Log - Text in element : [[ChromeDriver: chrome on WINDOWS (8f8b90df0c71f7aed427c5d367aee256)] -> id: input-password] is cleared
+[INFO ] 2022-08-22 10:50:08.359 [main] Log - Click on Text Box: [[ChromeDriver: chrome on WINDOWS (8f8b90df0c71f7aed427c5d367aee256)] -> id: input-password]
+[INFO ] 2022-08-22 10:50:08.423 [main] Log - Enter text on [[ChromeDriver: chrome on WINDOWS (8f8b90df0c71f7aed427c5d367aee256)] -> id: input-password] :Dinnu@4318
+[INFO ] 2022-08-22 10:50:08.474 [main] Log - wait for until element [[ChromeDriver: chrome on WINDOWS (8f8b90df0c71f7aed427c5d367aee256)] -> xpath: //input[@value='Login']] is visible
+[INFO ] 2022-08-22 10:50:10.035 [main] Log - Click on element: Proxy element for: DefaultElementLocator 'By.xpath: //input[@value='Login']'
+[ERROR] 2022-08-22 10:50:10.078 [main] Log - loginToApplication Test is failed
+[INFO ] 2022-08-22 10:50:10.245 [main] Log - loginToApplication com.blazeclan.qa.test.testng.TestFramework  null ebcd9e32-3c33-4572-a535-1595600f1149
+[INFO ] 2022-08-22 10:50:11.420 [main] Log - Kills the browsers
+[INFO ] 2022-08-22 10:50:11.454 [main] Log - I am in onFinish method testng
+[INFO ] 2022-08-22 11:06:13.269 [main] Log - Open chrome browser
+[INFO ] 2022-08-22 11:06:13.282 [main] Log - chrome browser is selected
+[INFO ] 2022-08-22 11:06:22.056 [main] Log - Open the urlhttps://naveenautomationlabs.com/opencart/
+[INFO ] 2022-08-22 11:06:26.647 [main] Log - https://naveenautomationlabs.com/opencart/
+[INFO ] 2022-08-22 11:06:26.841 [main] Log - navigateToLoginPage test is starting.
+[INFO ] 2022-08-22 11:06:27.331 [main] Log - move to the element : [[ChromeDriver: chrome on WINDOWS (1a8f92724ea22c66cbad919a41128a41)] -> xpath: //span[normalize-space()='My Account']] is clicked
+[INFO ] 2022-08-22 11:06:27.407 [main] Log - wait for until element [[ChromeDriver: chrome on WINDOWS (1a8f92724ea22c66cbad919a41128a41)] -> xpath: (//a[normalize-space()='Login'])[1]] is visible
+[INFO ] 2022-08-22 11:06:27.798 [main] Log - Click on element: [[ChromeDriver: chrome on WINDOWS (1a8f92724ea22c66cbad919a41128a41)] -> xpath: (//a[normalize-space()='Login'])[1]]
+[INFO ] 2022-08-22 11:06:27.898 [main] Log - navigateToLoginPage Test is passed
+[INFO ] 2022-08-22 11:06:27.898 [main] Log - navigateToLoginPage com.blazeclan.qa.test.testng.TestFramework  null 67abdfbf-b55a-4554-acd0-2502957e72d7  []
+[INFO ] 2022-08-22 11:06:28.163 [main] Log - loginToApplication test is starting.
+[INFO ] 2022-08-22 11:06:28.181 [main] Log - deleted all cookies
+[INFO ] 2022-08-22 11:06:28.246 [main] Log - Text in element : [[ChromeDriver: chrome on WINDOWS (1a8f92724ea22c66cbad919a41128a41)] -> id: input-email] is cleared
+[INFO ] 2022-08-22 11:06:28.308 [main] Log - Click on Text Box: [[ChromeDriver: chrome on WINDOWS (1a8f92724ea22c66cbad919a41128a41)] -> id: input-email]
+[INFO ] 2022-08-22 11:06:28.414 [main] Log - Enter text on [[ChromeDriver: chrome on WINDOWS (1a8f92724ea22c66cbad919a41128a41)] -> id: input-email] :dineshkumar.icon.dk@gmail.com
+[INFO ] 2022-08-22 11:06:28.489 [main] Log - Text in element : [[ChromeDriver: chrome on WINDOWS (1a8f92724ea22c66cbad919a41128a41)] -> id: input-password] is cleared
+[INFO ] 2022-08-22 11:06:28.550 [main] Log - Click on Text Box: [[ChromeDriver: chrome on WINDOWS (1a8f92724ea22c66cbad919a41128a41)] -> id: input-password]
+[INFO ] 2022-08-22 11:06:28.616 [main] Log - Enter text on [[ChromeDriver: chrome on WINDOWS (1a8f92724ea22c66cbad919a41128a41)] -> id: input-password] :Dinnu@4318
+[INFO ] 2022-08-22 11:06:28.665 [main] Log - wait for until element [[ChromeDriver: chrome on WINDOWS (1a8f92724ea22c66cbad919a41128a41)] -> xpath: //input[@value='Login']] is visible
+[INFO ] 2022-08-22 11:06:30.388 [main] Log - Click on element: Proxy element for: DefaultElementLocator 'By.xpath: //input[@value='Login']'
+[ERROR] 2022-08-22 11:06:30.429 [main] Log - loginToApplication Test is failed
+[INFO ] 2022-08-22 11:06:30.608 [main] Log - loginToApplication com.blazeclan.qa.test.testng.TestFramework  null a792c6f6-34b0-4659-9625-1ae015a68669
+[INFO ] 2022-08-22 11:06:31.814 [main] Log - Kills the browsers
+[INFO ] 2022-08-22 11:06:31.851 [main] Log - I am in onFinish method testng
+[INFO ] 2022-08-22 11:11:45.497 [main] Log - Open chrome browser
+[INFO ] 2022-08-22 11:11:45.514 [main] Log - chrome browser is selected
+[INFO ] 2022-08-22 11:11:51.791 [main] Log - Open the urlhttps://naveenautomationlabs.com/opencart/
+[INFO ] 2022-08-22 11:11:54.539 [main] Log - https://naveenautomationlabs.com/opencart/
+[INFO ] 2022-08-22 11:11:54.784 [main] Log - navigateToLoginPage test is starting.
+[INFO ] 2022-08-22 11:11:55.282 [main] Log - move to the element : [[ChromeDriver: chrome on WINDOWS (2faabbf2b28ca6deb7d09c18b1a649f0)] -> xpath: //span[normalize-space()='My Account']] is clicked
+[INFO ] 2022-08-22 11:11:55.345 [main] Log - wait for until element [[ChromeDriver: chrome on WINDOWS (2faabbf2b28ca6deb7d09c18b1a649f0)] -> xpath: (//a[normalize-space()='Login'])[1]] is visible
+[INFO ] 2022-08-22 11:11:55.663 [main] Log - Click on element: [[ChromeDriver: chrome on WINDOWS (2faabbf2b28ca6deb7d09c18b1a649f0)] -> xpath: (//a[normalize-space()='Login'])[1]]
+[INFO ] 2022-08-22 11:11:55.773 [main] Log - navigateToLoginPage Test is passed
+[INFO ] 2022-08-22 11:11:55.773 [main] Log - navigateToLoginPage com.blazeclan.qa.test.testng.TestFramework  null 514969a6-8482-4793-8d80-2f5cf8c112ea  []
+[INFO ] 2022-08-22 11:11:56.036 [main] Log - loginToApplication test is starting.
+[INFO ] 2022-08-22 11:11:56.053 [main] Log - deleted all cookies
+[INFO ] 2022-08-22 11:11:56.112 [main] Log - Text in element : [[ChromeDriver: chrome on WINDOWS (2faabbf2b28ca6deb7d09c18b1a649f0)] -> id: input-email] is cleared
+[INFO ] 2022-08-22 11:11:56.168 [main] Log - Click on Text Box: [[ChromeDriver: chrome on WINDOWS (2faabbf2b28ca6deb7d09c18b1a649f0)] -> id: input-email]
+[INFO ] 2022-08-22 11:11:56.269 [main] Log - Enter text on [[ChromeDriver: chrome on WINDOWS (2faabbf2b28ca6deb7d09c18b1a649f0)] -> id: input-email] :dineshkumar.icon.dk@gmail.com
+[INFO ] 2022-08-22 11:11:56.363 [main] Log - Text in element : [[ChromeDriver: chrome on WINDOWS (2faabbf2b28ca6deb7d09c18b1a649f0)] -> id: input-password] is cleared
+[INFO ] 2022-08-22 11:11:56.442 [main] Log - Click on Text Box: [[ChromeDriver: chrome on WINDOWS (2faabbf2b28ca6deb7d09c18b1a649f0)] -> id: input-password]
+[INFO ] 2022-08-22 11:11:56.510 [main] Log - Enter text on [[ChromeDriver: chrome on WINDOWS (2faabbf2b28ca6deb7d09c18b1a649f0)] -> id: input-password] :Dinnu@4318
+[INFO ] 2022-08-22 11:11:56.572 [main] Log - wait for until element [[ChromeDriver: chrome on WINDOWS (2faabbf2b28ca6deb7d09c18b1a649f0)] -> xpath: //input[@value='Login']] is visible
+[INFO ] 2022-08-22 11:11:58.097 [main] Log - Click on element: Proxy element for: DefaultElementLocator 'By.xpath: //input[@value='Login']'
+[WARN ] 2022-08-22 11:11:58.155 [main] Log - loginToApplication Test is skipped
+[INFO ] 2022-08-22 11:11:58.330 [main] Log - loginToApplication test is starting.
+[INFO ] 2022-08-22 11:11:58.346 [main] Log - deleted all cookies
+[ERROR] 2022-08-22 11:11:59.355 [main] Log - no such element: Unable to locate element: {"method":"css selector","selector":"#input\-email"}
+  (Session info: chrome=104.0.5112.82)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'BCT-LTP-G877', ip: '192.168.31.245', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2faabbf2b28ca6deb7d09c18b1a649f0, findElement {using=id, value=input-email}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.82, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\DINESH~1.PED\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:49237}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49237/devtoo..., se:cdpVersion: 104.0.5112.82, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 2faabbf2b28ca6deb7d09c18b1a649f0
+[ERROR] 2022-08-22 11:12:00.366 [main] Log - no such element: Unable to locate element: {"method":"css selector","selector":"#input\-password"}
+  (Session info: chrome=104.0.5112.82)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'BCT-LTP-G877', ip: '192.168.31.245', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2faabbf2b28ca6deb7d09c18b1a649f0, findElement {using=id, value=input-password}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.82, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\DINESH~1.PED\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:49237}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49237/devtoo..., se:cdpVersion: 104.0.5112.82, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 2faabbf2b28ca6deb7d09c18b1a649f0
+[ERROR] 2022-08-22 11:12:11.627 [main] Log - Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //input[@value='Login']' (tried for 10 second(s) with 500 milliseconds interval)
+[ERROR] 2022-08-22 11:12:12.642 [main] Log - Fail to clicked on Proxy element for: DefaultElementLocator 'By.xpath: //input[@value='Login']'
+[WARN ] 2022-08-22 11:12:12.680 [main] Log - loginToApplication Test is skipped
+[INFO ] 2022-08-22 11:12:12.954 [main] Log - loginToApplication test is starting.
+[INFO ] 2022-08-22 11:12:12.960 [main] Log - deleted all cookies
+[ERROR] 2022-08-22 11:12:14.026 [main] Log - no such element: Unable to locate element: {"method":"css selector","selector":"#input\-email"}
+  (Session info: chrome=104.0.5112.82)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'BCT-LTP-G877', ip: '192.168.31.245', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2faabbf2b28ca6deb7d09c18b1a649f0, findElement {using=id, value=input-email}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.82, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\DINESH~1.PED\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:49237}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49237/devtoo..., se:cdpVersion: 104.0.5112.82, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 2faabbf2b28ca6deb7d09c18b1a649f0
+[ERROR] 2022-08-22 11:12:15.040 [main] Log - no such element: Unable to locate element: {"method":"css selector","selector":"#input\-password"}
+  (Session info: chrome=104.0.5112.82)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'BCT-LTP-G877', ip: '192.168.31.245', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2faabbf2b28ca6deb7d09c18b1a649f0, findElement {using=id, value=input-password}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.82, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\DINESH~1.PED\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:49237}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49237/devtoo..., se:cdpVersion: 104.0.5112.82, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 2faabbf2b28ca6deb7d09c18b1a649f0
+[ERROR] 2022-08-22 11:12:26.391 [main] Log - Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //input[@value='Login']' (tried for 10 second(s) with 500 milliseconds interval)
+[ERROR] 2022-08-22 11:12:27.405 [main] Log - Fail to clicked on Proxy element for: DefaultElementLocator 'By.xpath: //input[@value='Login']'
+[ERROR] 2022-08-22 11:12:27.434 [main] Log - loginToApplication Test is failed
+[INFO ] 2022-08-22 11:12:27.597 [main] Log - loginToApplication com.blazeclan.qa.test.testng.TestFramework  null db482499-6455-432c-8ae1-d0e6198c08c1
+[INFO ] 2022-08-22 11:12:28.715 [main] Log - Kills the browsers
+[INFO ] 2022-08-22 11:12:28.734 [main] Log - I am in onFinish method testng

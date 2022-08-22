@@ -1,0 +1,22 @@
+[INFO ] 2022-08-19 16:58:51.012 [main] Log - Open  browser
+[INFO ] 2022-08-19 16:58:51.031 [main] Log - Open the url
+[INFO ] 2022-08-19 16:58:51.231 [main] Log - navigateToLoginPage test is starting.
+[WARN ] 2022-08-19 16:58:51.700 [main] Log - navigateToLoginPage Test is skipped
+[ERROR] 2022-08-19 16:58:51.723 [main] Log - navigateToLoginPage Test is failed
+[INFO ] 2022-08-19 16:58:51.825 [main] Log - I am in onFinish method BlazeclanAutomationFramework
+[INFO ] 2022-08-19 17:00:13.346 [main] Log - Open  browser
+[INFO ] 2022-08-19 17:00:13.358 [main] Log - Open the url
+[INFO ] 2022-08-19 17:00:13.516 [main] Log - Open  browser
+[INFO ] 2022-08-19 17:00:13.517 [main] Log - Open the url
+[INFO ] 2022-08-19 17:01:33.720 [main] Log - Open chrome browser
+[INFO ] 2022-08-19 17:01:33.734 [main] Log - chrome browser is selected
+[INFO ] 2022-08-19 17:01:47.649 [main] Log - Open the urlhttps://naveenautomationlabs.com/opencart/
+[INFO ] 2022-08-19 17:01:51.154 [main] Log - https://naveenautomationlabs.com/opencart/
+[INFO ] 2022-08-19 17:01:51.485 [main] Log - navigateToLoginPage test is starting.
+[INFO ] 2022-08-19 17:01:52.341 [main] Log - move to the element : [[ChromeDriver: chrome on WINDOWS (4ec71a5e8f2d32057eb4f6ea305574c4)] -> xpath: //span[normalize-space()='My Account']] is clicked
+[INFO ] 2022-08-19 17:01:52.510 [main] Log - wait for until element [[ChromeDriver: chrome on WINDOWS (4ec71a5e8f2d32057eb4f6ea305574c4)] -> xpath: (//a[normalize-space()='Login'])[1]] is visible
+[INFO ] 2022-08-19 17:01:53.078 [main] Log - Click on element: [[ChromeDriver: chrome on WINDOWS (4ec71a5e8f2d32057eb4f6ea305574c4)] -> xpath: (//a[normalize-space()='Login'])[1]]
+[INFO ] 2022-08-19 17:01:53.247 [main] Log - navigateToLoginPage Test is passed
+[INFO ] 2022-08-19 17:01:53.248 [main] Log - navigateToLoginPage com.blazeclan.qa.test.testng.TestFramework  null 62e97b32-53f1-4eff-a1b5-18e25c3ee9cb  []
+[INFO ] 2022-08-19 17:01:55.167 [main] Log - Kills the browsers
+[INFO ] 2022-08-19 17:01:55.290 [main] Log - I am in onFinish method BlazeclanAutomationFramework

@@ -1,9 +1,7 @@
 package com.blazeclan.qa.test.testng;
 
 import com.blazeclan.qa.pages.LoginPage;
-import com.blazeclan.qa.test.testng.BaseTest;
 import com.blazeclan.qa.utility.TestListener;
-import io.qameta.allure.Step;
 import org.testng.Assert;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
@@ -62,7 +60,7 @@ public class TestFramework extends BaseTest {
     public void navigateToLoginPage() {
         moveAndClick(homePage.myAccount);
 
-        loginPage = (LoginPage) clickNavigateToNewPage(new LoginPage(driver), homePage.loginBtn);
+        loginPage = (LoginPage) clickNavigateToNewPage( new LoginPage(driver),homePage.loginBtn);
         waitForLoading();
         String expectedUrl = "https://naveenautomationlabs.com/opencart/index.php?route=account/login";
         String actualUrl = getCurrentUrl();
@@ -78,7 +76,7 @@ public class TestFramework extends BaseTest {
         addCookiesToFile("D:\\Framework\\BlazeclanAutomationFramework", "cookies");
         waitForLoading();
         String actualTitle = getTitle();
-        String expectedTitle = "My Account";
+        String expectedTitle = "";
         Assert.assertEquals(actualTitle,expectedTitle);
     }
 }
