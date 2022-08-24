@@ -76,7 +76,7 @@ public class TestFramework extends BaseTest {
         addCookiesToFile("D:\\Framework\\BlazeclanAutomationFramework", "cookies");
         waitForLoading();
         String actualTitle = getTitle();
-        String expectedTitle = "";
+        String expectedTitle = "My Account";
         Assert.assertEquals(actualTitle,expectedTitle);
     }
 }

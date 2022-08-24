@@ -1,9 +1,13 @@
 package com.blazeclan.qa.test.bdd;
 
+import com.blazeclan.qa.base.CommonFunctions;
+import com.blazeclan.qa.constants.IConstants;
 import com.blazeclan.qa.reports.CucumberExtentReports;
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 import org.testng.annotations.AfterSuite;
+
+import java.util.Properties;
 
 @CucumberOptions(features = {"@target/failedrerun.txt"},
         plugin = { "pretty", "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
@@ -15,7 +19,8 @@ import org.testng.annotations.AfterSuite;
 public class RerunFailedTests extends AbstractTestNGCucumberTests {
     @AfterSuite
     public void afterSuite() {
-        CucumberExtentReports.cucumberReports();
+        Properties prop = CommonFunctions.init_properties(IConstants.CUCUMBER_CONFIG_PATH);
+        CucumberExtentReports.cucumberReports(prop.getProperty("RerunOutputDirectory"));
 //        String filePath = EmailUtil.prop.getProperty("ReportPath");
 //        String fileName = EmailUtil.prop.getProperty("FileName");
 //        EmailUtil.sendMail(filePath, fileName);

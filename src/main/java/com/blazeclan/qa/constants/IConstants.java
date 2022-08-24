@@ -12,4 +12,6 @@ public interface IConstants {
     String EMAIL_CONFIG_PATH = prop.getProperty("EmailConfigPath");
     String TEST_CONFIG_PATH = prop.getProperty("TestConfigPath");
     String EXTENT_CONFIG_PATH = prop.getProperty("ExtentConfigPath");
+    String DATA_PROVIDER_FILE_PATH = prop.getProperty("DataProviderFilePath");
 }
+

@@ -1,214 +1,165 @@
-[INFO ] 2022-08-22 09:55:47.470 [main] Log - Open chrome browser
-[INFO ] 2022-08-22 09:55:47.502 [main] Log - chrome browser is selected
-[INFO ] 2022-08-22 09:55:56.551 [main] Log - Open the urlhttps://naveenautomationlabs.com/opencart/
-[INFO ] 2022-08-22 09:56:00.794 [main] Log - https://naveenautomationlabs.com/opencart/
-[INFO ] 2022-08-22 09:56:02.018 [main] Log - Text in element : [[ChromeDriver: chrome on WINDOWS (c9c85f489bd5f562b74369922488df88)] -> xpath: //input[@placeholder='Search']] is cleared
-[INFO ] 2022-08-22 09:56:02.088 [main] Log - Click on Text Box: [[ChromeDriver: chrome on WINDOWS (c9c85f489bd5f562b74369922488df88)] -> xpath: //input[@placeholder='Search']]
-[INFO ] 2022-08-22 09:56:02.204 [main] Log - Enter text on [[ChromeDriver: chrome on WINDOWS (c9c85f489bd5f562b74369922488df88)] -> xpath: //input[@placeholder='Search']] :Apple
-[INFO ] 2022-08-22 09:56:02.373 [main] Log - wait for until element [[ChromeDriver: chrome on WINDOWS (c9c85f489bd5f562b74369922488df88)] -> xpath: //div[@id='search']/span] is visible
-[INFO ] 2022-08-22 09:56:02.880 [main] Log - Click on element: [[ChromeDriver: chrome on WINDOWS (c9c85f489bd5f562b74369922488df88)] -> xpath: //div[@id='search']/span]
-[ERROR] 2022-08-22 09:56:05.796 [main] Log - Fail to clicked on [[ChromeDriver: chrome on WINDOWS (c9c85f489bd5f562b74369922488df88)] -> xpath: (//a[normalize-space()='Login'])[1]]
-[INFO ] 2022-08-22 09:56:07.494 [main] Log - Kills the browsers
-[INFO ] 2022-08-22 09:56:07.668 [main] Log - Open chrome browser
-[INFO ] 2022-08-22 09:56:07.669 [main] Log - chrome browser is selected
-[INFO ] 2022-08-22 09:56:11.440 [main] Log - Open the urlhttps://naveenautomationlabs.com/opencart/
-[INFO ] 2022-08-22 09:56:15.912 [main] Log - https://naveenautomationlabs.com/opencart/
-[INFO ] 2022-08-22 09:56:16.670 [main] Log - wait for until element [[ChromeDriver: chrome on WINDOWS (2cc61fdb52d989274c7dce3c7a2f5352)] -> xpath: //span[normalize-space()='My Account']] is visible
-[INFO ] 2022-08-22 09:56:16.782 [main] Log - Click on element: [[ChromeDriver: chrome on WINDOWS (2cc61fdb52d989274c7dce3c7a2f5352)] -> xpath: //span[normalize-space()='My Account']]
-[INFO ] 2022-08-22 09:56:16.821 [main] Log - wait for until element [[ChromeDriver: chrome on WINDOWS (2cc61fdb52d989274c7dce3c7a2f5352)] -> xpath: (//a[normalize-space()='Login'])[1]] is visible
-[INFO ] 2022-08-22 09:56:17.155 [main] Log - Click on element: [[ChromeDriver: chrome on WINDOWS (2cc61fdb52d989274c7dce3c7a2f5352)] -> xpath: (//a[normalize-space()='Login'])[1]]
-[INFO ] 2022-08-22 09:56:17.485 [main] Log - Text in element : [[ChromeDriver: chrome on WINDOWS (2cc61fdb52d989274c7dce3c7a2f5352)] -> id: input-email] is cleared
-[INFO ] 2022-08-22 09:56:17.537 [main] Log - Click on Text Box: [[ChromeDriver: chrome on WINDOWS (2cc61fdb52d989274c7dce3c7a2f5352)] -> id: input-email]
-[INFO ] 2022-08-22 09:56:17.620 [main] Log - Enter text on [[ChromeDriver: chrome on WINDOWS (2cc61fdb52d989274c7dce3c7a2f5352)] -> id: input-email] :dineshkumar.icon.dk@gmail.com
-[INFO ] 2022-08-22 09:56:17.733 [main] Log - Text in element : [[ChromeDriver: chrome on WINDOWS (2cc61fdb52d989274c7dce3c7a2f5352)] -> id: input-password] is cleared
-[INFO ] 2022-08-22 09:56:17.789 [main] Log - Click on Text Box: [[ChromeDriver: chrome on WINDOWS (2cc61fdb52d989274c7dce3c7a2f5352)] -> id: input-password]
-[INFO ] 2022-08-22 09:56:17.846 [main] Log - Enter text on [[ChromeDriver: chrome on WINDOWS (2cc61fdb52d989274c7dce3c7a2f5352)] -> id: input-password] :Dinnu@4318
-[INFO ] 2022-08-22 09:56:17.890 [main] Log - wait for until element [[ChromeDriver: chrome on WINDOWS (2cc61fdb52d989274c7dce3c7a2f5352)] -> xpath: //input[@value='Login']] is visible
-[INFO ] 2022-08-22 09:56:19.394 [main] Log - Click on element: Proxy element for: DefaultElementLocator 'By.xpath: //input[@value='Login']'
-[INFO ] 2022-08-22 09:56:21.233 [main] Log - Kills the browsers
-[INFO ] 2022-08-22 10:01:09.951 [main] Log - Open chrome browser
-[INFO ] 2022-08-22 10:01:09.961 [main] Log - chrome browser is selected
-[INFO ] 2022-08-22 10:01:15.001 [main] Log - Open the urlhttps://naveenautomationlabs.com/opencart/
-[INFO ] 2022-08-22 10:01:18.072 [main] Log - https://naveenautomationlabs.com/opencart/
-[INFO ] 2022-08-22 10:01:18.880 [main] Log - wait for until element [[ChromeDriver: chrome on WINDOWS (99866c4241a4526d3572a857bac83499)] -> xpath: //span[normalize-space()='My Account']] is visible
-[INFO ] 2022-08-22 10:01:18.953 [main] Log - Click on element: [[ChromeDriver: chrome on WINDOWS (99866c4241a4526d3572a857bac83499)] -> xpath: //span[normalize-space()='My Account']]
-[INFO ] 2022-08-22 10:01:18.999 [main] Log - wait for until element [[ChromeDriver: chrome on WINDOWS (99866c4241a4526d3572a857bac83499)] -> xpath: (//a[normalize-space()='Login'])[1]] is visible
-[INFO ] 2022-08-22 10:01:19.339 [main] Log - Click on element: [[ChromeDriver: chrome on WINDOWS (99866c4241a4526d3572a857bac83499)] -> xpath: (//a[normalize-space()='Login'])[1]]
-[INFO ] 2022-08-22 10:01:19.763 [main] Log - Text in element : [[ChromeDriver: chrome on WINDOWS (99866c4241a4526d3572a857bac83499)] -> id: input-email] is cleared
-[INFO ] 2022-08-22 10:01:19.828 [main] Log - Click on Text Box: [[ChromeDriver: chrome on WINDOWS (99866c4241a4526d3572a857bac83499)] -> id: input-email]
-[INFO ] 2022-08-22 10:01:19.939 [main] Log - Enter text on [[ChromeDriver: chrome on WINDOWS (99866c4241a4526d3572a857bac83499)] -> id: input-email] :dineshkumar.icon.dk@gmail.com
-[INFO ] 2022-08-22 10:01:20.007 [main] Log - Text in element : [[ChromeDriver: chrome on WINDOWS (99866c4241a4526d3572a857bac83499)] -> id: input-password] is cleared
-[INFO ] 2022-08-22 10:01:20.058 [main] Log - Click on Text Box: [[ChromeDriver: chrome on WINDOWS (99866c4241a4526d3572a857bac83499)] -> id: input-password]
-[INFO ] 2022-08-22 10:01:20.121 [main] Log - Enter text on [[ChromeDriver: chrome on WINDOWS (99866c4241a4526d3572a857bac83499)] -> id: input-password] :Dinnu@4318
-[INFO ] 2022-08-22 10:01:20.171 [main] Log - wait for until element [[ChromeDriver: chrome on WINDOWS (99866c4241a4526d3572a857bac83499)] -> xpath: //input[@value='Login']] is visible
-[INFO ] 2022-08-22 10:01:21.746 [main] Log - Click on element: Proxy element for: DefaultElementLocator 'By.xpath: //input[@value='Login']'
-[INFO ] 2022-08-22 10:01:23.342 [main] Log - Kills the browsers
-[INFO ] 2022-08-22 10:02:29.947 [main] Log - Open chrome browser
-[INFO ] 2022-08-22 10:02:29.963 [main] Log - chrome browser is selected
-[INFO ] 2022-08-22 10:02:35.382 [main] Log - Open the urlhttps://naveenautomationlabs.com/opencart/
-[INFO ] 2022-08-22 10:02:38.027 [main] Log - https://naveenautomationlabs.com/opencart/
-[INFO ] 2022-08-22 10:02:38.321 [main] Log - wait for until element [[ChromeDriver: chrome on WINDOWS (7f01551a2195e49bc1f6adee7a13b8e7)] -> xpath: //span[normalize-space()='My Account']] is visible
-[INFO ] 2022-08-22 10:02:38.402 [main] Log - Click on element: [[ChromeDriver: chrome on WINDOWS (7f01551a2195e49bc1f6adee7a13b8e7)] -> xpath: //span[normalize-space()='My Account']]
-[INFO ] 2022-08-22 10:02:38.469 [main] Log - wait for until element [[ChromeDriver: chrome on WINDOWS (7f01551a2195e49bc1f6adee7a13b8e7)] -> xpath: (//a[normalize-space()='Login'])[1]] is visible
-[INFO ] 2022-08-22 10:02:43.189 [main] Log - Click on element: [[ChromeDriver: chrome on WINDOWS (7f01551a2195e49bc1f6adee7a13b8e7)] -> xpath: (//a[normalize-space()='Login'])[1]]
-[INFO ] 2022-08-22 10:02:43.502 [main] Log - Text in element : [[ChromeDriver: chrome on WINDOWS (7f01551a2195e49bc1f6adee7a13b8e7)] -> id: input-email] is cleared
-[INFO ] 2022-08-22 10:02:43.549 [main] Log - Click on Text Box: [[ChromeDriver: chrome on WINDOWS (7f01551a2195e49bc1f6adee7a13b8e7)] -> id: input-email]
-[INFO ] 2022-08-22 10:02:43.634 [main] Log - Enter text on [[ChromeDriver: chrome on WINDOWS (7f01551a2195e49bc1f6adee7a13b8e7)] -> id: input-email] :dineshkumar.icon.dk@gmail.com
-[INFO ] 2022-08-22 10:02:43.704 [main] Log - Text in element : [[ChromeDriver: chrome on WINDOWS (7f01551a2195e49bc1f6adee7a13b8e7)] -> id: input-password] is cleared
-[INFO ] 2022-08-22 10:02:43.750 [main] Log - Click on Text Box: [[ChromeDriver: chrome on WINDOWS (7f01551a2195e49bc1f6adee7a13b8e7)] -> id: input-password]
-[INFO ] 2022-08-22 10:02:43.803 [main] Log - Enter text on [[ChromeDriver: chrome on WINDOWS (7f01551a2195e49bc1f6adee7a13b8e7)] -> id: input-password] :Dinnu@4318
-[INFO ] 2022-08-22 10:02:43.848 [main] Log - wait for until element [[ChromeDriver: chrome on WINDOWS (7f01551a2195e49bc1f6adee7a13b8e7)] -> xpath: //input[@value='Login']] is visible
-[INFO ] 2022-08-22 10:02:45.503 [main] Log - Click on element: Proxy element for: DefaultElementLocator 'By.xpath: //input[@value='Login']'
-[INFO ] 2022-08-22 10:02:47.298 [main] Log - Kills the browsers
-[INFO ] 2022-08-22 10:31:57.798 [main] Log - Open chrome browser
-[INFO ] 2022-08-22 10:31:57.810 [main] Log - chrome browser is selected
-[INFO ] 2022-08-22 10:32:03.731 [main] Log - Open the urlhttps://naveenautomationlabs.com/opencart/
-[INFO ] 2022-08-22 10:32:06.607 [main] Log - https://naveenautomationlabs.com/opencart/
-[INFO ] 2022-08-22 10:32:06.823 [main] Log - loginToApplication test is starting.
-[INFO ] 2022-08-22 10:32:07.168 [main] Log - deleted all cookies
-[ERROR] 2022-08-22 10:32:07.237 [main] Log - loginToApplication Test is failed
-[INFO ] 2022-08-22 10:32:07.542 [main] Log - loginToApplication com.blazeclan.qa.test.testng.TestFramework  null ababf1c8-98de-47cb-950d-da366aeae2ff
-[INFO ] 2022-08-22 10:32:08.702 [main] Log - Kills the browsers
-[INFO ] 2022-08-22 10:32:08.733 [main] Log - I am in onFinish method BlazeclanAutomationFramework
-[INFO ] 2022-08-22 10:35:39.834 [main] Log - Open chrome browser
-[INFO ] 2022-08-22 10:35:39.842 [main] Log - chrome browser is selected
-[INFO ] 2022-08-22 10:35:44.352 [main] Log - Open the urlhttps://naveenautomationlabs.com/opencart/
-[INFO ] 2022-08-22 10:35:46.993 [main] Log - https://naveenautomationlabs.com/opencart/
-[INFO ] 2022-08-22 10:35:47.232 [main] Log - navigateToLoginPage test is starting.
-[INFO ] 2022-08-22 10:35:47.663 [main] Log - move to the element : [[ChromeDriver: chrome on WINDOWS (2633e054ef767ff6ff069c765fb7e1c5)] -> xpath: //span[normalize-space()='My Account']] is clicked
-[INFO ] 2022-08-22 10:35:47.724 [main] Log - wait for until element [[ChromeDriver: chrome on WINDOWS (2633e054ef767ff6ff069c765fb7e1c5)] -> xpath: (//a[normalize-space()='Login'])[1]] is visible
-[INFO ] 2022-08-22 10:35:48.281 [main] Log - Click on element: [[ChromeDriver: chrome on WINDOWS (2633e054ef767ff6ff069c765fb7e1c5)] -> xpath: (//a[normalize-space()='Login'])[1]]
-[INFO ] 2022-08-22 10:35:48.376 [main] Log - navigateToLoginPage Test is passed
-[INFO ] 2022-08-22 10:35:48.376 [main] Log - navigateToLoginPage com.blazeclan.qa.test.testng.TestFramework  null 32564f95-766a-4940-84da-9a34210622d6  []
-[INFO ] 2022-08-22 10:35:48.607 [main] Log - loginToApplication test is starting.
-[INFO ] 2022-08-22 10:35:48.621 [main] Log - deleted all cookies
-[INFO ] 2022-08-22 10:35:48.673 [main] Log - Text in element : [[ChromeDriver: chrome on WINDOWS (2633e054ef767ff6ff069c765fb7e1c5)] -> id: input-email] is cleared
-[INFO ] 2022-08-22 10:35:48.729 [main] Log - Click on Text Box: [[ChromeDriver: chrome on WINDOWS (2633e054ef767ff6ff069c765fb7e1c5)] -> id: input-email]
-[INFO ] 2022-08-22 10:35:48.816 [main] Log - Enter text on [[ChromeDriver: chrome on WINDOWS (2633e054ef767ff6ff069c765fb7e1c5)] -> id: input-email] :dineshkumar.icon.dk@gmail.com
-[INFO ] 2022-08-22 10:35:48.871 [main] Log - Text in element : [[ChromeDriver: chrome on WINDOWS (2633e054ef767ff6ff069c765fb7e1c5)] -> id: input-password] is cleared
-[INFO ] 2022-08-22 10:35:48.915 [main] Log - Click on Text Box: [[ChromeDriver: chrome on WINDOWS (2633e054ef767ff6ff069c765fb7e1c5)] -> id: input-password]
-[INFO ] 2022-08-22 10:35:48.961 [main] Log - Enter text on [[ChromeDriver: chrome on WINDOWS (2633e054ef767ff6ff069c765fb7e1c5)] -> id: input-password] :Dinnu@4318
-[INFO ] 2022-08-22 10:35:49.001 [main] Log - wait for until element [[ChromeDriver: chrome on WINDOWS (2633e054ef767ff6ff069c765fb7e1c5)] -> xpath: //input[@value='Login']] is visible
-[INFO ] 2022-08-22 10:35:50.534 [main] Log - Click on element: Proxy element for: DefaultElementLocator 'By.xpath: //input[@value='Login']'
-[ERROR] 2022-08-22 10:35:50.585 [main] Log - loginToApplication Test is failed
-[INFO ] 2022-08-22 10:35:50.755 [main] Log - loginToApplication com.blazeclan.qa.test.testng.TestFramework  null b039f70c-af56-4395-a3bb-f8d60bc782e1
-[INFO ] 2022-08-22 10:35:51.839 [main] Log - Kills the browsers
-[INFO ] 2022-08-22 10:35:51.865 [main] Log - I am in onFinish method BlazeclanAutomationFramework
-[INFO ] 2022-08-22 10:49:59.175 [main] Log - Open chrome browser
-[INFO ] 2022-08-22 10:49:59.182 [main] Log - chrome browser is selected
-[INFO ] 2022-08-22 10:50:02.988 [main] Log - Open the urlhttps://naveenautomationlabs.com/opencart/
-[INFO ] 2022-08-22 10:50:06.001 [main] Log - https://naveenautomationlabs.com/opencart/
-[INFO ] 2022-08-22 10:50:06.246 [main] Log - navigateToLoginPage test is starting.
-[INFO ] 2022-08-22 10:50:06.777 [main] Log - move to the element : [[ChromeDriver: chrome on WINDOWS (8f8b90df0c71f7aed427c5d367aee256)] -> xpath: //span[normalize-space()='My Account']] is clicked
-[INFO ] 2022-08-22 10:50:06.839 [main] Log - wait for until element [[ChromeDriver: chrome on WINDOWS (8f8b90df0c71f7aed427c5d367aee256)] -> xpath: (//a[normalize-space()='Login'])[1]] is visible
-[INFO ] 2022-08-22 10:50:07.605 [main] Log - Click on element: [[ChromeDriver: chrome on WINDOWS (8f8b90df0c71f7aed427c5d367aee256)] -> xpath: (//a[normalize-space()='Login'])[1]]
-[INFO ] 2022-08-22 10:50:07.706 [main] Log - navigateToLoginPage Test is passed
-[INFO ] 2022-08-22 10:50:07.706 [main] Log - navigateToLoginPage com.blazeclan.qa.test.testng.TestFramework  null 68742f67-5347-4e10-91f0-97c589d0538a  []
-[INFO ] 2022-08-22 10:50:07.953 [main] Log - loginToApplication test is starting.
-[INFO ] 2022-08-22 10:50:07.970 [main] Log - deleted all cookies
-[INFO ] 2022-08-22 10:50:08.029 [main] Log - Text in element : [[ChromeDriver: chrome on WINDOWS (8f8b90df0c71f7aed427c5d367aee256)] -> id: input-email] is cleared
-[INFO ] 2022-08-22 10:50:08.087 [main] Log - Click on Text Box: [[ChromeDriver: chrome on WINDOWS (8f8b90df0c71f7aed427c5d367aee256)] -> id: input-email]
-[INFO ] 2022-08-22 10:50:08.227 [main] Log - Enter text on [[ChromeDriver: chrome on WINDOWS (8f8b90df0c71f7aed427c5d367aee256)] -> id: input-email] :dineshkumar.icon.dk@gmail.com
-[INFO ] 2022-08-22 10:50:08.301 [main] Log - Text in element : [[ChromeDriver: chrome on WINDOWS (8f8b90df0c71f7aed427c5d367aee256)] -> id: input-password] is cleared
-[INFO ] 2022-08-22 10:50:08.359 [main] Log - Click on Text Box: [[ChromeDriver: chrome on WINDOWS (8f8b90df0c71f7aed427c5d367aee256)] -> id: input-password]
-[INFO ] 2022-08-22 10:50:08.423 [main] Log - Enter text on [[ChromeDriver: chrome on WINDOWS (8f8b90df0c71f7aed427c5d367aee256)] -> id: input-password] :Dinnu@4318
-[INFO ] 2022-08-22 10:50:08.474 [main] Log - wait for until element [[ChromeDriver: chrome on WINDOWS (8f8b90df0c71f7aed427c5d367aee256)] -> xpath: //input[@value='Login']] is visible
-[INFO ] 2022-08-22 10:50:10.035 [main] Log - Click on element: Proxy element for: DefaultElementLocator 'By.xpath: //input[@value='Login']'
-[ERROR] 2022-08-22 10:50:10.078 [main] Log - loginToApplication Test is failed
-[INFO ] 2022-08-22 10:50:10.245 [main] Log - loginToApplication com.blazeclan.qa.test.testng.TestFramework  null ebcd9e32-3c33-4572-a535-1595600f1149
-[INFO ] 2022-08-22 10:50:11.420 [main] Log - Kills the browsers
-[INFO ] 2022-08-22 10:50:11.454 [main] Log - I am in onFinish method testng
-[INFO ] 2022-08-22 11:06:13.269 [main] Log - Open chrome browser
-[INFO ] 2022-08-22 11:06:13.282 [main] Log - chrome browser is selected
-[INFO ] 2022-08-22 11:06:22.056 [main] Log - Open the urlhttps://naveenautomationlabs.com/opencart/
-[INFO ] 2022-08-22 11:06:26.647 [main] Log - https://naveenautomationlabs.com/opencart/
-[INFO ] 2022-08-22 11:06:26.841 [main] Log - navigateToLoginPage test is starting.
-[INFO ] 2022-08-22 11:06:27.331 [main] Log - move to the element : [[ChromeDriver: chrome on WINDOWS (1a8f92724ea22c66cbad919a41128a41)] -> xpath: //span[normalize-space()='My Account']] is clicked
-[INFO ] 2022-08-22 11:06:27.407 [main] Log - wait for until element [[ChromeDriver: chrome on WINDOWS (1a8f92724ea22c66cbad919a41128a41)] -> xpath: (//a[normalize-space()='Login'])[1]] is visible
-[INFO ] 2022-08-22 11:06:27.798 [main] Log - Click on element: [[ChromeDriver: chrome on WINDOWS (1a8f92724ea22c66cbad919a41128a41)] -> xpath: (//a[normalize-space()='Login'])[1]]
-[INFO ] 2022-08-22 11:06:27.898 [main] Log - navigateToLoginPage Test is passed
-[INFO ] 2022-08-22 11:06:27.898 [main] Log - navigateToLoginPage com.blazeclan.qa.test.testng.TestFramework  null 67abdfbf-b55a-4554-acd0-2502957e72d7  []
-[INFO ] 2022-08-22 11:06:28.163 [main] Log - loginToApplication test is starting.
-[INFO ] 2022-08-22 11:06:28.181 [main] Log - deleted all cookies
-[INFO ] 2022-08-22 11:06:28.246 [main] Log - Text in element : [[ChromeDriver: chrome on WINDOWS (1a8f92724ea22c66cbad919a41128a41)] -> id: input-email] is cleared
-[INFO ] 2022-08-22 11:06:28.308 [main] Log - Click on Text Box: [[ChromeDriver: chrome on WINDOWS (1a8f92724ea22c66cbad919a41128a41)] -> id: input-email]
-[INFO ] 2022-08-22 11:06:28.414 [main] Log - Enter text on [[ChromeDriver: chrome on WINDOWS (1a8f92724ea22c66cbad919a41128a41)] -> id: input-email] :dineshkumar.icon.dk@gmail.com
-[INFO ] 2022-08-22 11:06:28.489 [main] Log - Text in element : [[ChromeDriver: chrome on WINDOWS (1a8f92724ea22c66cbad919a41128a41)] -> id: input-password] is cleared
-[INFO ] 2022-08-22 11:06:28.550 [main] Log - Click on Text Box: [[ChromeDriver: chrome on WINDOWS (1a8f92724ea22c66cbad919a41128a41)] -> id: input-password]
-[INFO ] 2022-08-22 11:06:28.616 [main] Log - Enter text on [[ChromeDriver: chrome on WINDOWS (1a8f92724ea22c66cbad919a41128a41)] -> id: input-password] :Dinnu@4318
-[INFO ] 2022-08-22 11:06:28.665 [main] Log - wait for until element [[ChromeDriver: chrome on WINDOWS (1a8f92724ea22c66cbad919a41128a41)] -> xpath: //input[@value='Login']] is visible
-[INFO ] 2022-08-22 11:06:30.388 [main] Log - Click on element: Proxy element for: DefaultElementLocator 'By.xpath: //input[@value='Login']'
-[ERROR] 2022-08-22 11:06:30.429 [main] Log - loginToApplication Test is failed
-[INFO ] 2022-08-22 11:06:30.608 [main] Log - loginToApplication com.blazeclan.qa.test.testng.TestFramework  null a792c6f6-34b0-4659-9625-1ae015a68669
-[INFO ] 2022-08-22 11:06:31.814 [main] Log - Kills the browsers
-[INFO ] 2022-08-22 11:06:31.851 [main] Log - I am in onFinish method testng
-[INFO ] 2022-08-22 11:11:45.497 [main] Log - Open chrome browser
-[INFO ] 2022-08-22 11:11:45.514 [main] Log - chrome browser is selected
-[INFO ] 2022-08-22 11:11:51.791 [main] Log - Open the urlhttps://naveenautomationlabs.com/opencart/
-[INFO ] 2022-08-22 11:11:54.539 [main] Log - https://naveenautomationlabs.com/opencart/
-[INFO ] 2022-08-22 11:11:54.784 [main] Log - navigateToLoginPage test is starting.
-[INFO ] 2022-08-22 11:11:55.282 [main] Log - move to the element : [[ChromeDriver: chrome on WINDOWS (2faabbf2b28ca6deb7d09c18b1a649f0)] -> xpath: //span[normalize-space()='My Account']] is clicked
-[INFO ] 2022-08-22 11:11:55.345 [main] Log - wait for until element [[ChromeDriver: chrome on WINDOWS (2faabbf2b28ca6deb7d09c18b1a649f0)] -> xpath: (//a[normalize-space()='Login'])[1]] is visible
-[INFO ] 2022-08-22 11:11:55.663 [main] Log - Click on element: [[ChromeDriver: chrome on WINDOWS (2faabbf2b28ca6deb7d09c18b1a649f0)] -> xpath: (//a[normalize-space()='Login'])[1]]
-[INFO ] 2022-08-22 11:11:55.773 [main] Log - navigateToLoginPage Test is passed
-[INFO ] 2022-08-22 11:11:55.773 [main] Log - navigateToLoginPage com.blazeclan.qa.test.testng.TestFramework  null 514969a6-8482-4793-8d80-2f5cf8c112ea  []
-[INFO ] 2022-08-22 11:11:56.036 [main] Log - loginToApplication test is starting.
-[INFO ] 2022-08-22 11:11:56.053 [main] Log - deleted all cookies
-[INFO ] 2022-08-22 11:11:56.112 [main] Log - Text in element : [[ChromeDriver: chrome on WINDOWS (2faabbf2b28ca6deb7d09c18b1a649f0)] -> id: input-email] is cleared
-[INFO ] 2022-08-22 11:11:56.168 [main] Log - Click on Text Box: [[ChromeDriver: chrome on WINDOWS (2faabbf2b28ca6deb7d09c18b1a649f0)] -> id: input-email]
-[INFO ] 2022-08-22 11:11:56.269 [main] Log - Enter text on [[ChromeDriver: chrome on WINDOWS (2faabbf2b28ca6deb7d09c18b1a649f0)] -> id: input-email] :dineshkumar.icon.dk@gmail.com
-[INFO ] 2022-08-22 11:11:56.363 [main] Log - Text in element : [[ChromeDriver: chrome on WINDOWS (2faabbf2b28ca6deb7d09c18b1a649f0)] -> id: input-password] is cleared
-[INFO ] 2022-08-22 11:11:56.442 [main] Log - Click on Text Box: [[ChromeDriver: chrome on WINDOWS (2faabbf2b28ca6deb7d09c18b1a649f0)] -> id: input-password]
-[INFO ] 2022-08-22 11:11:56.510 [main] Log - Enter text on [[ChromeDriver: chrome on WINDOWS (2faabbf2b28ca6deb7d09c18b1a649f0)] -> id: input-password] :Dinnu@4318
-[INFO ] 2022-08-22 11:11:56.572 [main] Log - wait for until element [[ChromeDriver: chrome on WINDOWS (2faabbf2b28ca6deb7d09c18b1a649f0)] -> xpath: //input[@value='Login']] is visible
-[INFO ] 2022-08-22 11:11:58.097 [main] Log - Click on element: Proxy element for: DefaultElementLocator 'By.xpath: //input[@value='Login']'
-[WARN ] 2022-08-22 11:11:58.155 [main] Log - loginToApplication Test is skipped
-[INFO ] 2022-08-22 11:11:58.330 [main] Log - loginToApplication test is starting.
-[INFO ] 2022-08-22 11:11:58.346 [main] Log - deleted all cookies
-[ERROR] 2022-08-22 11:11:59.355 [main] Log - no such element: Unable to locate element: {"method":"css selector","selector":"#input\-email"}
+[INFO ] 2022-08-24 08:57:49.007 [main] Log - chrome browser is selected
+[INFO ] 2022-08-24 08:57:49.294 [main] Log - Open chrome browser
+[INFO ] 2022-08-24 08:57:51.923 [main] Log - Open the urlhttps://naveenautomationlabs.com/opencart/
+[INFO ] 2022-08-24 08:57:52.114 [main] Log - navigateToLoginPage test is starting.
+[INFO ] 2022-08-24 08:57:52.443 [main] Log - move to the element : [[ChromeDriver: chrome on WINDOWS (d4b9d0e3104b035974344aabbfd4e357)] -> xpath: //span[normalize-space()='My Account']] is clicked
+[INFO ] 2022-08-24 08:57:52.530 [main] Log - wait for until element [[ChromeDriver: chrome on WINDOWS (d4b9d0e3104b035974344aabbfd4e357)] -> xpath: (//a[normalize-space()='Login'])[1]] is visible
+[INFO ] 2022-08-24 08:57:53.124 [main] Log - Click on element: [[ChromeDriver: chrome on WINDOWS (d4b9d0e3104b035974344aabbfd4e357)] -> xpath: (//a[normalize-space()='Login'])[1]]
+[INFO ] 2022-08-24 08:57:53.135 [main] Log - Clicked on element : [[ChromeDriver: chrome on WINDOWS (d4b9d0e3104b035974344aabbfd4e357)] -> xpath: (//a[normalize-space()='Login'])[1]]
+[INFO ] 2022-08-24 08:57:53.223 [main] Log - navigateToLoginPage Test is passed
+[INFO ] 2022-08-24 08:57:53.224 [main] Log - navigateToLoginPage com.blazeclan.qa.test.testng.TestFramework  null ed94eeb9-8d93-4c81-8a0d-3ae7240732e6  []
+[INFO ] 2022-08-24 08:57:53.486 [main] Log - loginToApplication test is starting.
+[INFO ] 2022-08-24 08:57:53.504 [main] Log - deleted all cookies
+[INFO ] 2022-08-24 08:57:53.562 [main] Log - Text in element : [[ChromeDriver: chrome on WINDOWS (d4b9d0e3104b035974344aabbfd4e357)] -> id: input-email] is cleared
+[INFO ] 2022-08-24 08:57:53.621 [main] Log - Click on Text Box: [[ChromeDriver: chrome on WINDOWS (d4b9d0e3104b035974344aabbfd4e357)] -> id: input-email]
+[INFO ] 2022-08-24 08:57:53.722 [main] Log - Enter text on [[ChromeDriver: chrome on WINDOWS (d4b9d0e3104b035974344aabbfd4e357)] -> id: input-email] :dineshkumar.icon.dk@gmail.com
+[INFO ] 2022-08-24 08:57:53.796 [main] Log - Text in element : [[ChromeDriver: chrome on WINDOWS (d4b9d0e3104b035974344aabbfd4e357)] -> id: input-password] is cleared
+[INFO ] 2022-08-24 08:57:53.861 [main] Log - Click on Text Box: [[ChromeDriver: chrome on WINDOWS (d4b9d0e3104b035974344aabbfd4e357)] -> id: input-password]
+[INFO ] 2022-08-24 08:57:53.936 [main] Log - Enter text on [[ChromeDriver: chrome on WINDOWS (d4b9d0e3104b035974344aabbfd4e357)] -> id: input-password] :Dinnu@4318
+[INFO ] 2022-08-24 08:57:54.021 [main] Log - wait for until element [[ChromeDriver: chrome on WINDOWS (d4b9d0e3104b035974344aabbfd4e357)] -> xpath: //input[@value='Login']] is visible
+[INFO ] 2022-08-24 08:57:55.661 [main] Log - Click on element: Proxy element for: DefaultElementLocator 'By.xpath: //input[@value='Login']'
+[INFO ] 2022-08-24 08:57:55.699 [main] Log - loginToApplication Test is passed
+[INFO ] 2022-08-24 08:57:55.699 [main] Log - loginToApplication com.blazeclan.qa.test.testng.TestFramework  null 5afd00e2-e5f7-46ec-97a4-6dd66226ee32  []
+[INFO ] 2022-08-24 08:57:57.114 [main] Log - Kills the browsers
+[INFO ] 2022-08-24 08:57:57.172 [main] Log - I am in onFinish method testng
+[INFO ] 2022-08-24 09:01:41.297 [main] Log - chrome browser is selected
+[INFO ] 2022-08-24 09:01:41.559 [main] Log - Open chrome browser
+[INFO ] 2022-08-24 09:01:44.344 [main] Log - Open the urlhttps://naveenautomationlabs.com/opencart/
+[INFO ] 2022-08-24 09:01:44.559 [main] Log - navigateToLoginPage test is starting.
+[INFO ] 2022-08-24 09:01:44.794 [main] Log - move to the element : [[ChromeDriver: chrome on WINDOWS (7667b9d20f0a1f014b4b31af24daa1f3)] -> xpath: //span[normalize-space()='My Account']] is clicked
+[INFO ] 2022-08-24 09:01:44.870 [main] Log - wait for until element [[ChromeDriver: chrome on WINDOWS (7667b9d20f0a1f014b4b31af24daa1f3)] -> xpath: (//a[normalize-space()='Login'])[1]] is visible
+[INFO ] 2022-08-24 09:01:45.203 [main] Log - Click on element: [[ChromeDriver: chrome on WINDOWS (7667b9d20f0a1f014b4b31af24daa1f3)] -> xpath: (//a[normalize-space()='Login'])[1]]
+[INFO ] 2022-08-24 09:01:45.213 [main] Log - Clicked on element : [[ChromeDriver: chrome on WINDOWS (7667b9d20f0a1f014b4b31af24daa1f3)] -> xpath: (//a[normalize-space()='Login'])[1]]
+[INFO ] 2022-08-24 09:01:45.313 [main] Log - navigateToLoginPage Test is passed
+[INFO ] 2022-08-24 09:01:45.313 [main] Log - navigateToLoginPage com.blazeclan.qa.test.testng.TestFramework  null 3083c98c-caa3-4142-b440-58ba3a74d9f1  []
+[INFO ] 2022-08-24 09:01:45.597 [main] Log - loginToApplication test is starting.
+[INFO ] 2022-08-24 09:01:45.614 [main] Log - deleted all cookies
+[INFO ] 2022-08-24 09:01:45.677 [main] Log - Text in element : [[ChromeDriver: chrome on WINDOWS (7667b9d20f0a1f014b4b31af24daa1f3)] -> id: input-email] is cleared
+[INFO ] 2022-08-24 09:01:45.740 [main] Log - Click on Text Box: [[ChromeDriver: chrome on WINDOWS (7667b9d20f0a1f014b4b31af24daa1f3)] -> id: input-email]
+[INFO ] 2022-08-24 09:01:45.833 [main] Log - Enter text on [[ChromeDriver: chrome on WINDOWS (7667b9d20f0a1f014b4b31af24daa1f3)] -> id: input-email] :dineshkumar.icon.dk@gmail.com
+[INFO ] 2022-08-24 09:01:45.896 [main] Log - Text in element : [[ChromeDriver: chrome on WINDOWS (7667b9d20f0a1f014b4b31af24daa1f3)] -> id: input-password] is cleared
+[INFO ] 2022-08-24 09:01:45.948 [main] Log - Click on Text Box: [[ChromeDriver: chrome on WINDOWS (7667b9d20f0a1f014b4b31af24daa1f3)] -> id: input-password]
+[INFO ] 2022-08-24 09:01:46.009 [main] Log - Enter text on [[ChromeDriver: chrome on WINDOWS (7667b9d20f0a1f014b4b31af24daa1f3)] -> id: input-password] :Dinnu@4318
+[INFO ] 2022-08-24 09:01:46.057 [main] Log - wait for until element [[ChromeDriver: chrome on WINDOWS (7667b9d20f0a1f014b4b31af24daa1f3)] -> xpath: //input[@value='Login']] is visible
+[INFO ] 2022-08-24 09:01:47.550 [main] Log - Click on element: Proxy element for: DefaultElementLocator 'By.xpath: //input[@value='Login']'
+[INFO ] 2022-08-24 09:01:47.596 [main] Log - loginToApplication Test is passed
+[INFO ] 2022-08-24 09:01:47.596 [main] Log - loginToApplication com.blazeclan.qa.test.testng.TestFramework  null 87e23736-f196-4512-a756-334843fa0978  []
+[INFO ] 2022-08-24 09:01:49.012 [main] Log - Kills the browsers
+[INFO ] 2022-08-24 09:01:49.120 [main] Log - I am in onFinish method testng
+[INFO ] 2022-08-24 09:07:18.811 [main] Log - chrome browser is selected
+[INFO ] 2022-08-24 09:07:19.101 [main] Log - Open chrome browser
+[INFO ] 2022-08-24 09:07:21.460 [main] Log - Open the urlhttps://naveenautomationlabs.com/opencart/
+[INFO ] 2022-08-24 09:07:21.695 [main] Log - navigateToLoginPage test is starting.
+[INFO ] 2022-08-24 09:07:21.907 [main] Log - move to the element : [[ChromeDriver: chrome on WINDOWS (7aff8eb749b6caaae455dd23894257e4)] -> xpath: //span[normalize-space()='My Account']] is clicked
+[INFO ] 2022-08-24 09:07:21.979 [main] Log - wait for until element [[ChromeDriver: chrome on WINDOWS (7aff8eb749b6caaae455dd23894257e4)] -> xpath: (//a[normalize-space()='Login'])[1]] is visible
+[INFO ] 2022-08-24 09:07:22.314 [main] Log - Click on element: [[ChromeDriver: chrome on WINDOWS (7aff8eb749b6caaae455dd23894257e4)] -> xpath: (//a[normalize-space()='Login'])[1]]
+[INFO ] 2022-08-24 09:07:22.325 [main] Log - Clicked on element : [[ChromeDriver: chrome on WINDOWS (7aff8eb749b6caaae455dd23894257e4)] -> xpath: (//a[normalize-space()='Login'])[1]]
+[INFO ] 2022-08-24 09:07:22.450 [main] Log - navigateToLoginPage Test is passed
+[INFO ] 2022-08-24 09:07:22.451 [main] Log - navigateToLoginPage com.blazeclan.qa.test.testng.TestFramework  null 825569b8-2a28-437f-8d52-e9a6a8fa6585  []
+[INFO ] 2022-08-24 09:07:22.719 [main] Log - loginToApplication test is starting.
+[INFO ] 2022-08-24 09:07:22.738 [main] Log - deleted all cookies
+[INFO ] 2022-08-24 09:07:22.800 [main] Log - Text in element : [[ChromeDriver: chrome on WINDOWS (7aff8eb749b6caaae455dd23894257e4)] -> id: input-email] is cleared
+[INFO ] 2022-08-24 09:07:22.862 [main] Log - Click on Text Box: [[ChromeDriver: chrome on WINDOWS (7aff8eb749b6caaae455dd23894257e4)] -> id: input-email]
+[INFO ] 2022-08-24 09:07:22.951 [main] Log - Enter text on [[ChromeDriver: chrome on WINDOWS (7aff8eb749b6caaae455dd23894257e4)] -> id: input-email] :dineshkumar.icon.dk@gmail.com
+[INFO ] 2022-08-24 09:07:23.015 [main] Log - Text in element : [[ChromeDriver: chrome on WINDOWS (7aff8eb749b6caaae455dd23894257e4)] -> id: input-password] is cleared
+[INFO ] 2022-08-24 09:07:23.068 [main] Log - Click on Text Box: [[ChromeDriver: chrome on WINDOWS (7aff8eb749b6caaae455dd23894257e4)] -> id: input-password]
+[INFO ] 2022-08-24 09:07:23.124 [main] Log - Enter text on [[ChromeDriver: chrome on WINDOWS (7aff8eb749b6caaae455dd23894257e4)] -> id: input-password] :Dinnu@4318
+[INFO ] 2022-08-24 09:07:23.170 [main] Log - wait for until element [[ChromeDriver: chrome on WINDOWS (7aff8eb749b6caaae455dd23894257e4)] -> xpath: //input[@value='Login']] is visible
+[INFO ] 2022-08-24 09:07:24.653 [main] Log - Click on element: Proxy element for: DefaultElementLocator 'By.xpath: //input[@value='Login']'
+[INFO ] 2022-08-24 09:07:24.705 [main] Log - loginToApplication Test is passed
+[INFO ] 2022-08-24 09:07:24.705 [main] Log - loginToApplication com.blazeclan.qa.test.testng.TestFramework  null 37683ab3-e01a-4132-a2b6-066b374826ee  []
+[INFO ] 2022-08-24 09:07:26.066 [main] Log - Kills the browsers
+[INFO ] 2022-08-24 09:07:26.145 [main] Log - I am in onFinish method testng
+[INFO ] 2022-08-24 09:10:57.200 [main] Log - chrome browser is selected
+[INFO ] 2022-08-24 09:10:57.571 [main] Log - Open chrome browser
+[INFO ] 2022-08-24 09:11:00.220 [main] Log - Open the urlhttps://naveenautomationlabs.com/opencart/
+[INFO ] 2022-08-24 09:11:00.427 [main] Log - navigateToLoginPage test is starting.
+[ERROR] 2022-08-24 09:11:00.533 [main] Log - element not interactable: [object HTMLSpanElement] has no size and location
   (Session info: chrome=104.0.5112.82)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.3.0', revision: 'a4995e2c09*'
 System info: host: 'BCT-LTP-G877', ip: '192.168.31.245', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [2faabbf2b28ca6deb7d09c18b1a649f0, findElement {using=id, value=input-email}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.82, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\DINESH~1.PED\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:49237}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49237/devtoo..., se:cdpVersion: 104.0.5112.82, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 2faabbf2b28ca6deb7d09c18b1a649f0
-[ERROR] 2022-08-22 11:12:00.366 [main] Log - no such element: Unable to locate element: {"method":"css selector","selector":"#input\-password"}
-  (Session info: chrome=104.0.5112.82)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Command: [f040af7d11f6215929be2200f25356d8, actions {actions=[org.openqa.selenium.interactions.Sequence@2b08772d]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.82, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\DINESH~1.PED\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:56713}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56713/devtoo..., se:cdpVersion: 104.0.5112.82, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f040af7d11f6215929be2200f25356d8
+[ERROR] 2022-08-24 09:11:10.748 [main] Log - Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on WINDOWS (f040af7d11f6215929be2200f25356d8)] -> xpath: (//a[normalize-space()='Login'])[1]] (tried for 10 second(s) with 500 milliseconds interval)
 Build info: version: '4.3.0', revision: 'a4995e2c09*'
 System info: host: 'BCT-LTP-G877', ip: '192.168.31.245', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [2faabbf2b28ca6deb7d09c18b1a649f0, findElement {using=id, value=input-password}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.82, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\DINESH~1.PED\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:49237}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49237/devtoo..., se:cdpVersion: 104.0.5112.82, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 2faabbf2b28ca6deb7d09c18b1a649f0
-[ERROR] 2022-08-22 11:12:11.627 [main] Log - Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //input[@value='Login']' (tried for 10 second(s) with 500 milliseconds interval)
-[ERROR] 2022-08-22 11:12:12.642 [main] Log - Fail to clicked on Proxy element for: DefaultElementLocator 'By.xpath: //input[@value='Login']'
-[WARN ] 2022-08-22 11:12:12.680 [main] Log - loginToApplication Test is skipped
-[INFO ] 2022-08-22 11:12:12.954 [main] Log - loginToApplication test is starting.
-[INFO ] 2022-08-22 11:12:12.960 [main] Log - deleted all cookies
-[ERROR] 2022-08-22 11:12:14.026 [main] Log - no such element: Unable to locate element: {"method":"css selector","selector":"#input\-email"}
-  (Session info: chrome=104.0.5112.82)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.3.0', revision: 'a4995e2c09*'
-System info: host: 'BCT-LTP-G877', ip: '192.168.31.245', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [2faabbf2b28ca6deb7d09c18b1a649f0, findElement {using=id, value=input-email}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.82, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\DINESH~1.PED\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:49237}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49237/devtoo..., se:cdpVersion: 104.0.5112.82, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 2faabbf2b28ca6deb7d09c18b1a649f0
-[ERROR] 2022-08-22 11:12:15.040 [main] Log - no such element: Unable to locate element: {"method":"css selector","selector":"#input\-password"}
-  (Session info: chrome=104.0.5112.82)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.3.0', revision: 'a4995e2c09*'
-System info: host: 'BCT-LTP-G877', ip: '192.168.31.245', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [2faabbf2b28ca6deb7d09c18b1a649f0, findElement {using=id, value=input-password}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.82, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\DINESH~1.PED\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:49237}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49237/devtoo..., se:cdpVersion: 104.0.5112.82, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 2faabbf2b28ca6deb7d09c18b1a649f0
-[ERROR] 2022-08-22 11:12:26.391 [main] Log - Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //input[@value='Login']' (tried for 10 second(s) with 500 milliseconds interval)
-[ERROR] 2022-08-22 11:12:27.405 [main] Log - Fail to clicked on Proxy element for: DefaultElementLocator 'By.xpath: //input[@value='Login']'
-[ERROR] 2022-08-22 11:12:27.434 [main] Log - loginToApplication Test is failed
-[INFO ] 2022-08-22 11:12:27.597 [main] Log - loginToApplication com.blazeclan.qa.test.testng.TestFramework  null db482499-6455-432c-8ae1-d0e6198c08c1
-[INFO ] 2022-08-22 11:12:28.715 [main] Log - Kills the browsers
-[INFO ] 2022-08-22 11:12:28.734 [main] Log - I am in onFinish method testng
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.82, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\DINESH~1.PED\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:56713}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56713/devtoo..., se:cdpVersion: 104.0.5112.82, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f040af7d11f6215929be2200f25356d8
+[ERROR] 2022-08-24 09:11:10.756 [main] Log - Fail to clicked on [[ChromeDriver: chrome on WINDOWS (f040af7d11f6215929be2200f25356d8)] -> xpath: (//a[normalize-space()='Login'])[1]]
+[INFO ] 2022-08-24 09:11:10.763 [main] Log - Clicked on element : [[ChromeDriver: chrome on WINDOWS (f040af7d11f6215929be2200f25356d8)] -> xpath: (//a[normalize-space()='Login'])[1]]
+[INFO ] 2022-08-24 09:11:10.790 [main] Log - Retrying navigateToLoginPage again and the count is 1
+[WARN ] 2022-08-24 09:11:10.861 [main] Log - navigateToLoginPage Test is skipped
+[INFO ] 2022-08-24 09:11:10.861 [main] Log - []
+[INFO ] 2022-08-24 09:11:11.272 [main] Log - navigateToLoginPage test is starting.
+[INFO ] 2022-08-24 09:11:11.430 [main] Log - move to the element : [[ChromeDriver: chrome on WINDOWS (f040af7d11f6215929be2200f25356d8)] -> xpath: //span[normalize-space()='My Account']] is clicked
+[INFO ] 2022-08-24 09:11:11.466 [main] Log - wait for until element [[ChromeDriver: chrome on WINDOWS (f040af7d11f6215929be2200f25356d8)] -> xpath: (//a[normalize-space()='Login'])[1]] is visible
+[INFO ] 2022-08-24 09:11:12.257 [main] Log - Click on element: [[ChromeDriver: chrome on WINDOWS (f040af7d11f6215929be2200f25356d8)] -> xpath: (//a[normalize-space()='Login'])[1]]
+[INFO ] 2022-08-24 09:11:12.272 [main] Log - Clicked on element : [[ChromeDriver: chrome on WINDOWS (f040af7d11f6215929be2200f25356d8)] -> xpath: (//a[normalize-space()='Login'])[1]]
+[INFO ] 2022-08-24 09:11:12.312 [main] Log - navigateToLoginPage Test is passed
+[INFO ] 2022-08-24 09:11:12.312 [main] Log - navigateToLoginPage com.blazeclan.qa.test.testng.TestFramework  null e3ec3ffb-c6f0-436f-a63c-01817421a9b5  []
+[INFO ] 2022-08-24 09:11:12.545 [main] Log - loginToApplication test is starting.
+[INFO ] 2022-08-24 09:11:12.561 [main] Log - deleted all cookies
+[INFO ] 2022-08-24 09:11:12.619 [main] Log - Text in element : [[ChromeDriver: chrome on WINDOWS (f040af7d11f6215929be2200f25356d8)] -> id: input-email] is cleared
+[INFO ] 2022-08-24 09:11:12.674 [main] Log - Click on Text Box: [[ChromeDriver: chrome on WINDOWS (f040af7d11f6215929be2200f25356d8)] -> id: input-email]
+[INFO ] 2022-08-24 09:11:12.760 [main] Log - Enter text on [[ChromeDriver: chrome on WINDOWS (f040af7d11f6215929be2200f25356d8)] -> id: input-email] :dineshkumar.icon.dk@gmail.com
+[INFO ] 2022-08-24 09:11:12.827 [main] Log - Text in element : [[ChromeDriver: chrome on WINDOWS (f040af7d11f6215929be2200f25356d8)] -> id: input-password] is cleared
+[INFO ] 2022-08-24 09:11:12.948 [main] Log - Click on Text Box: [[ChromeDriver: chrome on WINDOWS (f040af7d11f6215929be2200f25356d8)] -> id: input-password]
+[INFO ] 2022-08-24 09:11:13.042 [main] Log - Enter text on [[ChromeDriver: chrome on WINDOWS (f040af7d11f6215929be2200f25356d8)] -> id: input-password] :Dinnu@4318
+[INFO ] 2022-08-24 09:11:13.113 [main] Log - wait for until element [[ChromeDriver: chrome on WINDOWS (f040af7d11f6215929be2200f25356d8)] -> xpath: //input[@value='Login']] is visible
+[INFO ] 2022-08-24 09:11:14.707 [main] Log - Click on element: Proxy element for: DefaultElementLocator 'By.xpath: //input[@value='Login']'
+[INFO ] 2022-08-24 09:11:14.745 [main] Log - loginToApplication Test is passed
+[INFO ] 2022-08-24 09:11:14.745 [main] Log - loginToApplication com.blazeclan.qa.test.testng.TestFramework  null 3e5fa58a-903a-47e3-abe8-7e00a1159780  []
+[INFO ] 2022-08-24 09:11:16.154 [main] Log - Kills the browsers
+[INFO ] 2022-08-24 09:11:16.199 [main] Log - I am in onFinish method testng
+[INFO ] 2022-08-24 10:03:04.015 [main] Log - chrome browser is selected
+[INFO ] 2022-08-24 10:03:04.182 [main] Log - Open chrome browser
+[INFO ] 2022-08-24 10:03:07.969 [main] Log - Open the urlhttps://naveenautomationlabs.com/opencart/
+[INFO ] 2022-08-24 10:03:08.647 [main] Log - Text in element : [[ChromeDriver: chrome on WINDOWS (62c055f0b0c37ed368e50822e1bf492e)] -> xpath: //input[@placeholder='Search']] is cleared
+[INFO ] 2022-08-24 10:03:08.716 [main] Log - Click on Text Box: [[ChromeDriver: chrome on WINDOWS (62c055f0b0c37ed368e50822e1bf492e)] -> xpath: //input[@placeholder='Search']]
+[INFO ] 2022-08-24 10:03:08.786 [main] Log - Enter text on [[ChromeDriver: chrome on WINDOWS (62c055f0b0c37ed368e50822e1bf492e)] -> xpath: //input[@placeholder='Search']] :Apple
+[INFO ] 2022-08-24 10:03:08.833 [main] Log - wait for until element [[ChromeDriver: chrome on WINDOWS (62c055f0b0c37ed368e50822e1bf492e)] -> xpath: //div[@id='search']/span] is visible
+[INFO ] 2022-08-24 10:03:09.257 [main] Log - Click on element: [[ChromeDriver: chrome on WINDOWS (62c055f0b0c37ed368e50822e1bf492e)] -> xpath: //div[@id='search']/span]
+[INFO ] 2022-08-24 10:03:11.625 [main] Log - Kills the browsers
+[INFO ] 2022-08-24 10:03:16.992 [main] Log - chrome browser is selected
+[INFO ] 2022-08-24 10:03:16.993 [main] Log - Open chrome browser
+[INFO ] 2022-08-24 10:03:20.223 [main] Log - Open the urlhttps://naveenautomationlabs.com/opencart/
+[INFO ] 2022-08-24 10:03:20.977 [main] Log - wait for until element [[ChromeDriver: chrome on WINDOWS (5548e18fa6a1a9535a652fcda38b2b02)] -> xpath: //span[normalize-space()='My Account']] is visible
+[INFO ] 2022-08-24 10:03:21.099 [main] Log - Click on element: [[ChromeDriver: chrome on WINDOWS (5548e18fa6a1a9535a652fcda38b2b02)] -> xpath: //span[normalize-space()='My Account']]
+[INFO ] 2022-08-24 10:03:21.156 [main] Log - wait for until element [[ChromeDriver: chrome on WINDOWS (5548e18fa6a1a9535a652fcda38b2b02)] -> xpath: (//a[normalize-space()='Login'])[1]] is visible
+[INFO ] 2022-08-24 10:03:21.582 [main] Log - Click on element: [[ChromeDriver: chrome on WINDOWS (5548e18fa6a1a9535a652fcda38b2b02)] -> xpath: (//a[normalize-space()='Login'])[1]]
+[INFO ] 2022-08-24 10:03:21.935 [main] Log - Text in element : [[ChromeDriver: chrome on WINDOWS (5548e18fa6a1a9535a652fcda38b2b02)] -> id: input-email] is cleared
+[INFO ] 2022-08-24 10:03:21.988 [main] Log - Click on Text Box: [[ChromeDriver: chrome on WINDOWS (5548e18fa6a1a9535a652fcda38b2b02)] -> id: input-email]
+[INFO ] 2022-08-24 10:03:22.097 [main] Log - Enter text on [[ChromeDriver: chrome on WINDOWS (5548e18fa6a1a9535a652fcda38b2b02)] -> id: input-email] :dineshkumar.icon.dk@gmail.com
+[INFO ] 2022-08-24 10:03:22.164 [main] Log - Text in element : [[ChromeDriver: chrome on WINDOWS (5548e18fa6a1a9535a652fcda38b2b02)] -> id: input-password] is cleared
+[INFO ] 2022-08-24 10:03:22.229 [main] Log - Click on Text Box: [[ChromeDriver: chrome on WINDOWS (5548e18fa6a1a9535a652fcda38b2b02)] -> id: input-password]
+[INFO ] 2022-08-24 10:03:22.298 [main] Log - Enter text on [[ChromeDriver: chrome on WINDOWS (5548e18fa6a1a9535a652fcda38b2b02)] -> id: input-password] :Dinnu@4318
+[INFO ] 2022-08-24 10:03:22.348 [main] Log - wait for until element [[ChromeDriver: chrome on WINDOWS (5548e18fa6a1a9535a652fcda38b2b02)] -> xpath: //input[@value='Login']] is visible
+[INFO ] 2022-08-24 10:03:23.965 [main] Log - Click on element: Proxy element for: DefaultElementLocator 'By.xpath: //input[@value='Login']'
+[INFO ] 2022-08-24 10:03:25.616 [main] Log - Kills the browsers
+[INFO ] 2022-08-24 10:04:12.877 [main] Log - chrome browser is selected
+[INFO ] 2022-08-24 10:04:13.211 [main] Log - Open chrome browser
+[INFO ] 2022-08-24 10:04:16.527 [main] Log - Open the urlhttps://naveenautomationlabs.com/opencart/
+[INFO ] 2022-08-24 10:04:16.726 [main] Log - navigateToLoginPage test is starting.
+[INFO ] 2022-08-24 10:04:17.075 [main] Log - move to the element : [[ChromeDriver: chrome on WINDOWS (7b6e5bd827f72d1dabd2162f0f934186)] -> xpath: //span[normalize-space()='My Account']] is clicked
+[INFO ] 2022-08-24 10:04:17.142 [main] Log - wait for until element [[ChromeDriver: chrome on WINDOWS (7b6e5bd827f72d1dabd2162f0f934186)] -> xpath: (//a[normalize-space()='Login'])[1]] is visible
+[INFO ] 2022-08-24 10:04:17.477 [main] Log - Click on element: [[ChromeDriver: chrome on WINDOWS (7b6e5bd827f72d1dabd2162f0f934186)] -> xpath: (//a[normalize-space()='Login'])[1]]
+[INFO ] 2022-08-24 10:04:17.488 [main] Log - Clicked on element : [[ChromeDriver: chrome on WINDOWS (7b6e5bd827f72d1dabd2162f0f934186)] -> xpath: (//a[normalize-space()='Login'])[1]]
+[INFO ] 2022-08-24 10:04:17.612 [main] Log - navigateToLoginPage Test is passed
+[INFO ] 2022-08-24 10:04:17.613 [main] Log - navigateToLoginPage com.blazeclan.qa.test.testng.TestFramework  null 740e188a-f158-418f-9211-81bdd6fefe3a  []
+[INFO ] 2022-08-24 10:04:17.887 [main] Log - loginToApplication test is starting.
+[INFO ] 2022-08-24 10:04:17.904 [main] Log - deleted all cookies
+[INFO ] 2022-08-24 10:04:17.993 [main] Log - Text in element : [[ChromeDriver: chrome on WINDOWS (7b6e5bd827f72d1dabd2162f0f934186)] -> id: input-email] is cleared
+[INFO ] 2022-08-24 10:04:18.057 [main] Log - Click on Text Box: [[ChromeDriver: chrome on WINDOWS (7b6e5bd827f72d1dabd2162f0f934186)] -> id: input-email]
+[INFO ] 2022-08-24 10:04:18.147 [main] Log - Enter text on [[ChromeDriver: chrome on WINDOWS (7b6e5bd827f72d1dabd2162f0f934186)] -> id: input-email] :dineshkumar.icon.dk@gmail.com
+[INFO ] 2022-08-24 10:04:18.210 [main] Log - Text in element : [[ChromeDriver: chrome on WINDOWS (7b6e5bd827f72d1dabd2162f0f934186)] -> id: input-password] is cleared
+[INFO ] 2022-08-24 10:04:18.270 [main] Log - Click on Text Box: [[ChromeDriver: chrome on WINDOWS (7b6e5bd827f72d1dabd2162f0f934186)] -> id: input-password]
+[INFO ] 2022-08-24 10:04:18.335 [main] Log - Enter text on [[ChromeDriver: chrome on WINDOWS (7b6e5bd827f72d1dabd2162f0f934186)] -> id: input-password] :Dinnu@4318
+[INFO ] 2022-08-24 10:04:18.386 [main] Log - wait for until element [[ChromeDriver: chrome on WINDOWS (7b6e5bd827f72d1dabd2162f0f934186)] -> xpath: //input[@value='Login']] is visible
+[INFO ] 2022-08-24 10:04:19.891 [main] Log - Click on element: Proxy element for: DefaultElementLocator 'By.xpath: //input[@value='Login']'
+[INFO ] 2022-08-24 10:04:19.944 [main] Log - loginToApplication Test is passed
+[INFO ] 2022-08-24 10:04:19.944 [main] Log - loginToApplication com.blazeclan.qa.test.testng.TestFramework  null 2bd95a9f-64f6-4338-8890-dd9a580f0e98  []
+[INFO ] 2022-08-24 10:04:21.379 [main] Log - Kills the browsers
+[INFO ] 2022-08-24 10:04:21.440 [main] Log - I am in onFinish method testng

@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testng-results failed="1" passed="0" skipped="0" total="1">
-    <suite duration-ms="18849" name="io.cucumber.core.plugin.TestNGFormatter">
-        <test duration-ms="18849" name="io.cucumber.core.plugin.TestNGFormatter">
+<testng-results failed="1" passed="1" skipped="0" total="2">
+    <suite duration-ms="29973" name="io.cucumber.core.plugin.TestNGFormatter">
+        <test duration-ms="29973" name="io.cucumber.core.plugin.TestNGFormatter">
+            <class name="Search for product">
+                <test-method duration-ms="15444" finished-at="2022-08-24T04:33:11.627457600Z" name="Search for an product" started-at="2022-08-24T04:32:56.066125900Z" status="PASS"/>
+            </class>
             <class name="Validate the login functionality">
-                <test-method duration-ms="18187" finished-at="2022-08-22T04:32:47.301206400Z" name="Test login functionality" started-at="2022-08-22T04:32:28.865820400Z" status="FAIL">
+                <test-method duration-ms="13701" finished-at="2022-08-24T04:33:25.617588400Z" name="Test login functionality" started-at="2022-08-24T04:33:11.886328400Z" status="FAIL">
                     <exception class="java.lang.AssertionError">
                         <message><![CDATA[Given When user open login page.............................................passed
 When User login to application with "dineshkumar.icon.dk@gmail.com" and "Dinnu@4318" credentials.passed

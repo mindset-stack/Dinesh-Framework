@@ -1,10 +1,13 @@
 package com.blazeclan.qa.reports;
 
 
+
 import com.blazeclan.qa.base.CommonFunctions;
 import com.blazeclan.qa.constants.IConstants;
 import net.masterthought.cucumber.Configuration;
 import net.masterthought.cucumber.ReportBuilder;
+import net.masterthought.cucumber.ReportParser;
+import net.masterthought.cucumber.Reportable;
 import net.masterthought.cucumber.presentation.PresentationMode;
 import net.masterthought.cucumber.sorting.SortingMethod;
 import org.openqa.selenium.remote.RemoteWebDriver;
@@ -14,9 +17,9 @@ import java.util.*;
 
 public class CucumberExtentReports extends CommonFunctions {
 
-    public static void cucumberReports() {
+    public static void cucumberReports(String outputDir) {
         Properties prop = init_properties(IConstants.CUCUMBER_CONFIG_PATH);
-        File reportOutputDirectory = new File(prop.getProperty("OutputDirectory"));
+        File reportOutputDirectory = new File(outputDir);
         List<String> jsonFiles = new ArrayList<>();
         jsonFiles.add("target/MyReports/cucumber.json");
 
@@ -26,10 +29,12 @@ public class CucumberExtentReports extends CommonFunctions {
         configuration.setBuildNumber(buildNumber);
 
         configuration.addClassifications("Browser", ((RemoteWebDriver)driver).getCapabilities().getBrowserName());
+        configuration.addClassifications("Browser Version",((RemoteWebDriver)driver).getCapabilities().getBrowserVersion() );
         configuration.addClassifications("Branch", prop.getProperty("Branch"));
         configuration.setSortingMethod(SortingMethod.NATURAL);
         configuration.addPresentationModes(PresentationMode.EXPAND_ALL_STEPS);
         configuration.addPresentationModes(PresentationMode.PARALLEL_TESTING);
+
 //        configuration.setQualifier("sample", "Chrome 80, mobile");
 
         configuration.setTrendsStatsFile(new File("target/test-classes/demo-trends.json"));

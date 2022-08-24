@@ -14,17 +14,16 @@ public class CrossBrowser extends CommonFunctions {
             case "chrome": //chrome driver
                 ChromeOptions options = new ChromeOptions();
                 options.addArguments("--disable-notifications");
-                Log.info("chrome browser is selected");
-
                 driver = WebDriverManager.chromedriver().capabilities(options).create();
+                Log.info("chrome browser is selected");
                 break;
             case "firefox"://firefox driver
-                Log.info("firefox browser is selected");
                 driver = WebDriverManager.firefoxdriver().create();
+                Log.info("firefox browser is selected");
                 break;
             case "edge"://edge driver
-                Log.info("edge browser is selected");
                 driver = WebDriverManager.edgedriver().create();
+                Log.info("edge browser is selected");
                 break;
             default: System.out.println("Please provide browser name");
         }

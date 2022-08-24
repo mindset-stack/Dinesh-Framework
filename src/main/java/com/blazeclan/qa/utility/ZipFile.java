@@ -13,7 +13,7 @@ import java.util.zip.ZipEntry;
 import java.util.zip.ZipOutputStream;
 
 
-public class ZipFile extends CommonFunctions {
+public class ZipFile {
 
   private final List <String> fileList;
 

@@ -42,7 +42,6 @@ public class TestListener extends CommonFunctions implements ITestListener {
         Log.error(result.getName() + " Test is failed");
         System.out.println(Arrays.toString(result.getParameters()));
         String screenshotPath = captureScreenshot(result.getName(), "failed");
-        Log.info(result.getName() +" " + result.getInstanceName()+"  "+result.getHost()+" "+result.id());
 
         try {
             ExtentTestManager.getTest().addScreenCaptureFromPath(screenshotPath);
@@ -67,8 +66,6 @@ public class TestListener extends CommonFunctions implements ITestListener {
         String screenshotPath = captureScreenshot(result.getName(), "success");
         MediaEntityBuilder screenshot = MediaEntityBuilder.createScreenCaptureFromPath(screenshotPath);
         ExtentTestManager.getTest().log(Status.PASS, "Test passed", screenshot.build());
-        ExtentTestManager.getTest().info(MarkupHelper.createLabel("" +
-                "pass", ExtentColor.GREEN));
     }
 
     /**
@@ -78,7 +75,7 @@ public class TestListener extends CommonFunctions implements ITestListener {
     public void onTestSkipped(ITestResult result) {
         System.out.println("Method skipped " + result.getName());
         Log.warn(result.getName() + " Test is skipped");
-        System.out.println(Arrays.toString(result.getParameters()));
+        Log.info(Arrays.toString(result.getParameters()));
         String screenshotPath = captureScreenshot(result.getName(), "skipped");
         MediaEntityBuilder screenshot = MediaEntityBuilder.createScreenCaptureFromPath(screenshotPath);
         ExtentTestManager.getTest().log(Status.SKIP, "Test Skipped", screenshot.build());

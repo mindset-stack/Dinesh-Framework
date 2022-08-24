@@ -24,6 +24,5 @@ public class Home extends CommonFunctions {
     @Then("Navigate to Searched Product Page url as {string}")
     public void navigateToSearchedProductPageUrlAs(String arg0) {
         Assert.assertEquals(getCurrentUrl(),arg0);
-        verifyDisplayAndEnableAndClick(homePage.loginBtn);
     }
 }

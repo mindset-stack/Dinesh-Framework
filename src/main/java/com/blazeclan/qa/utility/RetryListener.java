@@ -1,8 +1,6 @@
 package com.blazeclan.qa.utility;
 
-import com.sun.net.httpserver.Authenticator;
 import org.testng.IAnnotationTransformer;
-
 import org.testng.annotations.ITestAnnotation;
 
 import java.lang.reflect.Constructor;

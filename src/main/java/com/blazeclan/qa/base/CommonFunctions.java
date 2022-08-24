@@ -7,6 +7,8 @@
 package com.blazeclan.qa.base;
 
 import com.blazeclan.qa.logging.Log;
+import com.blazeclan.qa.reports.ExtentManager;
+import com.blazeclan.qa.reports.ExtentTestManager;
 import com.blazeclan.qa.utility.CrossBrowser;
 import org.apache.commons.io.FileUtils;
 import org.jetbrains.annotations.NotNull;
@@ -53,11 +55,11 @@ public abstract class CommonFunctions {
      * @Description : this method open a selected browser and open an application in it
      */
     public static void invokeApplicationURL(String browserName, String url) {
-        Log.info("Open " + browserName + " browser");
+
         driver = CrossBrowser.selectDriver(browserName);
-        Log.info("Open the url" + url);
+        Log.info("Open " + browserName + " browser");
         driver.get(url);
-        Log.info(driver.getCurrentUrl());
+        Log.info("Open the url" + url);
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(PAGE_LOAD_OUT_TIME_SEC));
     }
@@ -102,6 +104,7 @@ public abstract class CommonFunctions {
             Log.info("wait for until element " + element.toString() + " is visible");
             element.click();
             Log.info("Click on element: " + element);
+
         } catch (WebDriverException e) {
             Log.error(e.getMessage());
             Log.error("Fail to clicked on " + element.toString());
@@ -2751,6 +2754,7 @@ public abstract class CommonFunctions {
      */
     public Object clickNavigateToNewPage(Object object, WebElement element) {
         clickElement(element);
+        Log.info("Clicked on element : " + element.toString());
         return object;
     }
 
@@ -2763,6 +2767,7 @@ public abstract class CommonFunctions {
      */
     public Object clickNavigateToNewPage(Object object, By locator) {
         clickElement(locator);
+        Log.info("Clicked on element : " + locator.toString());
         return object;
     }
 
