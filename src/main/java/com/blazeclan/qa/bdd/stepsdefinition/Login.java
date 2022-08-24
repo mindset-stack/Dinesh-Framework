@@ -19,8 +19,8 @@ public class Login extends CommonFunctions {
     @When("User login to application with {string} and {string} credentials")
     public void userLoginToApplicationWithAndCredentials(String arg0, String arg1) {
         LoginPage loginPage =  new LoginPage(driver);
-        enterText(loginPage.email,arg0);
-        enterText(loginPage.password, arg1);
+        enterText(loginPage.loginEmail,arg0);
+        enterText(loginPage.loginPassword, arg1);
         clickElement(loginPage.loginBtn);
     }
 

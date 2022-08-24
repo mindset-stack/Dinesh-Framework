@@ -70,8 +70,8 @@ public class TestFramework extends BaseTest {
     @Test(priority = 3)
     public void loginToApplication() {
         clearAllCookies();
-        enterText(loginPage.email,"dineshkumar.icon.dk@gmail.com");
-        enterText(loginPage.password, "Dinnu@4318");
+        enterText(loginPage.loginEmail,"dineshkumar.icon.dk@gmail.com");
+        enterText(loginPage.loginPassword, "Dinnu@4318");
         clickElement(loginPage.loginBtn);
         addCookiesToFile("D:\\Framework\\BlazeclanAutomationFramework", "cookies");
         waitForLoading();
@@ -79,4 +79,5 @@ public class TestFramework extends BaseTest {
         String expectedTitle = "My Account";
         Assert.assertEquals(actualTitle,expectedTitle);
     }
+
 }

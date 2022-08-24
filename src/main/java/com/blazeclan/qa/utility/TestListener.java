@@ -59,9 +59,7 @@ public class TestListener extends CommonFunctions implements ITestListener {
      * @param result ITestResult interface is used to get results of the testcase
      */
     public void onTestSuccess(ITestResult result) {
-        System.out.println("Method passed " + result.getName());
         Log.info(result.getName() + " Test is passed");
-        System.out.println(Arrays.toString(result.getParameters()));
         Log.info(result.getName() +" " + result.getInstanceName()+"  "+result.getHost()+" "+result.id()+"  "+ Arrays.toString(result.getFactoryParameters()));
         String screenshotPath = captureScreenshot(result.getName(), "success");
         MediaEntityBuilder screenshot = MediaEntityBuilder.createScreenCaptureFromPath(screenshotPath);

@@ -25,7 +25,7 @@ public class EmailUtil {
     private static final String RECIPIENT = prop.getProperty("Recipient");
 
     //this method is used to send mail by giving the details of body subject, to address, attachment path
-    public static void sendMail(String reportPath, String fileName) {
+    public void sendMail(String reportPath, String fileName) {
 
 
         String[] to = {RECIPIENT}; // list of recipient mail addresses
@@ -35,7 +35,7 @@ public class EmailUtil {
         sendFromGMail(to, subject, body, reportPath,fileName);
     }
 
-    public static String readMailOtp(String subject) {
+    public  String readMailOtp(String subject) {
         String message = readGmail(subject);
         String regex = "\\D+";
         String[] otp = message.split(regex);
@@ -43,7 +43,7 @@ public class EmailUtil {
         return otp[1];
     }
 
-    private static void sendFromGMail(String[] to, String subject, String body, String reportPath, String fileName) {
+    private void sendFromGMail(String[] to, String subject, String body, String reportPath, String fileName) {
 
         Properties properties = new Properties();
         properties.put("mail.smtp.auth", "true");
@@ -105,7 +105,7 @@ public class EmailUtil {
         }
     }
 
-    private static String readGmail(String subject) {
+    private  String readGmail(String subject) {
 
         String message = null;
         try {
@@ -153,7 +153,7 @@ public class EmailUtil {
         return message;
     }
 
-    private static String getTextFromMessage(Message message) {
+    private String getTextFromMessage(Message message) {
         String result = "";
         try {
             if (message.isMimeType("text/plain")) {
@@ -169,7 +169,7 @@ public class EmailUtil {
         return result;
     }
 
-    private static String getTextFromMimeMultipart(MimeMultipart mimeMultipart) {
+    private String getTextFromMimeMultipart(MimeMultipart mimeMultipart) {
         StringBuilder result = new StringBuilder();
         try {
             int count = mimeMultipart.getCount();

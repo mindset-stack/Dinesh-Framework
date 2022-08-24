@@ -7,8 +7,6 @@
 package com.blazeclan.qa.base;
 
 import com.blazeclan.qa.logging.Log;
-import com.blazeclan.qa.reports.ExtentManager;
-import com.blazeclan.qa.reports.ExtentTestManager;
 import com.blazeclan.qa.utility.CrossBrowser;
 import org.apache.commons.io.FileUtils;
 import org.jetbrains.annotations.NotNull;
@@ -41,8 +39,9 @@ public abstract class CommonFunctions {
     private String childWindowHandle;
 
     /**
-     * @MethodName : getDate
-     * @Description : To get the date in yyyy_MM_dd_hh_mm_ss format as a string
+     * MethodName : getDate
+     * Description : To get the date in yyyy_MM_dd_hh_mm_ss format as a string
+     * @return : String
      */
     public String getDate() {
         return new SimpleDateFormat("yyyy_MM_dd_hh_mm_ss").format(new Date());
@@ -51,8 +50,8 @@ public abstract class CommonFunctions {
     /**
      * @param browserName : it's name of a selected browser
      * @param url:        url of a testing application
-     * @MethodName : invokeApplicationURL
-     * @Description : this method open a selected browser and open an application in it
+     * MethodName : invokeApplicationURL
+     * Description : this method open a selected browser and open an application in it
      */
     public static void invokeApplicationURL(String browserName, String url) {
 
@@ -65,8 +64,8 @@ public abstract class CommonFunctions {
     }
 
     /**
-     * @MethodName : waitForLoading
-     * @Description : it's wait for application to load for certain period of time
+     * MethodName : waitForLoading
+     * Description : it's wait for application to load for certain period of time
      */
     public void waitForLoading() {
         try {
@@ -85,8 +84,8 @@ public abstract class CommonFunctions {
 
     /**
      * @return WebElement
-     * @MethodName : createWebElement
-     * @Description : to create web element using a locator
+     * MethodName : createWebElement
+     * Description : to create web element using a locator
      */
     public WebElement createWebElement(By locator) {
         return driver.findElement(locator);
@@ -94,8 +93,8 @@ public abstract class CommonFunctions {
 
     /**
      * @param element: web element used as a parameter to click
-     * @MethodName : clickElement
-     * @Description : to click on particular element in web application
+     * MethodName : clickElement
+     * Description : to click on particular element in web application
      */
     public void clickElement(WebElement element) {
         try {
@@ -113,8 +112,8 @@ public abstract class CommonFunctions {
 
     /**
      * @param locator : locator is passed to create web element
-     * @MethodName : clickElement
-     * @Description : to click on particular element in web application by passing locator to create a Web element
+     * MethodName : clickElement
+     * Description : to click on particular element in web application by passing locator to create a Web element
      **/
     public void clickElement(By locator) {
         WebElement elm = createWebElement(locator);
@@ -132,8 +131,8 @@ public abstract class CommonFunctions {
 
     /**
      * @param locator : locator is used to find a web element
-     * @MethodName : verifyDisplayAndEnableAndClick
-     * @Description : it can verify the web element is displayed and enabled before click
+     * MethodName : verifyDisplayAndEnableAndClick
+     * Description : it can verify the web element is displayed and enabled before click
      **/
     public void verifyDisplayAndEnableAndClick(By locator) {
         WebElement elm = createWebElement(locator);
@@ -154,8 +153,8 @@ public abstract class CommonFunctions {
 
     /**
      * @param elm : web element
-     * @MethodName : verifyDisplayAndEnableAndClick
-     * @Description : it can verify the web element is displayed and enabled before click
+     * MethodName : verifyDisplayAndEnableAndClick
+     * Description : it can verify the web element is displayed and enabled before click
      **/
     public void verifyDisplayAndEnableAndClick(WebElement elm) {
         try {
@@ -175,8 +174,8 @@ public abstract class CommonFunctions {
 
     /**
      * @param elm : Web element
-     * @MethodName : verifyDisplayedAndClick
-     * @Description : it can verify the web element is displayed before click
+     * MethodName : verifyDisplayedAndClick
+     * Description : it can verify the web element is displayed before click
      **/
     public void verifyDisplayedAndClick(WebElement elm) {
         try {
@@ -195,8 +194,8 @@ public abstract class CommonFunctions {
 
     /**
      * @param locator : locator is used to find a web element
-     * @MethodName : verifyDisplayedAndClick
-     * @Description : it can verify the web element is displayed before click
+     * MethodName : verifyDisplayedAndClick
+     * Description : it can verify the web element is displayed before click
      **/
     public void verifyDisplayedAndClick(By locator) {
         WebElement elm = createWebElement(locator);
@@ -218,8 +217,8 @@ public abstract class CommonFunctions {
 
     /**
      * @param elm : web element
-     * @MethodName : verifyEnabledAndClick
-     * @Description : it can verify the web element is enabled before click
+     * MethodName : verifyEnabledAndClick
+     * Description : it can verify the web element is enabled before click
      **/
     public void verifyEnabledAndClick(WebElement elm) {
         try {
@@ -238,8 +237,8 @@ public abstract class CommonFunctions {
 
     /**
      * @param locator : locator is used to find a web element
-     * @MethodName : verifyEnabledAndClick
-     * @Description : it can verify the web element is enabled before click
+     * MethodName : verifyEnabledAndClick
+     * Description : it can verify the web element is enabled before click
      **/
     public void verifyEnabledAndClick(By locator) {
         WebElement elm = driver.findElement(locator);
@@ -263,8 +262,8 @@ public abstract class CommonFunctions {
      * @param element        : web element of application
      * @param filePath       : location to save a screenshot
      * @param screenshotName : name of screenshot
-     * @MethodName : takeScreenshotOfElement
-     * @Description : it can take screenshot of a particular element and save as a given name at  a given file path.
+     * MethodName : takeScreenshotOfElement
+     * Description : it can take screenshot of a particular element and save as a given name at  a given file path.
      */
     public void takeScreenshotOfElement(@NotNull WebElement element, String filePath, String screenshotName) {
         File scrFile = element.getScreenshotAs(OutputType.FILE);
@@ -275,8 +274,8 @@ public abstract class CommonFunctions {
      * @param locator        : web element of application
      * @param filePath       : location to save a screenshot
      * @param screenshotName : name of screenshot
-     * @MethodName : takeScreenshotOfElement
-     * @Description : it can take screenshot of a particular element and save as a given name at  a given file path.
+     * MethodName : takeScreenshotOfElement
+     * Description : it can take screenshot of a particular element and save as a given name at  a given file path.
      */
     public void takeScreenshotOfElement(By locator, String filePath, String screenshotName) {
         File scrFile = createWebElement(locator).getScreenshotAs(OutputType.FILE);
@@ -287,8 +286,8 @@ public abstract class CommonFunctions {
      * @param scrFile    : screenshot is saved as file and passed as src file into this method
      * @param filePath   : location of a file path to save a screenshot
      * @param elmImgName : name of the screenshot of element
-     * @MethodName : takeScreenshotOfElement
-     * @Description : it is used to take screenshot of particular element and save as a png file at given location
+     * MethodName : takeScreenshotOfElement
+     * Description : it is used to take screenshot of particular element and save as a png file at given location
      * with a given name
      **/
     private void takeScreenshotOfElement(File scrFile, String filePath, String elmImgName) {
@@ -305,8 +304,8 @@ public abstract class CommonFunctions {
     /**
      * @param locator  : locator is used to identify the element
      * @param expected : expected data to enter
-     * @MethodName : verifyDisplayedAndEnterText
-     * @Description : it's verify the element text box is displayed and enter the text
+     * MethodName : verifyDisplayedAndEnterText
+     * Description : it's verify the element text box is displayed and enter the text
      */
     public void verifyDisplayedAndEnterText(By locator, String expected) {
         WebElement element = driver.findElement(locator);
@@ -317,8 +316,8 @@ public abstract class CommonFunctions {
     /**
      * @param element : web element of application
      * @param text    : text to enter the filed
-     * @MethodName : verifyDisplayedAndEnterText
-     * @Description : it's verify the text filed element is displayed or not and then enter the text
+     * MethodName : verifyDisplayedAndEnterText
+     * Description : it's verify the text filed element is displayed or not and then enter the text
      **/
     public void verifyDisplayedAndEnterText(WebElement element, String text) {
         isDisplayedAndEnterText(element, text);
@@ -327,8 +326,8 @@ public abstract class CommonFunctions {
     /**
      * @param element : web element of application
      * @param text    : text to enter the filed
-     * @MethodName : isDisplayedAndEnterText
-     * @Description : it's verify the text filed element is displayed or not and then enter the text
+     * MethodName : isDisplayedAndEnterText
+     * Description : it's verify the text filed element is displayed or not and then enter the text
      **/
     private void isDisplayedAndEnterText(WebElement element, String text) {
         try {
@@ -344,8 +343,8 @@ public abstract class CommonFunctions {
     /**
      * @param element : web element of application
      * @param text    : text to enter the filed
-     * @MethodName : enterText
-     * @Description : it's enter the text in text box
+     * MethodName : enterText
+     * Description : it's enter the text in text box
      **/
     public void enterText(WebElement element, String text) {
         try {
@@ -364,8 +363,8 @@ public abstract class CommonFunctions {
     /**
      * @param locator : locator is used to identify the element
      * @param text    : text to enter the filed
-     * @MethodName : enterText
-     * @Description : it's enter the text in text box
+     * MethodName : enterText
+     * Description : it's enter the text in text box
      **/
     public void enterText(By locator, String text) {
         try {
@@ -386,8 +385,8 @@ public abstract class CommonFunctions {
     /**
      * @param element  : locator is used to identify the
      * @param expected : text to enter the filed
-     * @MethodName : verifyDisplayedAndEnabledEnterText
-     * @Description : it's enter the text in text box
+     * MethodName : verifyDisplayedAndEnabledEnterText
+     * Description : it's enter the text in text box
      **/
     public void verifyDisplayedAndEnabledEnterText(WebElement element, String expected) {
         isDisplayedAndEnabledEnterText(element, expected);
@@ -396,8 +395,8 @@ public abstract class CommonFunctions {
     /**
      * @param locator : locator is used to identify the web element
      * @param text    : text to enter the filed
-     * @MethodName : verifyDisplayedAndEnabledEnterText
-     * @Description : it's enter the text in text box
+     * MethodName : verifyDisplayedAndEnabledEnterText
+     * Description : it's enter the text in text box
      **/
     public void verifyDisplayedAndEnabledEnterText(By locator, String text) {
         WebElement element = createWebElement(locator);
@@ -407,8 +406,8 @@ public abstract class CommonFunctions {
     /**
      * @param element  : locator is used to identify the web element
      * @param expected : text to enter the filed
-     * @MethodName : isDisplayedAndEnabledEnterText
-     * @Description : it's enter the text in text box
+     * MethodName : isDisplayedAndEnabledEnterText
+     * Description : it's enter the text in text box
      **/
     private void isDisplayedAndEnabledEnterText(WebElement element, String expected) {
         try {
@@ -423,8 +422,8 @@ public abstract class CommonFunctions {
 
     /**
      * @param element : web element
-     * @MethodName : waitForElementLoad
-     * @Description : it's wait for element to load for certain period of time
+     * MethodName : waitForElementLoad
+     * Description : it's wait for element to load for certain period of time
      */
     private void waitForElementLoad(WebElement element, int timeOut) {
         try {
@@ -437,8 +436,8 @@ public abstract class CommonFunctions {
 
     /**
      * @param element : web element
-     * @MethodName : waitForElementLoading
-     * @Description : it's wait for element to load for certain period of time
+     * MethodName : waitForElementLoading
+     * Description : it's wait for element to load for certain period of time
      */
     public void waitForElementLoading(WebElement element) {
         waitForElementLoad(element, ELEMENT_LOAD_TIME);
@@ -447,8 +446,8 @@ public abstract class CommonFunctions {
     /**
      * @param element      : web element
      * @param intervalTime : interval time to wait for element loading
-     * @MethodName : waitForElementLoading
-     * @Description : it's wait for element to load for certain period of time
+     * MethodName : waitForElementLoading
+     * Description : it's wait for element to load for certain period of time
      */
     public void waitForElementLoading(WebElement element, int intervalTime) {
         waitForElementLoad(element, intervalTime);
@@ -456,8 +455,8 @@ public abstract class CommonFunctions {
 
     /**
      * @param locator : locator is used to identify the web element
-     * @MethodName : waitForElementLoading
-     * @Description : it's wait for element to load for certain period of time
+     * MethodName : waitForElementLoading
+     * Description : it's wait for element to load for certain period of time
      */
     public void waitForElementLoading(By locator) {
         WebElement element = createWebElement(locator);
@@ -467,8 +466,8 @@ public abstract class CommonFunctions {
     /**
      * @param locator      : locator is used to identify the web element
      * @param intervalTime : interval time to wait for element loading
-     * @MethodName : waitForElementLoading
-     * @Description : it's wait for element to load for certain period of time
+     * MethodName : waitForElementLoading
+     * Description : it's wait for element to load for certain period of time
      */
     public void waitForElementLoading(By locator, int intervalTime) {
         WebElement element = createWebElement(locator);
@@ -478,8 +477,8 @@ public abstract class CommonFunctions {
     /**
      * @param element : web element
      * @param text    : text to enter
-     * @MethodName : enterTextUsingJS
-     * @Description : it's used the javascript executor to enter the text on element
+     * MethodName : enterTextUsingJS
+     * Description : it's used the javascript executor to enter the text on element
      */
     public void enterTextUsingJS(WebElement element, String text) {
         jsExecute("arguments[0].value='" + text +"';", element);
@@ -489,8 +488,8 @@ public abstract class CommonFunctions {
     /**
      * @param locator : locator is used to identify the web element
      * @param text    : text to enter
-     * @MethodName : enterTextUsingJS
-     * @Description : it's used the javascript executor to enter the text on element
+     * MethodName : enterTextUsingJS
+     * Description : it's used the javascript executor to enter the text on element
      */
     public void enterTextUsingJS(By locator, String text) {
         jsExecute("arguments[0].value='" + text+"';", createWebElement(locator));
@@ -499,8 +498,8 @@ public abstract class CommonFunctions {
 
     /**
      * @param element : web element
-     * @MethodName : scrollToElement
-     * @Description : it's used the javascript executor to scroll into the view of a particular element
+     * MethodName : scrollToElement
+     * Description : it's used the javascript executor to scroll into the view of a particular element
      */
     public void scrollToElement(WebElement element) {
         jsExecute("arguments[0].scrollIntoViewIfNeeded()", element);
@@ -509,8 +508,8 @@ public abstract class CommonFunctions {
 
     /**
      * @param locator : locator is used to identify the web element
-     * @MethodName : scrollToElement
-     * @Description : it's used the javascript executor to scroll into the view of a particular element
+     * MethodName : scrollToElement
+     * Description : it's used the javascript executor to scroll into the view of a particular element
      */
     public void scrollToElement(By locator) {
         jsExecute("arguments[0].scrollIntoViewIfNeeded()", createWebElement(locator));
@@ -519,8 +518,8 @@ public abstract class CommonFunctions {
 
     /**
      * @param element : web element
-     * @MethodName : clickUsingJS
-     * @Description : it's used the javascript executor to click on element
+     * MethodName : clickUsingJS
+     * Description : it's used the javascript executor to click on element
      */
     public void clickUsingJS(WebElement element) {
         jsExecute("arguments[0].click();", element);
@@ -529,8 +528,8 @@ public abstract class CommonFunctions {
 
     /**
      * @param locator : locator is used to identify the web element
-     * @MethodName : clickUsingJS
-     * @Description : it's used the javascript executor to click on element
+     * MethodName : clickUsingJS
+     * Description : it's used the javascript executor to click on element
      */
     public void clickUsingJS(By locator) {
         jsExecute("arguments[0].click();", createWebElement(locator));
@@ -538,8 +537,8 @@ public abstract class CommonFunctions {
     }
 
     /**
-     * @MethodName : scrollBottomOfPage
-     * @Description : this method is used to scroll the web page to the bottom of the page
+     * MethodName : scrollBottomOfPage
+     * Description : this method is used to scroll the web page to the bottom of the page
      */
     public void scrollBottomOfPage() {
         ((JavascriptExecutor) driver).executeScript("window.scrollBy(0,document.body.scrollHeight");
@@ -549,8 +548,8 @@ public abstract class CommonFunctions {
     /**
      * @param script  : javascript  query is used.
      * @param element : web element
-     * @MethodName : jsExecute
-     * @Description : its execute javascript
+     * MethodName : jsExecute
+     * Description : its execute javascript
      **/
     public void jsExecute(String script, WebElement element) {
         ((JavascriptExecutor) driver).executeScript(script, element);
@@ -559,8 +558,8 @@ public abstract class CommonFunctions {
 
     /**
      * @param cookieName : name of a particular cookie
-     * @MethodName : deleteCookieByName
-     * @Description : it's used to delete a cookie by a name
+     * MethodName : deleteCookieByName
+     * Description : it's used to delete a cookie by a name
      */
     public void deleteCookieByName(String cookieName) {
         driver.manage().deleteCookieNamed(getCookieByName(cookieName));
@@ -570,8 +569,8 @@ public abstract class CommonFunctions {
     /**
      * @param cookieName : name of the cookie
      * @return cookie as a string
-     * @MethodName : getCookieByName
-     * @Description : it gets the particular cookie by its name from the list of cookies
+     * MethodName : getCookieByName
+     * Description : it gets the particular cookie by its name from the list of cookies
      */
     public String getCookieByName(String cookieName) {
         String cookieNamed = "";
@@ -594,8 +593,8 @@ public abstract class CommonFunctions {
     }
 
     /**
-     * @MethodName : clearAllCookies
-     * @Description : it's clears all cookies data
+     * MethodName : clearAllCookies
+     * Description : it's clears all cookies data
      */
     public void clearAllCookies() {
         try {
@@ -610,8 +609,8 @@ public abstract class CommonFunctions {
 
     /**
      * @param ele : web element
-     * @MethodName : moveAndClick
-     * @Description : it's uses action class to move to a particular element and click it.
+     * MethodName : moveAndClick
+     * Description : it's uses action class to move to a particular element and click it.
      */
     public void moveAndClick(WebElement ele) {
         try {
@@ -625,8 +624,8 @@ public abstract class CommonFunctions {
 
     /**
      * @param locator : locator is used to identify the web element
-     * @MethodName : moveToElement
-     * @Description : movie to element after its visible
+     * MethodName : moveToElement
+     * Description : movie to element after its visible
      */
     public void moveToElement(By locator) {
         WebElement element = createWebElement(locator);
@@ -644,8 +643,8 @@ public abstract class CommonFunctions {
      * @param element : web element
      * @param x       : x-axis location in web page
      * @param y       : y-axis location in web page
-     * @MethodName : moveAndClickOnLocation
-     * @Description : move to the particular element using the x and y location and click it
+     * MethodName : moveAndClickOnLocation
+     * Description : move to the particular element using the x and y location and click it
      */
     public void moveAndClickOnLocation(WebElement element, int x, int y) {
         try {
@@ -660,8 +659,8 @@ public abstract class CommonFunctions {
 
     /**
      * @param element : web element
-     * @MethodName : ClickElementUsingActionClass
-     * @Description : it's uses action class to move to a particular element and click it.
+     * MethodName : ClickElementUsingActionClass
+     * Description : it's uses action class to move to a particular element and click it.
      */
     public void ClickElementUsingActionClass(WebElement element) {
         try {
@@ -676,8 +675,8 @@ public abstract class CommonFunctions {
 
     /**
      * @param element :  web element in application
-     * @MethodName : clickAndHold
-     * @Description : it's used to click and hold an element in web page
+     * MethodName : clickAndHold
+     * Description : it's used to click and hold an element in web page
      */
     public void clickAndHold(WebElement element) {
         try {
@@ -691,8 +690,8 @@ public abstract class CommonFunctions {
 
     /**
      * @param element : web element in application
-     * @MethodName : moveToEleAndDoubleClick
-     * @Description : it's used to move to a particular element and double on that web element
+     * MethodName : moveToEleAndDoubleClick
+     * Description : it's used to move to a particular element and double on that web element
      */
     public void moveToEleAndDoubleClick(WebElement element) {
         try {
@@ -706,8 +705,8 @@ public abstract class CommonFunctions {
 
     /**
      * @param element :web element in application
-     * @MethodName : doubleClickElement
-     * @Description : it's used to double-click on a particular web element
+     * MethodName : doubleClickElement
+     * Description : it's used to double-click on a particular web element
      */
     public void doubleClickElement(WebElement element) {
         try {
@@ -722,8 +721,8 @@ public abstract class CommonFunctions {
     /**
      * @param source      : source of the web element to drag
      * @param destination : destination of the web element to drop
-     * @MethodName : dragAndDrop
-     * @Description : it's used to drag web element from one location to other location in web element
+     * MethodName : dragAndDrop
+     * Description : it's used to drag web element from one location to other location in web element
      */
     public void dragAndDrop(WebElement source, WebElement destination) {
         try {
@@ -739,8 +738,8 @@ public abstract class CommonFunctions {
      * @param source  : source of the web element to drag
      * @param xOffset : x-axis offset of destination of the web element to drop
      * @param yOffset : y-axis offset of destination of the web element to drop
-     * @MethodName : dragAndDropByLocation
-     * @Description : it's used to drag web element from one location to other location in web element
+     * MethodName : dragAndDropByLocation
+     * Description : it's used to drag web element from one location to other location in web element
      */
     public void dragAndDropByLocation(WebElement source, int xOffset, int yOffset) {
         try {
@@ -755,8 +754,8 @@ public abstract class CommonFunctions {
     /**
      * @param element : web element
      * @return x-axis location in integer
-     * @MethodName : getXAxisLocation
-     * @Description : get x-axis location of the web element
+     * MethodName : getXAxisLocation
+     * Description : get x-axis location of the web element
      */
     public int getXAxisLocation(WebElement element) {
         return element.getLocation().x;
@@ -765,8 +764,8 @@ public abstract class CommonFunctions {
     /**
      * @param element : web element
      * @return y-axis location in integer
-     * @MethodName : getYAxisLocation
-     * @Description : get y-axis location of the web element
+     * MethodName : getYAxisLocation
+     * Description : get y-axis location of the web element
      */
     public int getYAxisLocation(WebElement element) {
         return element.getLocation().y;
@@ -775,8 +774,8 @@ public abstract class CommonFunctions {
     /**
      * @param element : web element
      * @return x-axis and y-axis location as a point
-     * @MethodName : getLocation
-     * @Description : get x-axis and y-axis location in a point of the web element
+     * MethodName : getLocation
+     * Description : get x-axis and y-axis location in a point of the web element
      */
     public Point getLocation(WebElement element) {
         return element.getLocation();
@@ -785,8 +784,8 @@ public abstract class CommonFunctions {
     /**
      * @param locator : locator is used to find web element
      * @return x-axis location in integer
-     * @MethodName : getXAxisLocation
-     * @Description : get x-axis location of the web element
+     * MethodName : getXAxisLocation
+     * Description : get x-axis location of the web element
      */
     public int getXAxisLocation(By locator) {
         return createWebElement(locator).getLocation().x;
@@ -795,8 +794,8 @@ public abstract class CommonFunctions {
     /**
      * @param locator : locator is used to find web element
      * @return y-axis location in integer
-     * @MethodName : getYAxisLocation
-     * @Description : get y-axis location of the web element
+     * MethodName : getYAxisLocation
+     * Description : get y-axis location of the web element
      */
     public int getYAxisLocation(By locator) {
         return createWebElement(locator).getLocation().y;
@@ -805,8 +804,8 @@ public abstract class CommonFunctions {
     /**
      * @param locator : locator is used to find web element
      * @return x-axis and y-axis location as a point
-     * @MethodName : getLocation
-     * @Description : get x-axis and y-axis location in a point of the web element
+     * MethodName : getLocation
+     * Description : get x-axis and y-axis location in a point of the web element
      */
     public Point getLocation(By locator) {
         return createWebElement(locator).getLocation();
@@ -816,8 +815,8 @@ public abstract class CommonFunctions {
      * @param locator : locator is used to identify the web element
      * @param x       : x-axis location on the web page
      * @param y       : y-axis location on the web page
-     * @MethodName : moveAndClickOnLocation
-     * @Description : it's used to move to the element using x and y point and then its click it
+     * MethodName : moveAndClickOnLocation
+     * Description : it's used to move to the element using x and y point and then its click it
      */
     public void moveAndClickOnLocation(By locator, int x, int y) {
         try {
@@ -833,8 +832,8 @@ public abstract class CommonFunctions {
 
     /**
      * @param locator : locator is used to identify the web element
-     * @MethodName : ClickElementUsingActionClass
-     * @Description : it's used action class to click on element
+     * MethodName : ClickElementUsingActionClass
+     * Description : it's used action class to click on element
      */
     public void moveAndClickEle(By locator) {
         try {
@@ -849,8 +848,8 @@ public abstract class CommonFunctions {
 
     /**
      * @param locator : locator is used to identify the web element
-     * @MethodName : clickAndHold
-     * @Description : it's used to click and hold a particular element
+     * MethodName : clickAndHold
+     * Description : it's used to click and hold a particular element
      */
     public void clickAndHold(By locator) {
         try {
@@ -865,8 +864,8 @@ public abstract class CommonFunctions {
 
     /**
      * @param element : web element
-     * @MethodName : releaseElement
-     * @Description : it's used to release the hold element
+     * MethodName : releaseElement
+     * Description : it's used to release the hold element
      */
     public void releaseElement(WebElement element) {
         try {
@@ -880,8 +879,8 @@ public abstract class CommonFunctions {
 
     /**
      * @param locator : locator is used to identify web element
-     * @MethodName : releaseElement
-     * @Description : it's used to release the hold element
+     * MethodName : releaseElement
+     * Description : it's used to release the hold element
      */
     public void releaseElement(By locator) {
         try {
@@ -896,8 +895,8 @@ public abstract class CommonFunctions {
 
     /**
      * @param locator : locator is used to identify web element
-     * @MethodName : moveToEleAndDoubleClick
-     * @Description : it's used to move to a particular element and double on that web element
+     * MethodName : moveToEleAndDoubleClick
+     * Description : it's used to move to a particular element and double on that web element
      */
     public void moveToEleAndDoubleClick(By locator) {
         try {
@@ -912,8 +911,8 @@ public abstract class CommonFunctions {
 
     /**
      * @param locator : locator is used to identify the web element
-     * @MethodName : doubleClickElement
-     * @Description : it's uses to double-click on the web element
+     * MethodName : doubleClickElement
+     * Description : it's uses to double-click on the web element
      */
     public void doubleClickElement(By locator) {
         try {
@@ -929,8 +928,8 @@ public abstract class CommonFunctions {
     /**
      * @param source      : it's a locator is used to identify the web element
      * @param destination : it's a locator is used to identify the web element
-     * @MethodName : dragAndDrop
-     * @Description : it's used to drag from source to drop at destination location
+     * MethodName : dragAndDrop
+     * Description : it's used to drag from source to drop at destination location
      */
     public void dragAndDrop(By source, By destination) {
         try {
@@ -948,15 +947,15 @@ public abstract class CommonFunctions {
      * @param locator : locator is used to identify the web element
      * @param xOffset : off set to x-axis point
      * @param yOffset : off set to y-axis point
-     * @MethodName : dragAndDropByOffsetLocation
-     * @Description : it's used to drag from source to drop at destination offset of x-axis and y-axis location
+     * MethodName : dragAndDropByOffsetLocation
+     * Description : it's used to drag from source to drop at destination offset of x-axis and y-axis location
      */
     public void dragAndDropByOffsetLocation(By locator, int xOffset, int yOffset) {
         try {
             WebElement source = driver.findElement(locator);
             Actions actions = new Actions(driver);
             actions.dragAndDropBy(source, xOffset, yOffset);
-
+            Log.info("drag from " + source+ " to drop at " +xOffset+ " and "+yOffset);
         } catch (Exception e) {
             Log.error(e.getMessage());
         }
@@ -967,13 +966,16 @@ public abstract class CommonFunctions {
      * @param locator : locator is used to identify web element
      * @param timeout : time out in seconds
      * @return WebElement
-     * @MethodName :waitUntilClickable Method
-     * @Description :To wait until the element is clickable and return WebElement Input Parameters :By locator,
+     * MethodName :waitUntilClickable Method
+     * Description :To wait until the element is clickable and return WebElement Input Parameters :By locator,
      */
     public WebElement waitUntilClickable(By locator, int timeout) {
+        WebElement element;
         try {
             WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeout));
-            return wait.until(ExpectedConditions.elementToBeClickable(locator));
+            element = wait.until(ExpectedConditions.elementToBeClickable(locator));
+            Log.info("wait until element is clickable : " +element.toString());
+            return element;
         } catch (Exception e) {
             Log.error(e.getMessage());
             return null;
@@ -984,8 +986,8 @@ public abstract class CommonFunctions {
      * @param locator : By locator
      * @param CSS     : String CSS
      * @return : string
-     * @MethodName :getCSS Method
-     * @Description :To retrieve text from web element CSSValue
+     * MethodName :getCSS Method
+     * Description :To retrieve text from web element CSSValue
      */
     public String getCSS(By locator, String CSS) {
         try {
@@ -1001,13 +1003,16 @@ public abstract class CommonFunctions {
      * @param element : Web element,
      * @param timeout :int timeout
      * @return WebElement
-     * @MethodName :waitUntilVisible Method
-     * @Description :To wait until the element is visible and return WebElement Input Parameters :By
+     * MethodName :waitUntilVisible Method
+     * Description :To wait until the element is visible and return WebElement Input Parameters :By
      */
     public WebElement waitUntilVisibleElement(WebElement element, int timeout) {
+        WebElement ele;
         try {
             WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeout));
-            return wait.until(ExpectedConditions.visibilityOf(element));
+             ele = wait.until(ExpectedConditions.visibilityOf(element));
+            Log.info("wait until element is visible : " +element.toString());
+            return ele;
         } catch (Exception e) {
             Log.error(e.getMessage());
             return null;
@@ -1018,13 +1023,16 @@ public abstract class CommonFunctions {
      * @param locator : By method to identify the web element
      * @param timeout : int timeout in seconds
      * @return WebElement
-     * @MethodName :waitUntilVisible Method
-     * @Description :To wait until the element is visible and return WebElement
+     * MethodName :waitUntilVisible Method
+     * Description :To wait until the element is visible and return WebElement
      */
     public WebElement waitUntilVisible(By locator, int timeout) {
+        WebElement element;
         try {
             WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeout));
-            return wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+            element = wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+            Log.info("wait until visibility of element : "+element);
+            return element;
         } catch (Exception e) {
             Log.error(e.getMessage());
             return null;
@@ -1035,15 +1043,15 @@ public abstract class CommonFunctions {
      * @param element : Web element
      * @param timeout : timeout in seconds int
      * @return WebElement
-     * @MethodName : waitUntilVisible
-     * @Description : it's used to wait for certain period time until element visible
+     * MethodName : waitUntilVisible
+     * Description : it's used to wait for certain period time until element visible
      */
     public WebElement waitUntilVisible(WebElement element, int timeout) {
         WebElement ele;
         try {
             WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeout));
             ele = wait.until(ExpectedConditions.visibilityOf(element));
-            Log.info("wait for " + timeout + " this seconds until element to visible");
+            Log.info("wait for " + timeout + " this seconds until element to visible : " + ele);
             return ele;
         } catch (Exception e) {
             Log.error(e.getMessage());
@@ -1056,14 +1064,16 @@ public abstract class CommonFunctions {
      * @param locator : locator is used to identify web element,
      * @param timeout : int timeout in seconds
      * @return boolean
-     * @MethodName :waitUntilInvisible Method
-     * @Description :To wait until the element is Invisible and return boolean
+     * MethodName :waitUntilInvisible Method
+     * Description :To wait until the element is Invisible and return boolean
      */
     public Boolean waitUntilInvisible(By locator, int timeout) {
         try {
+            boolean bool;
             WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeout));
-            System.out.println("Wait until");
-            return wait.until(ExpectedConditions.invisibilityOfElementLocated(locator));
+            bool = wait.until(ExpectedConditions.invisibilityOfElementLocated(locator));
+            Log.info("wait until web element is invisible: " + locator);
+            return  bool;
         } catch (Exception e) {
             Log.error(e.getMessage());
             return null;
@@ -1074,15 +1084,17 @@ public abstract class CommonFunctions {
      * @param locator : By method locator to find web element
      * @param timeout : int timeout
      * @return WebElement
-     * @MethodName :waitElementPresence Method
-     * @Description :To wait until the element is present and return web element
+     * MethodName :waitElementPresence Method
+     * Description :To wait until the element is present and return web element
      */
     public WebElement waitElementPresence(By locator, int timeout) {
-
+        WebElement element;
         try {
             //
             WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeout));
-            return wait.until(ExpectedConditions.presenceOfElementLocated(locator));
+            element = wait.until(ExpectedConditions.presenceOfElementLocated(locator));
+            Log.info("wait until the element is present : " +element);
+            return  element;
         } catch (Exception e) {
             Log.error(e.getMessage());
             return null;
@@ -1092,14 +1104,16 @@ public abstract class CommonFunctions {
     /**
      * @param locator : By locator
      * @return boolean value
-     * @MethodName :waitElementPresence Method
-     * @Description :To wait until the element is invisible and return boolean
+     * MethodName :waitElementPresence Method
+     * Description :To wait until the element is invisible and return boolean
      */
     public Boolean waitElementInvisibility(By locator) {
         try {
             WebElement ele = driver.findElement(locator);
             WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
-            return wait.until(ExpectedConditions.invisibilityOf(ele));
+             boolean bool = wait.until(ExpectedConditions.invisibilityOf(ele));
+            Log.info("wait until element is invisible: "+ ele);
+            return  bool;
         } catch (Exception e) {
             Log.error(e.getMessage());
             return null;
@@ -1110,14 +1124,16 @@ public abstract class CommonFunctions {
     /**
      * @param locator :By locator
      * @return boolean
-     * @MethodName :waitElementToSelected
-     * @Description :To wait until the element is selected and return boolean
+     * MethodName :waitElementToSelected
+     * Description :To wait until the element is selected and return boolean
      */
     public Boolean waitElementToSelected(By locator) {
         try {
             //
             WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
-            return wait.until(ExpectedConditions.elementToBeSelected(locator));
+            boolean bool = wait.until(ExpectedConditions.elementToBeSelected(locator));
+            Log.info("wait until web element is selected : "+ bool);
+            return bool;
         } catch (Exception e) {
             Log.error(e.getMessage());
             return null;
@@ -1127,14 +1143,16 @@ public abstract class CommonFunctions {
     /**
      * @param element :By locator
      * @return boolean
-     * @MethodName :waitElementToSelected
-     * @Description :To wait until the element is selected and return boolean
+     * MethodName :waitElementToSelected
+     * Description :To wait until the element is selected and return boolean
      */
     public Boolean waitElementToSelected(WebElement element) {
         try {
             //
             WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
-            return wait.until(ExpectedConditions.elementToBeSelected(element));
+            boolean bool = wait.until(ExpectedConditions.elementToBeSelected(element));
+            Log.info("wait until element is selected : "+ bool);
+            return bool;
         } catch (Exception e) {
             Log.error(e.getMessage());
             return null;
@@ -1144,19 +1162,21 @@ public abstract class CommonFunctions {
     /**
      * @param elements : List of WebElements
      * @return List<WebElement>
-     * @MethodName :waitListOfAllElementsVisible
-     * @Description :To wait until the list of elements are  visible and return list of elements
+     * MethodName :waitListOfAllElementsVisible
+     * Description :To wait until the list of elements are  visible and return list of elements
      */
     public List<WebElement> waitListOfAllElementsVisible(List<WebElement> elements) {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
-        return wait.until(ExpectedConditions.visibilityOfAllElements(elements));
+        List<WebElement> elementsList = wait.until(ExpectedConditions.visibilityOfAllElements(elements));
+        Log.info("wait until list of web elements are visible");
+        return elementsList;
     }
 
     /**
      * @param locator : locator is used to identify List of WebElements
      * @return List<WebElement>
-     * @MethodName :waitListOfAllElementsVisible
-     * @Description :To wait until the list of elements are  visible and return list of elements
+     * MethodName :waitListOfAllElementsVisible
+     * Description :To wait until the list of elements are  visible and return list of elements
      */
     public List<WebElement> waitListOfAllElementsVisible(By locator) {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
@@ -1167,8 +1187,8 @@ public abstract class CommonFunctions {
     /**
      * @param locator : locator
      * @return boolean
-     * @MethodName : isListOFElementsDisplayedOnScreen
-     * @Description : it's used to identify the list of web elements isDisplayed and return boolean
+     * MethodName : isListOFElementsDisplayedOnScreen
+     * Description : it's used to identify the list of web elements isDisplayed and return boolean
      */
     public boolean isListOFElementsDisplayedOnScreen(By locator) {
 
@@ -1178,6 +1198,7 @@ public abstract class CommonFunctions {
             List<WebElement> weList = driver.findElements(locator);
             if (weList.size() > 0) {
                 blnDisplay = true;
+                Log.info("List of web elements displayed on the screen");
             }
         } catch (Exception e) {
             Log.error(e.getMessage());
@@ -1188,8 +1209,8 @@ public abstract class CommonFunctions {
     /**
      * @param locator : By locator
      * @param text    :String text
-     * @MethodName :typeFilteredValue
-     * @Description :To enter text in the elementLocator
+     * MethodName :typeFilteredValue
+     * Description :To enter text in the elementLocator
      */
     public void typeFilteredValue(By locator, String text) {
         enterText(locator, text);
@@ -1201,8 +1222,8 @@ public abstract class CommonFunctions {
      * @param text     : String text to enter
      * @param locator  : By locator is used to find web element
      * @param locator2 : By locator2 is used to find web element
-     * @MethodName : typeValueAndClickOnScreen
-     * @Description :Enter text and click on screen
+     * MethodName : typeValueAndClickOnScreen
+     * Description :Enter text and click on screen
      */
 
     public void typeValueAndClickOnScreen(By locator, By locator2, String text) {
@@ -1214,8 +1235,8 @@ public abstract class CommonFunctions {
     /**
      * @param locator : By locator
      * @param text    : String text
-     * @MethodName :selectDropDownVisibleText
-     * @Description : it's used to select the dropdown by using visible text
+     * MethodName :selectDropDownVisibleText
+     * Description : it's used to select the dropdown by using visible text
      */
     public void selectDropDownVisibleText(By locator, String text) {
 
@@ -1227,8 +1248,8 @@ public abstract class CommonFunctions {
     /**
      * @param element : web element
      * @param text    : String text
-     * @MethodName :selectDropDownVisibleText
-     * @Description : it's used to select the dropdown by using visible text
+     * MethodName :selectDropDownVisibleText
+     * Description : it's used to select the dropdown by using visible text
      */
     public void selectDropDownVisibleText(WebElement element, String text) {
         selectOption(element).selectByVisibleText(text);
@@ -1238,8 +1259,8 @@ public abstract class CommonFunctions {
     /**
      * @param element : web element
      * @return Select class
-     * @MethodName : selectOption
-     * @Description : it's used to create section class object
+     * MethodName : selectOption
+     * Description : it's used to create section class object
      */
     private Select selectOption(WebElement element) {
         return new Select(element);
@@ -1248,8 +1269,8 @@ public abstract class CommonFunctions {
     /**
      * @param locator : By locator
      * @param value   : String text
-     * @MethodName : selectDropDownByValue Method
-     * @Description : To select the list by value
+     * MethodName : selectDropDownByValue Method
+     * Description : To select the list by value
      */
     public void selectDropDownByValue(By locator, String value) {
 
@@ -1261,8 +1282,8 @@ public abstract class CommonFunctions {
     /**
      * @param element : WebElement
      * @param value   : String text
-     * @MethodName : selectDropDownByValue Method
-     * @Description : To select the list by value
+     * MethodName : selectDropDownByValue Method
+     * Description : To select the list by value
      */
     public void selectDropDownByValue(WebElement element, String value) {
         selectOption(element).selectByValue(value);
@@ -1272,8 +1293,8 @@ public abstract class CommonFunctions {
     /**
      * @param locator : By locator
      * @param index   : int index
-     * @MethodName : selectDropDownValueByIndex Method
-     * @Description :To select the dropdown list by index
+     * MethodName : selectDropDownValueByIndex Method
+     * Description :To select the dropdown list by index
      */
     public void selectDropDownValueByIndex(By locator, int index) {
         WebElement element = driver.findElement(locator);
@@ -1285,8 +1306,8 @@ public abstract class CommonFunctions {
     /**
      * @param element : Web element
      * @param index   : int index
-     * @MethodName : selectDropDownValueByIndex Method
-     * @Description :To select the dropdown list by index
+     * MethodName : selectDropDownValueByIndex Method
+     * Description :To select the dropdown list by index
      */
     public void selectDropDownValueByIndex(WebElement element, int index) {
         selectOption(element).selectByIndex(index);
@@ -1296,8 +1317,8 @@ public abstract class CommonFunctions {
     /**
      * @param locator :By locator
      * @return String
-     * @MethodName :getSelectedValue Method
-     * @Description :To get the value selected in a dropdown
+     * MethodName :getSelectedValue Method
+     * Description :To get the value selected in a dropdown
      */
     public String getSelectedValue(By locator) {
         String selected;
@@ -1310,8 +1331,8 @@ public abstract class CommonFunctions {
     /**
      * @param element : web element
      * @return String
-     * @MethodName :getSelectedValue Method
-     * @Description :To get the value selected in a dropdown
+     * MethodName :getSelectedValue Method
+     * Description :To get the value selected in a dropdown
      */
     public String getSelectedValue(WebElement element) {
         String selected;
@@ -1322,8 +1343,8 @@ public abstract class CommonFunctions {
 
     /**
      * @param locator :By locator
-     * @MethodName :pressTab
-     * @Description :To send a TAB key
+     * MethodName :pressTab
+     * Description :To send a TAB key
      */
     public void pressTab(By locator) {
         WebElement element = waitUntilVisible(locator, OBJ_SYNC_TIME);
@@ -1333,8 +1354,8 @@ public abstract class CommonFunctions {
 
     /**
      * @param element : web element
-     * @MethodName :pressTab
-     * @Description :To send a TAB key
+     * MethodName :pressTab
+     * Description :To send a TAB key
      */
     public void pressTab(@NotNull WebElement element) {
         element.sendKeys(Keys.TAB);
@@ -1344,8 +1365,8 @@ public abstract class CommonFunctions {
     /**
      * @param locator :By locator
      * @return string
-     * @MethodName :getLocatorName
-     * @Description :To get the locator key
+     * MethodName :getLocatorName
+     * Description :To get the locator key
      */
     public String getLocatorName(By locator) {
         return locator.toString();
@@ -1353,8 +1374,8 @@ public abstract class CommonFunctions {
 
     /**
      * @param locator : By locator
-     * @MethodName :clickRadioButton
-     * @Description :To click on a radio button once visible
+     * MethodName :clickRadioButton
+     * Description :To click on a radio button once visible
      */
     public void clickRadioBtn(By locator) {
         WebElement element = waitUntilVisible(locator, OBJ_SYNC_TIME);
@@ -1364,8 +1385,8 @@ public abstract class CommonFunctions {
 
     /**
      * @param element : web Element
-     * @MethodName :clickRadioButton
-     * @Description :To click on a radio button once visible
+     * MethodName :clickRadioButton
+     * Description :To click on a radio button once visible
      */
     public void clickRadioBtn(WebElement element) {
         waitUntilVisibleElement(element, OBJ_SYNC_TIME);
@@ -1375,8 +1396,8 @@ public abstract class CommonFunctions {
 
     /**
      * @param locator : By locator
-     * @MethodName :clickElement Method
-     * @Description :To click on an element immediately
+     * MethodName :clickElement Method
+     * Description :To click on an element immediately
      */
     public void clickElementFast(By locator) {
         try {
@@ -1390,8 +1411,8 @@ public abstract class CommonFunctions {
 
     /**
      * @param element : web element
-     * @MethodName :clickElement Method
-     * @Description :To click on an element immediately
+     * MethodName :clickElement Method
+     * Description :To click on an element immediately
      */
     public void clickElementFast(WebElement element) {
         try {
@@ -1406,14 +1427,16 @@ public abstract class CommonFunctions {
     /**
      * @param locator : By locator
      * @return boolean
-     * @MethodName : isElementEnabled Method
-     * @Description : To check if the element is enabled and return true if enabled
+     * MethodName : isElementEnabled Method
+     * Description : To check if the element is enabled and return true if enabled
      */
     public boolean isElementEnabled(By locator) {
         try {
             waitUntilVisible(locator, 20);
             WebElement element = driver.findElement(locator);
-            return element.isEnabled();
+            boolean bool = element.isEnabled();
+            Log.info("element is enabled "  + element);
+            return bool;
         } catch (Exception e) {
 
             return false;
@@ -1423,13 +1446,15 @@ public abstract class CommonFunctions {
     /**
      * @param element : web Element
      * @return boolean
-     * @MethodName : isElementEnabled Method
-     * @Description : To check if the element is enabled and return true if enabled
+     * MethodName : isElementEnabled Method
+     * Description : To check if the element is enabled and return true if enabled
      */
     public boolean isElementEnabled(WebElement element) {
         try {
             waitUntilVisible(element, 20);
-            return element.isEnabled();
+            boolean bool = element.isEnabled();
+            Log.info("element is enabled "  + element);
+            return bool;
         } catch (Exception e) {
             Log.error(element.toString() + " is not enabled");
             return false;
@@ -1439,8 +1464,8 @@ public abstract class CommonFunctions {
     /**
      * @param locator :By locator
      * @return int
-     * @MethodName :getListSize Method
-     * @Description :To get the size of the list and return list size
+     * MethodName :getListSize Method
+     * Description :To get the size of the list and return list size
      */
     public int getListSize(By locator) {
         return driver.findElements(locator).size();
@@ -1448,8 +1473,9 @@ public abstract class CommonFunctions {
 
     /**
      * @param locator :By locator
-     * @MethodName :getElementList Method
-     * @Description :To get the list of elements and return web element list
+     * MethodName :getElementList Method
+     * Description :To get the list of elements and return web element list
+     * @return : list of web elements
      */
     public List<WebElement> getElementList(By locator) {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));
@@ -1463,8 +1489,8 @@ public abstract class CommonFunctions {
     /**
      * @param locator :By locator
      * @return boolean
-     * @MethodName :verifyElementPresent
-     * @Description :To verify if an element is present and return boolean value
+     * MethodName :verifyElementPresent
+     * Description :To verify if an element is present and return boolean value
      */
     public boolean verifyElementPresent(By locator) {
         try {
@@ -1485,8 +1511,8 @@ public abstract class CommonFunctions {
     /**
      * @param element : web element
      * @return boolean
-     * @MethodName :verifyElementPresent
-     * @Description :To verify if an element is present and return boolean value
+     * MethodName :verifyElementPresent
+     * Description :To verify if an element is present and return boolean value
      */
     public boolean verifyElementPresent(WebElement element) {
         try {
@@ -1506,8 +1532,8 @@ public abstract class CommonFunctions {
     /**
      * @param locator : By locator
      * @return string
-     * @MethodName : getText
-     * @Description : To retrieve text from web element
+     * MethodName : getText
+     * Description : To retrieve text from web element
      */
     public String getText(By locator) {
         try {
@@ -1522,8 +1548,8 @@ public abstract class CommonFunctions {
     /**
      * @param element : web element
      * @return string
-     * @MethodName :getText
-     * @Description :To retrieve text from web element
+     * MethodName :getText
+     * Description :To retrieve text from web element
      */
     public String getText(WebElement element) {
 
@@ -1539,8 +1565,8 @@ public abstract class CommonFunctions {
     /**
      * @param locator :By locator
      * @return string
-     * @MethodName :getText Method
-     * @Description :To retrieve text from web element
+     * MethodName :getText Method
+     * Description :To retrieve text from web element
      */
     public String getContentDescription(By locator) {
         try {
@@ -1554,8 +1580,8 @@ public abstract class CommonFunctions {
      * @param locator   : By locator
      * @param Attribute : String Attribute
      * @return string
-     * @MethodName : getAttribute
-     * @Description : To retrieve attribute from web element
+     * MethodName : getAttribute
+     * Description : To retrieve attribute from web element
      */
     public String getAttribute(By locator, String Attribute) {
         try {
@@ -1569,8 +1595,9 @@ public abstract class CommonFunctions {
     /**
      * @param id        : By locator
      * @param attribute : String Attribute
-     * @MethodName : getAttributeJSByID Method
-     * @Description : To retrieve text from web element
+     * MethodName : getAttributeJSByID Method
+     * Description : To retrieve text from web element
+     * @return string
      */
     public String getAttributeJSByID(String id, String attribute) {
         try {
@@ -1586,8 +1613,8 @@ public abstract class CommonFunctions {
 
     /**
      * @param locator :By locator
-     * @MethodName : switchFrame
-     * @Description : Switch to the frame by locator
+     * MethodName : switchFrame
+     * Description : Switch to the frame by locator
      */
     public void switchFrame(By locator) {
         try {
@@ -1600,8 +1627,8 @@ public abstract class CommonFunctions {
 
     /**
      * @param element :By locator
-     * @MethodName : switchFrame
-     * @Description : Switch to the frame by locator
+     * MethodName : switchFrame
+     * Description : Switch to the frame by locator
      */
     public void switchFrame(WebElement element) {
         try {
@@ -1613,8 +1640,8 @@ public abstract class CommonFunctions {
     }
 
     /**
-     * @MethodName :switchDefaultFrame
-     * @Description :Switch to default frame
+     * MethodName :switchDefaultFrame
+     * Description :Switch to default frame
      */
     public void switchDefaultFrame() {
         try {
@@ -1626,8 +1653,8 @@ public abstract class CommonFunctions {
     }
 
     /**
-     * @MethodName :switchToActiveElement
-     * @Description :Switch to active element
+     * MethodName :switchToActiveElement
+     * Description :Switch to active element
      */
     public void switchToActiveElement() {
         driver.switchTo().activeElement();
@@ -1636,8 +1663,8 @@ public abstract class CommonFunctions {
 
     /**
      * @return : string
-     * @MethodName :getPageSource
-     * @Description : it's uses to get the page source
+     * MethodName :getPageSource
+     * Description : it's uses to get the page source
      */
     public String getPageSource() {
         try {
@@ -1652,8 +1679,8 @@ public abstract class CommonFunctions {
      * @param locator : By locator
      * @param data    : String data
      * @return boolean
-     * @MethodName :compareTextWithIgnoreCase
-     * @Description :To Compare two strings
+     * MethodName :compareTextWithIgnoreCase
+     * Description :To Compare two strings
      */
     public boolean compareTextWithIgnoreCase(By locator, String data) {
         try {
@@ -1672,8 +1699,8 @@ public abstract class CommonFunctions {
      * @param element : web element
      * @param data    : String data
      * @return boolean
-     * @MethodName :compareTextWithIgnoreCase
-     * @Description :To Compare two strings
+     * MethodName :compareTextWithIgnoreCase
+     * Description :To Compare two strings
      */
     public boolean compareTextWithIgnoreCase(WebElement element, String data) {
         try {
@@ -1690,8 +1717,8 @@ public abstract class CommonFunctions {
      * @param locator : By locator
      * @param data    : String
      * @return boolean
-     * @MethodName : verifyTextAfterRemoveSpecialCharacter
-     * @Description : it's compare text with removing of the special character
+     * MethodName : verifyTextAfterRemoveSpecialCharacter
+     * Description : it's compare text with removing of the special character
      */
     public boolean verifyTextAfterRemoveSpecialCharacter(By locator, String data) {
         try {
@@ -1705,9 +1732,10 @@ public abstract class CommonFunctions {
     }
 
     /**
-     * @MethodName : compareText
-     * @Description :To Compare two strings Input
-     * Parameters :String actual, String expected//// By Nirmal
+     * MethodName : compareText
+     * Description :To Compare two strings Input
+     * @param actual: string
+     * @param expected: string
      */
     public boolean compareText(String actual, String expected) throws IOException {
         try {
@@ -1725,8 +1753,8 @@ public abstract class CommonFunctions {
      * @param locator :By locator
      * @param data    String data
      * @return boolean
-     * @MethodName :verifyTitleAttributeText Method
-     * @Description :To get the title attribute and compare it with a string
+     * MethodName :verifyTitleAttributeText Method
+     * Description :To get the title attribute and compare it with a string
      */
     public boolean verifyTitleAttributeText(By locator, String data) {
 
@@ -1741,8 +1769,8 @@ public abstract class CommonFunctions {
     }
 
     /**
-     * @MethodName :sleep Method
-     * @Description :To wait for few seconds
+     * MethodName :sleep Method
+     * Description :To wait for few seconds
      * @param timeOutInSeconds  :int timeOutInSeconds
      */
     public void sleep(int timeOutInSeconds) {
@@ -1755,8 +1783,8 @@ public abstract class CommonFunctions {
     }
 
     /**
-     * @MethodName :responseTime Method
-     * @Description :To calculate the response time and return resTime
+     * MethodName :responseTime Method
+     * Description :To calculate the response time and return resTime
      * @param startTime  :long startTime
      * @param endTime long endTime
      * @return long
@@ -1767,8 +1795,8 @@ public abstract class CommonFunctions {
     }
 
     /**
-     * @MethodName : removeLastChar Method
-     * @Description :To remove the last character from a string and return the string
+     * MethodName : removeLastChar Method
+     * Description :To remove the last character from a string and return the string
      * @param str : String
      * @return string
      */
@@ -1781,7 +1809,7 @@ public abstract class CommonFunctions {
 
     /**
      * Method Name :txtClearValue Method
-     * @Description :To clear the text in the locator
+     * Description :To clear the text in the locator
      * @param locator : locator
      */
     public void txtClearValue(By locator) {
@@ -1792,7 +1820,7 @@ public abstract class CommonFunctions {
     }
     /**
      * Method Name :txtClearValue Method
-     * @Description :To clear the text in the locator
+     * Description :To clear the text in the locator
      * @param element : web element
      */
     public void txtClearValue(WebElement element) {
@@ -1803,8 +1831,8 @@ public abstract class CommonFunctions {
     }
 
     /**
-     * @MethodName : scrollViewElement
-     * @Description : it's used to scroll to the element to view
+     * MethodName : scrollViewElement
+     * Description : it's used to scroll to the element to view
      * @param element : web element
      */
     public void scrollViewElement(WebElement element) {
@@ -1820,7 +1848,7 @@ public abstract class CommonFunctions {
     }
 
     /**
-     * @MethodName : validateTableCol
+     * MethodName : validateTableCol
      * @param sTableXpath :
      * @param Column :
      * @param sOptions : string
@@ -1841,10 +1869,10 @@ public abstract class CommonFunctions {
                             .trim();
                     // svalFull=svalFull+"\n"+sVal;
                     if (sArray[iRow - 1].matches(sVal)) {
-                        System.out.println(iRow + "\t\t" + sArray[iRow - 1] + "\t\t" + sVal + "\t\t PASS");
+                        Log.info(iRow + "\t\t" + sArray[iRow - 1] + "\t\t" + sVal + "\t\t PASS");
                         flag = true;
                     } else {
-                        System.err.println(iRow + "\t\t" + sArray[iRow - 1] + "\t\t" + sVal + "\t\t FAIL");
+                       Log.info(iRow + "\t\t" + sArray[iRow - 1] + "\t\t" + sVal + "\t\t FAIL");
 
                         return false;
                     }
@@ -1861,8 +1889,8 @@ public abstract class CommonFunctions {
     }
 
     /**
-     * @MethodName :validateChkMultiple
-     * @Description :validate the whether check box displayed in a table has multiselect option
+     * MethodName :validateChkMultiple
+     * Description :validate the whether check box displayed in a table has multiselect option
      * Input Parameters :driver,table path till tobody, int column to validate
      */
     public static boolean validateChkMultiple( String sTableXpath, int Column) {
@@ -2026,8 +2054,6 @@ public abstract class CommonFunctions {
     /**********************************************************************************************
      * Method Name :validateListSingle Method Description :validate the whether
      * list box is displayed for multiple options
-     *
-     *
      * Input Parameters :driver,list name, int option - 1(single) and 2
      * (multiple)
      ************************************************************************************************/
@@ -2060,16 +2086,16 @@ public abstract class CommonFunctions {
     }
 
     /**
-     * @MethodName : browserClose
-     * @Description : it's closes active window
+     * MethodName : browserClose
+     * Description : it's closes active window
      */
     public void browserClose() {
         driver.close();
     }
 
     /**
-     * @MethodName : browserKill
-     * @Description : it's used to kill browsers and closes all tabs/windows
+     * MethodName : browserKill
+     * Description : it's used to kill browsers and closes all tabs/windows
      */
     public void browserKill() {
         driver.quit();
@@ -2077,8 +2103,8 @@ public abstract class CommonFunctions {
     }
 
     /**
-     * @MethodName : validateRadioSingle Method
-     * @Description :validate the whether the radio button displayed has multiple option or single option Input
+     * MethodName : validateRadioSingle Method
+     * Description :validate the whether the radio button displayed has multiple option or single option Input
      * @param locator  : Locator
      * @return boolean
      */
@@ -2111,8 +2137,8 @@ public abstract class CommonFunctions {
 
 
     /**
-     * @MethodName :compareTwoValues
-     * @Description : To compare two string values
+     * MethodName :compareTwoValues
+     * Description : To compare two string values
      */
 
     public boolean compareTwoValues(String elementText, String errorMessage) {
@@ -2121,8 +2147,8 @@ public abstract class CommonFunctions {
 
 
     /**
-     * @MethodName :generateRandomIntValue
-     * @Description : To generate a random integer value based upon the two given input values
+     * MethodName :generateRandomIntValue
+     * Description : To generate a random integer value based upon the two given input values
      * @param min : minimum value
      * @param max : maximum value
      * @return integer
@@ -2134,8 +2160,8 @@ public abstract class CommonFunctions {
     }
 
     /**
-     * @MethodName :generateRandomValue
-     * @Description : To generate a random integer value based upon the given input parameter
+     * MethodName :generateRandomValue
+     * Description : To generate a random integer value based upon the given input parameter
      * @param num : int number
      * @return integer
      */
@@ -2146,8 +2172,8 @@ public abstract class CommonFunctions {
     }
 
     /**
-     * @MethodName :pressTabByAction
-     * @Description : To press on TAB key using action class
+     * MethodName :pressTabByAction
+     * Description : To press on TAB key using action class
      */
 
     public void pressTabByAction() {
@@ -2166,8 +2192,8 @@ public abstract class CommonFunctions {
     }
 
     /**
-     * @MethodName : getFontSize
-     * @Description : Return Font Size for locator
+     * MethodName : getFontSize
+     * Description : Return Font Size for locator
      * @param locator : locator
      * @return string
      */
@@ -2177,8 +2203,8 @@ public abstract class CommonFunctions {
     }
 
     /**
-     * @MethodName : getFontSize
-     * @Description : Return Font Size for web element
+     * MethodName : getFontSize
+     * Description : Return Font Size for web element
      * @param element : web element
      * @return string
      */
@@ -2187,8 +2213,8 @@ public abstract class CommonFunctions {
     }
 
     /**
-     * @MethodName : getFontColor
-     * @Description : Return Font Color for the given locator
+     * MethodName : getFontColor
+     * Description : Return Font Color for the given locator
      * @param locator : locator
      * @return string font color
      */
@@ -2198,8 +2224,8 @@ public abstract class CommonFunctions {
     }
 
     /**
-     * @MethodName : getFontColor
-     * @Description : Return Font Color for the given locator
+     * MethodName : getFontColor
+     * Description : Return Font Color for the given locator
      * @param element : web element
      * @return string font color
      */
@@ -2208,8 +2234,8 @@ public abstract class CommonFunctions {
     }
 
     /**
-     * @MethodName : getFontWeight
-     * @Description : Return Font weight for the given locator
+     * MethodName : getFontWeight
+     * Description : Return Font weight for the given locator
      * @param locator : locator
      * @return integer
      */
@@ -2221,8 +2247,8 @@ public abstract class CommonFunctions {
     }
 
     /**
-     * @MethodName : getAttributeValue
-     * @Description : Returns the attribute value of a specific element
+     * MethodName : getAttributeValue
+     * Description : Returns the attribute value of a specific element
      * @param locator  : locator
      * @param attribute : attribute name
      * @return string
@@ -2239,24 +2265,24 @@ public abstract class CommonFunctions {
     }
 
     /**
-     * @MethodName : forwardBrowser
-     * @Description : Forward Browser
+     * MethodName : forwardBrowser
+     * Description : Forward Browser
      */
     public void forwardBrowser() {
         driver.navigate().forward();
     }
 
     /**
-     * @MethodName : NavigateToPreviousPage
-     * @Description : Back to previous page
+     * MethodName : NavigateToPreviousPage
+     * Description : Back to previous page
      */
     public void NavigateToPreviousPage() {
         driver.navigate().back();
     }
 
     /**
-     * @MethodName :isElementDisplayed Method
-     * @Description :To check if the element is displayed and return true if displayed
+     * MethodName :isElementDisplayed Method
+     * Description :To check if the element is displayed and return true if displayed
      * @param locator : locator
      */
     public boolean isElementDisplayed(By locator) {
@@ -2269,8 +2295,8 @@ public abstract class CommonFunctions {
     }
 
     /**
-     * @MethodName : isTextPresentInPageSource
-     * @Description : it's used to check whether the text is present in page source
+     * MethodName : isTextPresentInPageSource
+     * Description : it's used to check whether the text is present in page source
      * @param pageText : pageText
      * @return boolean
      */
@@ -2290,8 +2316,8 @@ public abstract class CommonFunctions {
 
 
     /**
-     * @MethodName :isElementDisplayed_MinWait Method
-     * @Description :To check if the element is displayed and return true if displayed, with minimal wait
+     * MethodName :isElementDisplayed_MinWait Method
+     * Description :To check if the element is displayed and return true if displayed, with minimal wait
      * time of 6 seconds
      * @param locator :By locator
      */
@@ -2315,8 +2341,8 @@ public abstract class CommonFunctions {
     }
 
     /**
-     * @MethodName : getListElementText
-     * @Description : it's used to get the list of elements text
+     * MethodName : getListElementText
+     * Description : it's used to get the list of elements text
      * @param locator : locator
      * @return string
      */
@@ -2335,8 +2361,8 @@ public abstract class CommonFunctions {
     }
 
     /**
-     * @MethodName : getListElementText
-     * @Description : it's used to get the list of elements text
+     * MethodName : getListElementText
+     * Description : it's used to get the list of elements text
      * @param ele : List of web elements
      * @return string
      */
@@ -2354,8 +2380,8 @@ public abstract class CommonFunctions {
     }
 
     /**
-     * @MethodName : trimSpace
-     * @Description : it's used to trim spaces
+     * MethodName : trimSpace
+     * Description : it's used to trim spaces
      * @param text : text
      * @return : string
      */
@@ -2364,8 +2390,8 @@ public abstract class CommonFunctions {
     }
 
     /**
-     * @MethodName : removeSpecialCharters
-     * @Description : it's used to remove special characters in text
+     * MethodName : removeSpecialCharters
+     * Description : it's used to remove special characters in text
      * @param inputParameter : string
      * @return string
      */
@@ -2375,8 +2401,8 @@ public abstract class CommonFunctions {
     }
 
     /**
-     * @MethodName : removeAlphabets
-     * @Description : it's used to remove alphabets from string
+     * MethodName : removeAlphabets
+     * Description : it's used to remove alphabets from string
      * @param inputParameter : parameter
      * @return string
      */
@@ -2385,8 +2411,8 @@ public abstract class CommonFunctions {
     }
 
     /**
-     * @MethodName : currencyStrToDouble
-     * @Description : it's used to currency value to double value
+     * MethodName : currencyStrToDouble
+     * Description : it's used to currency value to double value
      * @param str : string currency value
      * @param currencySym : currency symbol
      * @return double
@@ -2416,8 +2442,8 @@ public abstract class CommonFunctions {
     }
 
     /**
-     * @MethodName : chompDecimal
-     * @Description : it's used to remove decimal value from the string
+     * MethodName : chompDecimal
+     * Description : it's used to remove decimal value from the string
      * @param str string
      * @return string
      */
@@ -2427,8 +2453,8 @@ public abstract class CommonFunctions {
     }
 
     /**
-     * @MethodName : round
-     * @Description : it's used to round the double value based on the number of places given
+     * MethodName : round
+     * Description : it's used to round the double value based on the number of places given
      * @param value : double value
      * @param places : int number of places to round
      * @return double
@@ -2450,8 +2476,8 @@ public abstract class CommonFunctions {
     }
 
     /**
-     * @MethodName : isElementDisplayed
-     * @Description : it's used to check whether element is displayed
+     * MethodName : isElementDisplayed
+     * Description : it's used to check whether element is displayed
      * @param ele : Web element
      * @return boolean
      */
@@ -2460,31 +2486,36 @@ public abstract class CommonFunctions {
     }
 
     /**
-     * @MethodName : isElementSelected
-     * @Description : it's used to check whether the element is selected
+     * MethodName : isElementSelected
+     * Description : it's used to check whether the element is selected
      * @param element : web element
      * @return boolean
      */
     public boolean isElementSelected(@NotNull WebElement element) {
-        return element.isSelected();
+        boolean bool = element.isSelected();
+        Log.info("element " + element + " is selected : "+bool);
+        return bool;
     }
 
     /**
-     * @MethodName : isElementSelected
-     * @Description : it's used to check whether the element is selected
+     * MethodName : isElementSelected
+     * Description : it's used to check whether the element is selected
      * @param locator : locator is used to find web element
      * @return boolean
      */
     public boolean isElementSelected(By locator) {
-        return createWebElement(locator).isSelected();
+        WebElement element = createWebElement(locator);
+        boolean bool = element.isSelected();
+        Log.info("element " + element + " is selected : "+bool);
+        return bool;
     }
 
     public static int counter = 0;
 
 
     /**
-     * @MethodName : switchToPreviewWindow
-     * @Description : it's used to switch to preview window
+     * MethodName : switchToPreviewWindow
+     * Description : it's used to switch to preview window
      */
     public void switchToPreviewWindow() {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
@@ -2498,19 +2529,20 @@ public abstract class CommonFunctions {
             if (!windowHandle.equals(parentWindowHandle)) {
                 childWindowHandle = windowHandle;
                 driver.switchTo().window(windowHandle);
-                driver.manage().window().maximize();
+                Log.info("switch to child window : " + childWindowHandle);
                 break;
             }
         }
     }
 
     /**
-     * @MethodName : switchToParentPage
-     * @Description : it's used to switch from child window to parent window
+     * MethodName : switchToParentPage
+     * Description : it's used to switch from child window to parent window
      */
     public void switchToParentPage() {
         driver.close(); //closing child window
-        driver.switchTo().window(parentWindowHandle); //Control to parent window
+        driver.switchTo().window(parentWindowHandle);//Control to parent window
+        Log.info("switch to parent window");
     }
 
 
@@ -2552,8 +2584,8 @@ public abstract class CommonFunctions {
 
 
     /**
-     * @MethodName : addCookiesToFile
-     * @Description : it's used to add cookies to a file
+     * MethodName : addCookiesToFile
+     * Description : it's used to add cookies to a file
      * @param path : path of the file
      * @param fileName : file name
      */
@@ -2563,9 +2595,10 @@ public abstract class CommonFunctions {
             FileWriter fileWrite = new FileWriter(file);
             BufferedWriter bWrite = new BufferedWriter(fileWrite);
             Set<Cookie> cookies = driver.manage().getCookies();
-
+            Log.info("cookies : " +cookies.toString());
             for (Cookie ck : cookies) {
                 bWrite.write((ck.getName() + ";" + ck.getValue() + ";" + ck.getDomain() + ";" + ck.getPath() + ";" + ck.getExpiry() + ";" + ck.isSecure()));
+                Log.info("cookies added to file : " + fileName);
                 bWrite.newLine();
             }
             bWrite.close();
@@ -2577,8 +2610,8 @@ public abstract class CommonFunctions {
     }
 
     /**
-     * @MethodName : readCookieByFile
-     * @Description : it's used to read the cookie file and into the cookies
+     * MethodName : readCookieByFile
+     * Description : it's used to read the cookie file and into the cookies
      * @param filePath : string file path
      */
     public void readCookieByFile(String filePath) {
@@ -2612,8 +2645,8 @@ public abstract class CommonFunctions {
     }
 
     /**
-     * @MethodName : deselectDropDownByIndex
-     * @Description : it's used to deselect the drop-down by index
+     * MethodName : deselectDropDownByIndex
+     * Description : it's used to deselect the drop-down by index
      * @param element : web element
      * @param index : index value
      */
@@ -2623,8 +2656,8 @@ public abstract class CommonFunctions {
     }
 
     /**
-     * @MethodName : deselectDropDownByValue
-     * @Description : it's used to deselect the drop-down by value
+     * MethodName : deselectDropDownByValue
+     * Description : it's used to deselect the drop-down by value
      * @param element : web element
      * @param value : string value
      */
@@ -2634,8 +2667,8 @@ public abstract class CommonFunctions {
     }
 
     /**
-     * @MethodName : deselectByVisibleText
-     * @Description : it's used to deselect the drop-down by visible text
+     * MethodName : deselectByVisibleText
+     * Description : it's used to deselect the drop-down by visible text
      * @param element : web element
      * @param text : string text
      */
@@ -2645,8 +2678,8 @@ public abstract class CommonFunctions {
     }
 
     /**
-     * @MethodName : deselectDropDownByIndex
-     * @Description : it's used to deselect the drop-down by index
+     * MethodName : deselectDropDownByIndex
+     * Description : it's used to deselect the drop-down by index
      * @param locator : locator is used to find web element
      * @param index : index value
      */
@@ -2657,8 +2690,8 @@ public abstract class CommonFunctions {
     }
 
     /**
-     * @MethodName : deselectDropDownByValue
-     * @Description : it's used to deselect the drop-down by value
+     * MethodName : deselectDropDownByValue
+     * Description : it's used to deselect the drop-down by value
      * @param locator : locator is used to identify web element
      * @param value : string value
      */
@@ -2669,8 +2702,8 @@ public abstract class CommonFunctions {
     }
 
     /**
-     * @MethodName : deselectByVisibleText
-     * @Description : it's used to deselect the drop-down by visible text
+     * MethodName : deselectByVisibleText
+     * Description : it's used to deselect the drop-down by visible text
      * @param locator : locator is used to identify web element
      * @param text : string text
      */
@@ -2681,8 +2714,8 @@ public abstract class CommonFunctions {
     }
 
     /**
-     * @MethodName : deselectAllOptions
-     * @Description : it's used to deselect the all options from dropdown
+     * MethodName : deselectAllOptions
+     * Description : it's used to deselect the all options from dropdown
      * @param element : web element
      */
     public void deselectAllOptions(WebElement element) {
@@ -2691,8 +2724,8 @@ public abstract class CommonFunctions {
     }
 
     /**
-     * @MethodName : deselectAllOptions
-     * @Description : it's used to deselect the all options from dropdown
+     * MethodName : deselectAllOptions
+     * Description : it's used to deselect the all options from dropdown
      * @param locator : locator is used to identify web element
      */
     public void deselectAllOptions(By locator) {
@@ -2702,8 +2735,8 @@ public abstract class CommonFunctions {
     }
 
     /**
-     * @MethodName : captureScreenshot
-     * @Description : it's used to capture screenshot
+     * MethodName : captureScreenshot
+     * Description : it's used to capture screenshot
      * @param screenshotName : screenshot name
      * @param result : test case result
      * @return : file path as a string
@@ -2727,9 +2760,9 @@ public abstract class CommonFunctions {
     }
 
     /**
-     * @MethodName : getCurrentUrl
-     * @Description : it's showing
-     * @return
+     * MethodName : getCurrentUrl
+     * Description : it's showing
+     * @return string
      */
     public String getCurrentUrl() {
         return driver.getCurrentUrl();
@@ -2737,8 +2770,8 @@ public abstract class CommonFunctions {
 
 
     /**
-     * @MethodName : getTitle
-     * @Description : it's used to get the title of the page
+     * MethodName : getTitle
+     * Description : it's used to get the title of the page
      * @return title as string
      */
     public String getTitle() {
@@ -2746,8 +2779,8 @@ public abstract class CommonFunctions {
     }
 
     /**
-     * @MethodName : clickNavigateToNewPage
-     * @Description : it's used to click on element and navigate to new page
+     * MethodName : clickNavigateToNewPage
+     * Description : it's used to click on element and navigate to new page
      * @param object Object of new page to navigate
      * @param element web element of the page
      * @return Object of new page
@@ -2759,8 +2792,8 @@ public abstract class CommonFunctions {
     }
 
     /**
-     * @MethodName : clickNavigateToNewPage
-     * @Description : it's used to click on element and navigate to new page
+     * MethodName : clickNavigateToNewPage
+     * Description : it's used to click on element and navigate to new page
      * @param object Object of new page to navigate
      * @param locator web element of the page
      * @return Object of new page
@@ -2771,9 +2804,14 @@ public abstract class CommonFunctions {
         return object;
     }
 
-    public void uploadFileUsingRobotClass(String string) {
+    /**
+     * MethodName : uploadFileUsingRobotClass
+     * Description : upload file from windows using robot class
+     * @param filePath : string
+     */
+    public void uploadFileUsingRobotClass(String filePath) {
         try {
-            StringSelection stringSelection = new StringSelection(string);
+            StringSelection stringSelection = new StringSelection(filePath);
             Toolkit.getDefaultToolkit().getSystemClipboard().setContents(stringSelection, null);
 
             Robot robot = new Robot();//robot object is created
@@ -2792,6 +2830,12 @@ public abstract class CommonFunctions {
         }
     }
 
+    /**
+     * MethodName : clickFromListOfElements
+     * Description : it's used to click on the list of web elements
+     * @param elements : list of web elements
+     * @param text : text to identify to click list of elements;
+     */
     public void clickFromListOfElements (List<WebElement> elements, String text) {
         for (WebElement ele : elements) {
             if (ele.getText().trim().equals(text.trim())) {
@@ -2803,6 +2847,12 @@ public abstract class CommonFunctions {
         }
     }
 
+    /**
+     * MethodName :  clickFromListOfElements
+     * Description : it's used to click on the list of web elements
+     * @param locator : string locator of list of elements
+     * @param text : text to identify to click list of elements;
+     */
     public void clickFromListOfElements (By locator, String text) {
         List<WebElement> elements = driver.findElements(locator);
         for (WebElement ele : elements) {
@@ -2814,6 +2864,12 @@ public abstract class CommonFunctions {
         }
     }
 
+    /**
+     * MethodName : init_properties
+     * Description : it's used to read properties from a file
+     * @param path : String file path
+     * @return : properties
+     */
     public static Properties init_properties(String path) {
 
         Properties prop = new Properties();

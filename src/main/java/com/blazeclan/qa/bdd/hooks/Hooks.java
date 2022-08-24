@@ -21,8 +21,6 @@ public class Hooks extends CommonFunctions {
             waitForLoading();
     }
 
-
-
     @AfterStep
     public void after(Scenario scenario) throws IOException {
         File fi = new File(captureScreenshot(scenario.getName(), "stepScreenshot"));

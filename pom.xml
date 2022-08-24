@@ -22,10 +22,19 @@
     <webDriverManager-version>5.2.3</webDriverManager-version>
     <poi-ooxml-version>5.2.2</poi-ooxml-version>
     <allure-testng-version>2.18.1</allure-testng-version>
-    <jakarta.mail-api-version>1.6.3</jakarta.mail-api-version>
+<!--    <jakarta.mail-api-version>1.6.3</jakarta.mail-api-version>-->
     <extentreports-version>5.0.9</extentreports-version>
     <cucumber-java-version>7.6.0</cucumber-java-version>
     <cucumber-testng-version>7.6.0</cucumber-testng-version>
+    <poi-version>5.2.2</poi-version>
+    <lombok-version>1.18.24</lombok-version>
+    <jsoup-version>1.15.2</jsoup-version>
+    <commons-version>2.11.0</commons-version>
+    <cucumber-reporting-version>5.7.2</cucumber-reporting-version>
+    <extentreports-cucumber7-adapter-version>1.7.0</extentreports-cucumber7-adapter-version>
+    <cucumber-picocontainer-version>7.6.0</cucumber-picocontainer-version>
+    <javax.mail-version>1.6.2</javax.mail-version>
+    <allure-cucumber-jvm-version>2.19.0</allure-cucumber-jvm-version>
   </properties>
 
   <dependencies>
@@ -47,21 +56,21 @@
     <dependency>
       <groupId>org.apache.poi</groupId>
       <artifactId>poi</artifactId>
-      <version>5.2.2</version>
+      <version>${poi-version}</version>
     </dependency>
 
     <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
     <dependency>
       <groupId>org.projectlombok</groupId>
       <artifactId>lombok</artifactId>
-      <version>1.18.24</version>
+      <version>${lombok-version}</version>
       <scope>provided</scope>
     </dependency>
     <!-- https://mvnrepository.com/artifact/org.jsoup/jsoup -->
     <dependency>
       <groupId>org.jsoup</groupId>
       <artifactId>jsoup</artifactId>
-      <version>1.15.2</version>
+      <version>${jsoup-version}</version>
     </dependency>
 
 
@@ -69,7 +78,7 @@
     <dependency>
       <groupId>commons-io</groupId>
       <artifactId>commons-io</artifactId>
-      <version>2.11.0</version>
+      <version>${commons-version}</version>
     </dependency>
 
     <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
@@ -83,7 +92,7 @@
     <dependency>
       <groupId>net.masterthought</groupId>
       <artifactId>cucumber-reporting</artifactId>
-      <version>5.7.2</version>
+      <version>${cucumber-reporting-version}</version>
     </dependency>
 
     <!-- https://mvnrepository.com/artifact/org.testng/testng -->
@@ -118,16 +127,23 @@
       <artifactId>allure-testng</artifactId>
       <version>${allure-testng-version}</version>
     </dependency>
+    <!-- https://mvnrepository.com/artifact/io.qameta.allure/allure-cucumber-jvm -->
+    <dependency>
+      <groupId>io.qameta.allure</groupId>
+      <artifactId>allure-cucumber-jvm</artifactId>
+      <version>${allure-cucumber-jvm-version}</version>
+    </dependency>
+
     <dependency>
       <groupId>tech.grasshopper</groupId>
       <artifactId>extentreports-cucumber7-adapter</artifactId>
-      <version>1.7.0</version>
+      <version>${extentreports-cucumber7-adapter-version}</version>
     </dependency>
     <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-picocontainer -->
     <dependency>
       <groupId>io.cucumber</groupId>
       <artifactId>cucumber-picocontainer</artifactId>
-      <version>7.6.0</version>
+      <version>${cucumber-picocontainer-version}</version>
       <scope>test</scope>
     </dependency>
 
@@ -146,7 +162,7 @@
     <dependency>
       <groupId>com.sun.mail</groupId>
       <artifactId>javax.mail</artifactId>
-      <version>1.6.2</version>
+      <version>${javax.mail-version}</version>
     </dependency>
 
     <!-- https://mvnrepository.com/artifact/com.aventstack/extentreports -->
@@ -159,7 +175,7 @@
     <dependency>
       <groupId>org.testng</groupId>
       <artifactId>testng</artifactId>
-      <version>7.6.1</version>
+      <version>${testng-version}</version>
       <scope>compile</scope>
     </dependency>
     <dependency>

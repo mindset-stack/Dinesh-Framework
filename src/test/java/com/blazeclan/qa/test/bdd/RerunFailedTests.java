@@ -6,6 +6,7 @@ import com.blazeclan.qa.reports.CucumberExtentReports;
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 import org.testng.annotations.AfterSuite;
+import org.testng.annotations.DataProvider;
 
 import java.util.Properties;
 
@@ -25,4 +26,10 @@ public class RerunFailedTests extends AbstractTestNGCucumberTests {
 //        String fileName = EmailUtil.prop.getProperty("FileName");
 //        EmailUtil.sendMail(filePath, fileName);
     }
+
+//    @Override
+//    @DataProvider(parallel = true)
+//    public Object[][] scenarios() {
+//        return super.scenarios();
+//    }
 }
