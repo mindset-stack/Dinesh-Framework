@@ -3,11 +3,9 @@ package com.blazeclan.qa.test.bdd;
 import com.blazeclan.qa.base.CommonFunctions;
 import com.blazeclan.qa.constants.IConstants;
 import com.blazeclan.qa.reports.CucumberExtentReports;
-import com.blazeclan.qa.utility.EmailUtil;
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 import org.testng.annotations.AfterSuite;
-import org.testng.annotations.DataProvider;
 
 import java.util.Properties;
 
@@ -17,7 +15,8 @@ import java.util.Properties;
                 "json:target/MyReports/cucumber.json", "testng:target/MyReports/report.xml",
         "html:target/cucumber-html-report.html","rerun:target/failedRerun.txt"},
         monochrome = true,
-//        dryRun = true,
+//        tags = "@Group",
+//        dryRun = false,
         glue = {"com.blazeclan.qa.bdd.stepsdefinition","com.blazeclan.qa.bdd.hooks"})
 public class TestRunner extends AbstractTestNGCucumberTests {
     @AfterSuite
@@ -29,9 +28,9 @@ public class TestRunner extends AbstractTestNGCucumberTests {
 //        EmailUtil.sendMail(filePath, fileName);
     }
 
-//    @Override
-//    @DataProvider(parallel = true)
-//    public Object[][] scenarios() {
-//        return super.scenarios();
-//    }
+////    @Override
+////    @DataProvider(parallel = true)
+////    public Object[][] scenarios() {
+////        return super.scenarios();
+////    }
 }

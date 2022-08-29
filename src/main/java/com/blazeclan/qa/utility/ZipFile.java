@@ -1,8 +1,5 @@
 package com.blazeclan.qa.utility;
 
-//Import all needed packages
-import com.blazeclan.qa.base.CommonFunctions;
-
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;

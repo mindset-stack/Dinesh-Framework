@@ -54,7 +54,6 @@ public abstract class CommonFunctions {
      * Description : this method open a selected browser and open an application in it
      */
     public static void invokeApplicationURL(String browserName, String url) {
-
         driver = CrossBrowser.selectDriver(browserName);
         Log.info("Open " + browserName + " browser");
         driver.get(url);
@@ -1712,7 +1711,6 @@ public abstract class CommonFunctions {
             return false;
         }
     }
-
     /**
      * @param locator : By locator
      * @param data    : String
@@ -1847,142 +1845,12 @@ public abstract class CommonFunctions {
         }
     }
 
-    /**
-     * MethodName : validateTableCol
-     * @param sTableXpath :
-     * @param Column :
-     * @param sOptions : string
-     * @return : boolean  value
-     */
-    public boolean validateTable(String sTableXpath, int Column, String sOptions) {
-        boolean flag = false;
-        String sValFull = "";
-        String sVal = null;
-        if (driver != null && !sTableXpath.isEmpty()) {
-            int iTotalRow, iRow;
-            driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(1));
-            String[] sArray = sOptions.split(",", 0);
-            iTotalRow = totalNoRow(By.xpath(sTableXpath + "/tr"));
-            if (iTotalRow != -1 && sArray.length == iTotalRow) {
-                for (iRow = 1; iRow <= iTotalRow; iRow++) {
-                    sVal = driver.findElement(By.xpath(sTableXpath + "/tr[" + iRow + "]/td[" + Column + "]")).getText()
-                            .trim();
-                    // svalFull=svalFull+"\n"+sVal;
-                    if (sArray[iRow - 1].matches(sVal)) {
-                        Log.info(iRow + "\t\t" + sArray[iRow - 1] + "\t\t" + sVal + "\t\t PASS");
-                        flag = true;
-                    } else {
-                       Log.info(iRow + "\t\t" + sArray[iRow - 1] + "\t\t" + sVal + "\t\t FAIL");
-
-                        return false;
-                    }
-                    sValFull = String.format("%s%s", sVal, sValFull);
-                }
-
-            } else {
-
-                return false;
-            }
-        }
-        return flag;
-
-    }
-
-    /**
-     * MethodName :validateChkMultiple
-     * Description :validate the whether check box displayed in a table has multiselect option
-     * Input Parameters :driver,table path till tobody, int column to validate
-     */
-    public static boolean validateChkMultiple( String sTableXpath, int Column) {
-        boolean flag = false;
-        String svalFull = "";
-        String sVal = null;
-        int chkCount = 1;
-        if (driver != null && !sTableXpath.isEmpty()) {
-            int iTotalRow, iRow, iTotalCell, iCell;
-
-            try {
-                Thread.sleep(10);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-
-            iTotalRow = totalNoRow(By.xpath(sTableXpath + "/tr"));
-            if (iTotalRow != -1) {
-
-                int iChkSize = driver.findElements(By.name("objectInstanceId")).size();
-
-                for (iRow = 1; iRow <= iTotalRow; iRow++) {
-                    if (iRow <= iChkSize) {
-                        if (!driver.findElements(By.name("objectInstanceId")).get(iRow - 1).isSelected()) {
-
-                            driver.findElements(By.name("objectInstanceId")).get(iRow - 1).click();
-                        }
-                        chkCount++;
-                    }
-                }
-
-                flag = chkCount - 1 == iTotalRow;
-
-                return flag;
-
-            }
-
-        }
-
-        return flag;
-    }
-
-    /**********************************************************************************************
-     * Method Name :validateChkMultiple Method Description :validate the whether
-     * check box displayed in a table has multiselect option 2 checkboxes only
-     *
-     *
-     * Input Parameters :driver,table path till tobody, int column to validate
-     ************************************************************************************************/
-    public static boolean validateChkMultiple2(WebDriver driver, String sTableXpath, int Column, int iNo) {
-        boolean flag = false;
-        int chkCount = 0;
-        if (driver != null && !sTableXpath.isEmpty()) {
-            int iTotalRow, iRow, iTotalCell, iCell;
-
-            try {
-                Thread.sleep(10);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-
-            iTotalRow = totalNoRow(By.xpath(sTableXpath + "/tr"));
-            if (iTotalRow != -1) {
-
-                int iChkSize = driver.findElements(By.name("objectInstanceId")).size();
-
-                for (iRow = 0; iRow < iNo; iRow++) {
-                    if (!driver.findElements(By.name("objectInstanceId")).get(iRow).isSelected()) {
-
-                        driver.findElements(By.name("objectInstanceId")).get(iRow).click();
-                    }
-                    chkCount++;
-
-                }
-
-                if (chkCount == iNo)
-                    flag = true;
-
-//                return flag;
-
-            }
-
-        }
-
-        return flag;
-    }
 
     /**
      * Method Name :totalNoRow Method Description :Get total no. Of rows
      * Input Parameters :driver,Element reference
      */
-    public static int totalNoRow(By oBy) {
+    public int totalNoRow(By oBy) {
         if (driver != null) {
             return driver.findElements(oBy).size();
         } else {
@@ -2007,11 +1875,11 @@ public abstract class CommonFunctions {
                 List<WebElement> lstOptions = sLstEle.getOptions();
                 for (int i = 1; i < lstOptions.size(); i++) {
                     if ((sLstArray[i - 1]).matches(lstOptions.get(i).getText())) {
-                        System.out.println(
+                        Log.info(
                                 i + "\t\t" + sLstArray[i - 1] + "\t\t" + lstOptions.get(i).getText() + "\t\t PASS");
                         flag = true;
                     } else {
-                        System.out.println(
+                        Log.info(
                                 i + "\t\t" + sLstArray[i - 1] + "\t\t" + lstOptions.get(i).getText() + "\t\t FAIL");
                         flag = false;
                     }
@@ -2037,11 +1905,11 @@ public abstract class CommonFunctions {
                 List<WebElement> lstOptions = sLstEle.getOptions();
                 for (int i = 1; i < lstOptions.size(); i++) {
                     if ((sLstArray[i - 1]).matches(lstOptions.get(i).getText())) {
-                        System.out.println(
+                        Log.info(
                                 i + "\t\t" + sLstArray[i - 1] + "\t\t" + lstOptions.get(i).getText() + "\t\t PASS");
                         flag = true;
                     } else {
-                        System.out.println(
+                        Log.info(
                                 i + "\t\t" + sLstArray[i - 1] + "\t\t" + lstOptions.get(i).getText() + "\t\t FAIL");
                         flag = false;
                     }
@@ -2097,9 +1965,8 @@ public abstract class CommonFunctions {
      * MethodName : browserKill
      * Description : it's used to kill browsers and closes all tabs/windows
      */
-    public void browserKill() {
+    public static void browserKill() {
         driver.quit();
-        Log.info("Kills the browsers");
     }
 
     /**
@@ -2132,7 +1999,6 @@ public abstract class CommonFunctions {
 
         }
         return flag;
-
     }
 
 
@@ -2140,7 +2006,6 @@ public abstract class CommonFunctions {
      * MethodName :compareTwoValues
      * Description : To compare two string values
      */
-
     public boolean compareTwoValues(String elementText, String errorMessage) {
         return elementText.equalsIgnoreCase(errorMessage);
     }
@@ -2552,16 +2417,6 @@ public abstract class CommonFunctions {
         js.executeScript("arguments[0].scrollIntoView({behavior: 'smooth', block: 'center', inline: 'nearest'})", element);
     }
 
-//    public void waitElePresence(WebElement ele) {
-//        try {
-//            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
-//            wait.until(ExpectedConditions.visibilityOf(ele));
-//        } catch (Exception e) {
-//            System.out.println(e.getMessage());
-//        }
-//    }
-    
-
     public void waitForPageLoaded() {
         ExpectedCondition<Boolean> expectation = driver -> {
             assert driver != null;
@@ -2598,9 +2453,9 @@ public abstract class CommonFunctions {
             Log.info("cookies : " +cookies.toString());
             for (Cookie ck : cookies) {
                 bWrite.write((ck.getName() + ";" + ck.getValue() + ";" + ck.getDomain() + ";" + ck.getPath() + ";" + ck.getExpiry() + ";" + ck.isSecure()));
-                Log.info("cookies added to file : " + fileName);
                 bWrite.newLine();
             }
+            Log.info("cookies added to file : " + fileName);
             bWrite.close();
             fileWrite.close();
 
@@ -2825,6 +2680,7 @@ public abstract class CommonFunctions {
 
             robot.keyPress(KeyEvent.VK_ENTER);
             robot.keyRelease(KeyEvent.VK_ENTER);
+            Log.info("Upload the file from : " +filePath);
         } catch (AWTException e) {
             Log.error(e.getMessage());
         }

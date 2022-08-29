@@ -150,41 +150,6 @@ public class ExcelUtil {
         return data;
     }
 
-    public void WordReader(String fileName, String sheetno, String ResultPath, String ResultName) {
-        try {
-            fis = new FileInputStream(new File(fileName));
-            workbook = new XSSFWorkbook(fis);
-            sheet = workbook.getSheet(sheetno);
-            srcSheetNo = sheetno;
-            fileFullPath = fileName;
-            resultPath = ResultPath;
-            resultSheetName = ResultName;
-        } catch (FileNotFoundException fnfEx) {
-            System.out.println(fileName + " is not Found. please check the file name.");
-            System.exit(0);
-        } catch (IOException ioEx) {
-            System.out.println(fis + " is not Found. please check the path.");
-        } catch (Exception ex) {
-            System.out.println("There is error reading/loading xls file, due to " + ex);
-        }
-    }
-
-    public int searchField(String sheetName, int colNum, String value) throws Exception {
-        try {
-            int rowCount = sheet.getLastRowNum();
-            System.out.println("rowCount " + rowCount);
-
-            for (int i = 0; i <= rowCount; i++) {
-                if (getCellData(i, colNum).equalsIgnoreCase(value)) {
-                    return i;
-                }
-            }
-            return -1;
-        } catch (Exception e) {
-            throw (e);
-        }
-    }
-
     public String[] getRowData(int rowNum) throws Exception {
         String[] temp = new String[sheet.getRow(rowNum).getLastCellNum()];
 

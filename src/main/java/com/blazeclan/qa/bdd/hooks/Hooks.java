@@ -17,8 +17,8 @@ public class Hooks extends CommonFunctions {
     public void setUp(Scenario scenario) {
         Hooks.scenario = scenario;
             Properties prop = init_properties(IConstants.TEST_CONFIG_PATH);
-            invokeApplicationURL(prop.getProperty("BrowserName"), prop.getProperty("Url"));
-            waitForLoading();
+                invokeApplicationURL(prop.getProperty("BrowserName"), prop.getProperty("Url"));
+                waitForLoading();
     }
 
     @AfterStep
@@ -44,7 +44,6 @@ public class Hooks extends CommonFunctions {
             byte[] fileContent = Files.readAllBytes(fi.toPath());
             scenario.attach(fileContent, "image/png", scenario.getName());
         }
-
-            browserKill();
+        browserKill();
     }
 }

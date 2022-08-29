@@ -1,5 +1,6 @@
 Feature: Search for product
 
+  @Group
   Scenario: Search for an product
     Given When user open Homepage
     When User search for "Apple" product

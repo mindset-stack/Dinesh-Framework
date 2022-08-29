@@ -15,6 +15,13 @@ public class DataProvider {
     public static Object[][] getDataFromProvider(Method method) {
         ExcelUtil excel = new ExcelUtil(IConstants.DATA_PROVIDER_FILE_PATH);
 //        excel.readExcelData("",1,3,4,6);
+        switch (method.getName()) {
+            case "" :
+                return excel.readExcelData("",1,4,5,6);
+            case "  " :
+                return  excel.readExcelData("",1,4,5,7);
+            default:
+        }
         return null;
     }
 }
