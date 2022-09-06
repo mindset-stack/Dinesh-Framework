@@ -1757,7 +1757,7 @@ public abstract class CommonFunctions {
     public boolean verifyTitleAttributeText(By locator, String data) {
 
         try {
-            String actual = driver.findElement(locator).getAttribute("title").trim();
+            String actual = createWebElement(locator).getAttribute("title").trim();
             String expected = data.trim();
             return actual.equals(expected);
         } catch (Exception e) {

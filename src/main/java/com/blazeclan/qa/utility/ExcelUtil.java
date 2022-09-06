@@ -140,7 +140,6 @@ public class ExcelUtil {
                     data[i - startRow][j - fColumn] = getCellData(sheetName, i, j);
                 }
                 count++;
-
             }
             System.out.println(count);
         } else {
@@ -183,10 +182,10 @@ public class ExcelUtil {
         int lastRow = sheet.getLastRowNum();
         System.out.println(lastRow);
 
-        ArrayList<HashMap<String, String>> result = new ArrayList<HashMap<String, String>>(lastRow);
+        ArrayList<HashMap<String, String>> result = new ArrayList<>(lastRow);
 
         for (int i = 1; i <= sheet.getLastRowNum(); i++) {
-            HashMap<String, String> testdata = new HashMap<String, String>();
+            HashMap<String, String> testdata = new HashMap<>();
 
             for (int j = 0; j < sheet.getRow(i).getLastCellNum(); j++) {
                 try {

@@ -10,8 +10,8 @@ import java.util.Properties;
 public class MySqlDBConnection {
 
     Properties prop = CommonFunctions.init_properties(IConstants.MYSQL_DB_CONNECTION_CONFIG_PATH);
-    public Connection connection;
-    public  Statement statement;
+    private Connection connection;
+    private   Statement statement;
     private void databaseSetup() {
         try {
             //created a database connection
