@@ -1,30 +1,46 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testng-results failed="1" passed="2" skipped="0" total="3">
-    <suite duration-ms="54447" name="io.cucumber.core.plugin.TestNGFormatter">
-        <test duration-ms="54447" name="io.cucumber.core.plugin.TestNGFormatter">
+<testng-results failed="1" passed="0" skipped="0" total="1">
+    <suite duration-ms="31394" name="io.cucumber.core.plugin.TestNGFormatter">
+        <test duration-ms="31394" name="io.cucumber.core.plugin.TestNGFormatter">
             <class name="Search for product">
-                <test-method duration-ms="23327" finished-at="2022-08-29T04:33:33.264172200Z" name="Search for an product" started-at="2022-08-29T04:33:09.791380800Z" status="PASS"/>
-            </class>
-            <class name="Validate the login functionality">
-                <test-method duration-ms="14693" finished-at="2022-08-29T04:33:48.111433700Z" name="Test login functionality" started-at="2022-08-29T04:33:33.407130700Z" status="FAIL">
-                    <exception class="java.lang.AssertionError">
-                        <message><![CDATA[Given When user open login page.............................................passed
-When User login to application with "dineshkumar.icon.dk@gmail.com" and "Dinnu@4318" credentials.passed
-Then Navigate to Home Page title as ""......................................failed
+                <test-method duration-ms="30674" finished-at="2022-11-18T15:33:55.631216400Z" name="Search for an product" started-at="2022-11-18T15:33:24.575585900Z" status="FAIL">
+                    <exception class="org.openqa.selenium.NoSuchElementException">
+                        <message><![CDATA[Given When user open Homepage...............................................passed
+When User search for "Apple" product........................................failed
+Then Navigate to Searched Product Page url as "https://naveenautomationlabs.com/opencart/index.php?route=product/search&search=Apple".skipped
 ]]></message>
-                        <full-stacktrace><![CDATA[java.lang.AssertionError: expected [] but found [My Account]
-	at org.testng.Assert.fail(Assert.java:110)
-	at org.testng.Assert.failNotEquals(Assert.java:1413)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
-	at org.testng.Assert.assertEquals(Assert.java:131)
-	at org.testng.Assert.assertEquals(Assert.java:655)
-	at org.testng.Assert.assertEquals(Assert.java:665)
-	at com.blazeclan.qa.bdd.stepsdefinition.Login.navigateToHomePageTitleAs(Login.java:29)
-	at ✽.Navigate to Home Page title as ""(file:///D:/Framework/BlazeclanAutomationFramework/src/main/java/com/blazeclan/qa/bdd/features/Login.feature:7)
+                        <full-stacktrace><![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@id='search']/span"}
+  (Session info: chrome=107.0.5304.107)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'BCT-LTP-G877', ip: '192.168.31.245', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [60b4b2860aa8d3a44bfbc8d54c7922ac, findElement {using=xpath, value=//div[@id='search']/span}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.107, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\DINESH~1.PED\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:60689}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60689/devtoo..., se:cdpVersion: 107.0.5304.107, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 60b4b2860aa8d3a44bfbc8d54c7922ac
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+	at com.blazeclan.qa.base.CommonFunctions.createWebElement(CommonFunctions.java:90)
+	at com.blazeclan.qa.base.CommonFunctions.clickElement(CommonFunctions.java:118)
+	at com.blazeclan.qa.bdd.stepsdefinition.Home.userSearchForProduct(Home.java:22)
+	at ✽.User search for "Apple" product(file:///D:/Framework/BlazeclanAutomationFramework/src/main/java/com/blazeclan/qa/bdd/features/HomePage.feature:5)
 ]]></full-stacktrace>
                     </exception>
                 </test-method>
-                <test-method duration-ms="15290" finished-at="2022-08-29T04:34:03.518072100Z" name="Search for an product" started-at="2022-08-29T04:33:48.219822800Z" status="PASS"/>
             </class>
         </test>
     </suite>

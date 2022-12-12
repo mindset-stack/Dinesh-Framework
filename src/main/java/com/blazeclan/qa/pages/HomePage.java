@@ -1,6 +1,5 @@
 package com.blazeclan.qa.pages;
 
-import com.blazeclan.qa.base.CommonFunctions;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -18,6 +17,7 @@ public class HomePage {
     public WebElement register;
     @FindBy(xpath = "(//a[normalize-space()='Login'])[1]")
     public WebElement loginBtn;
+    By home = By.xpath("");
 
     public HomePage(WebDriver driver) {
         PageFactory.initElements(driver, this);

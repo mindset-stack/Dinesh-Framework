@@ -1,14 +1,13 @@
 package com.blazeclan.qa.bdd.stepsdefinition;
 
-import com.blazeclan.qa.base.CommonFunctions;
+import com.blazeclan.qa.objectManager.ObjectManager;
 import com.blazeclan.qa.pages.HomePage;
-import com.blazeclan.qa.pages.LoginPage;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.testng.Assert;
 
-public class Login extends CommonFunctions {
+public class Login extends ObjectManager {
     HomePage homePage = new HomePage(driver);
     @Given("When user open login page")
     public void whenUserOpenLoginPage() {
@@ -18,9 +17,8 @@ public class Login extends CommonFunctions {
 
     @When("User login to application with {string} and {string} credentials")
     public void userLoginToApplicationWithAndCredentials(String arg0, String arg1) {
-        LoginPage loginPage =  new LoginPage(driver);
-        enterText(loginPage.loginEmail,arg0);
-        enterText(loginPage.loginPassword, arg1);
+        enterText(loginPage.loginEmail, (String) getValueFromJson(arg0.split("-")));
+        enterText(loginPage.loginPassword, (String) getValueFromJson(arg1.split("-")));
         clickElement(loginPage.loginBtn);
     }
 

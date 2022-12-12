@@ -3,6 +3,7 @@ package com.blazeclan.qa.bdd.hooks;
 import com.blazeclan.qa.base.CommonFunctions;
 import com.blazeclan.qa.constants.IConstants;
 import io.cucumber.java.*;
+import org.json.JSONObject;
 
 import java.io.File;
 import java.io.IOException;
@@ -12,13 +13,14 @@ import java.util.Properties;
 public class Hooks extends CommonFunctions {
 
     public static Scenario scenario;
+    public static JSONObject testData;
 
     @Before
     public void setUp(Scenario scenario) {
         Hooks.scenario = scenario;
-            Properties prop = init_properties(IConstants.TEST_CONFIG_PATH);
-                invokeApplicationURL(prop.getProperty("BrowserName"), prop.getProperty("Url"));
-                waitForLoading();
+        Properties prop = init_properties(IConstants.TEST_CONFIG_PATH);
+        invokeBrowser(prop.getProperty("BrowserName"));
+        invokeApplicationURL(prop.getProperty("Url"));
     }
 
     @AfterStep
@@ -35,7 +37,7 @@ public class Hooks extends CommonFunctions {
             File fi = new File(captureScreenshot(scenario.getName(), "failed"));
             byte[] fileContent = Files.readAllBytes(fi.toPath());
             scenario.attach(fileContent, "image/png", scenario.getName());
-        } else if (scenario.getStatus().equals(Status.SKIPPED)){
+        } else if (scenario.getStatus().equals(Status.SKIPPED)) {
             File fi = new File(captureScreenshot(scenario.getName(), "skipped"));
             byte[] fileContent = Files.readAllBytes(fi.toPath());
             scenario.attach(fileContent, "image/png", scenario.getName());

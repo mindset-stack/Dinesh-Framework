@@ -9,8 +9,6 @@ import org.testng.annotations.Test;
 
 @Listeners(TestListener.class)
 public class TestFramework extends BaseTest {
-
-
 //    @Test
 //    public void testFramework() {
 //        String text = "apple";
@@ -58,7 +56,10 @@ public class TestFramework extends BaseTest {
 //
     @Test(priority = 2)
     public void navigateToLoginPage() {
-        moveAndClick(homePage.myAccount);
+        clickElement(homePage.myAccount);
+        clickElement(homePage.loginBtn);
+
+
 
         loginPage = (LoginPage) clickNavigateToNewPage( new LoginPage(driver),homePage.loginBtn);
         waitForLoading();
@@ -79,5 +80,4 @@ public class TestFramework extends BaseTest {
         String expectedTitle = "My Account";
         Assert.assertEquals(actualTitle,expectedTitle);
     }
-
 }

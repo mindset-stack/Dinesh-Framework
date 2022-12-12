@@ -1,7 +1,6 @@
 package com.blazeclan.qa.utility;
 
 
-import com.blazeclan.qa.logging.Log;
 import org.apache.poi.ss.usermodel.*;
 import org.apache.poi.xssf.usermodel.XSSFCell;
 import org.apache.poi.xssf.usermodel.XSSFRow;
@@ -9,7 +8,10 @@ import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 import java.io.*;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.HashMap;
+import java.util.Map;
 
 public class ExcelUtil {
 
@@ -48,7 +50,7 @@ public class ExcelUtil {
             return 0;
         } else {
             sheet = workbook.getSheetAt(index);
-            System.out.println(sheet.getPhysicalNumberOfRows());
+//            Log.info("physical number of rows : "+String.valueOf(sheet.getPhysicalNumberOfRows()));
             return sheet.getPhysicalNumberOfRows();
         }
     }
@@ -96,7 +98,7 @@ public class ExcelUtil {
         } catch (Exception e) {
 
             e.printStackTrace();
-            Log.error("row " + rowNum + " or column " + colNum + " does not exist  in sheet");
+//            Log.error("row " + rowNum + " or column " + colNum + " does not exist  in sheet");
             return "row " + rowNum + " or column " + colNum + " does not exist  in sheet";
         }
     }
@@ -105,7 +107,7 @@ public class ExcelUtil {
         int index = workbook.getSheetIndex(sheetName);
         if (index == -1) {
             index = workbook.getSheetIndex(sheetName.toUpperCase());
-            Log.error(sheetName + " doesn't exist");
+//            Log.error(sheetName + " doesn't exist");
             return index != -1;
         } else {
             return true;
@@ -141,7 +143,7 @@ public class ExcelUtil {
                 }
                 count++;
             }
-            System.out.println(count);
+//            Log.info(String.valueOf(count));
         } else {
             data = null;
         }
@@ -178,29 +180,33 @@ public class ExcelUtil {
     }
 
 
-    public ArrayList<HashMap<String, String>> getExcelData() {
-        int lastRow = sheet.getLastRowNum();
-        System.out.println(lastRow);
+    public ArrayList<HashMap<String, String>> getExcelData(String sheetName) {
+        ArrayList<HashMap<String, String>> result = null;
+        if (isSheetExist(sheetName)) {
+            sheet = workbook.getSheet(sheetName);
+            int lastRow = sheet.getLastRowNum();
+//            Log.info(String.valueOf(lastRow));
+            result = new ArrayList<>(lastRow);
+            for (int i = 1; i <= sheet.getLastRowNum(); i++) {
+                HashMap<String, String> testdata = new HashMap<>();
 
-        ArrayList<HashMap<String, String>> result = new ArrayList<>(lastRow);
-
-        for (int i = 1; i <= sheet.getLastRowNum(); i++) {
-            HashMap<String, String> testdata = new HashMap<>();
-
-            for (int j = 0; j < sheet.getRow(i).getLastCellNum(); j++) {
-                try {
-                    System.out.println("i:" + i + " " + "j:" + j);
-                    testdata.put(sheet.getRow(0).getCell(j).getStringCellValue(), sheet.getRow(i).getCell(j).getStringCellValue());
-                } catch (Throwable e) {
-                    e.printStackTrace();
+                for (int j = 0; j < sheet.getRow(i).getLastCellNum(); j++) {
+                    try {
+                        System.out.println("i:" + i + " " + "j:" + j);
+                        testdata.put(sheet.getRow(0).getCell(j).getStringCellValue(), sheet.getRow(i).getCell(j).getStringCellValue());
+                    } catch (Throwable e) {
+                        e.printStackTrace();
+                    }
                 }
-            }
 
-            result.add(testdata);
+                result.add(testdata);
+            }
         }
+
 
         return result;
     }
+
 
     public HashMap<String, String> getExcelRowData(int rowNum) {
         HashMap<String, String> map = new HashMap<>();
@@ -211,6 +217,22 @@ public class ExcelUtil {
         return map;
     }
 
+    public void readMergedCells(String sheetName) {
+        if (isSheetExist(sheetName)){
+            sheet = workbook.getSheet(sheetName);
+            int size = sheet.getMergedRegions().size();
+            System.out.println(size);
+            for (int i=0; i < size; i++) {
+                sheet.getMergedRegion(i).forEach(cellAddress -> {
+                    int row  = cellAddress.getRow();
+                    int col = cellAddress.getColumn();
+                    System.out.println(sheet.getRow(row).getCell(col).getStringCellValue());
+                });
+            }
+            System.out.println("kkkk "+sheet.getMergedRegions().size());
+            System.out.println(sheet.getMergedRegions().listIterator().hasNext());
+        }
+    }
     public int getFirstRowNum() {
         return sheet.getFirstRowNum();
     }

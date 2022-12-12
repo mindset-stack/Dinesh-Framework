@@ -14,5 +14,6 @@ public interface IConstants {
     String EXTENT_CONFIG_PATH = prop.getProperty("ExtentConfigPath");
     String DATA_PROVIDER_FILE_PATH = prop.getProperty("DataProviderFilePath");
     String MYSQL_DB_CONNECTION_CONFIG_PATH = prop.getProperty("MySqlDBConnectionConfig");
+    String TEST_DATA_FILE_PATH = prop.getProperty("TestDataFile");
 }
 
