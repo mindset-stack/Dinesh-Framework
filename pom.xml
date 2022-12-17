@@ -34,7 +34,7 @@
         <extentreports-cucumber7-adapter-version>1.7.0</extentreports-cucumber7-adapter-version>
         <cucumber-picocontainer-version>7.6.0</cucumber-picocontainer-version>
         <javax.mail-version>1.6.2</javax.mail-version>
-        <allure-cucumber-jvm-version>2.19.0</allure-cucumber-jvm-version>
+<!--        <allure-cucumber-jvm-version>2.19.0</allure-cucumber-jvm-version>-->
         <mysql-connector-java-version>8.0.30</mysql-connector-java-version>
         <json-version>20220924</json-version>
     </properties>
@@ -140,11 +140,11 @@
         <!--      <version>${allure-testng-version}</version>-->
         <!--    </dependency>-->
         <!-- https://mvnrepository.com/artifact/io.qameta.allure/allure-cucumber-jvm -->
-        <dependency>
-            <groupId>io.qameta.allure</groupId>
-            <artifactId>allure-cucumber-jvm</artifactId>
-            <version>${allure-cucumber-jvm-version}</version>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>io.qameta.allure</groupId>-->
+<!--            <artifactId>allure-cucumber-jvm</artifactId>-->
+<!--            <version>${allure-cucumber-jvm-version}</version>-->
+<!--        </dependency>-->
 
         <dependency>
             <groupId>tech.grasshopper</groupId>
